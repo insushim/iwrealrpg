@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: wordquest-online
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: ACCEPT_LICENSE
+        value: "true"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: PORT
+        value: "10000"
+      - key: SKIP_DATABASE
+        value: "true"
+      - key: NAME
+        value: "WordQuest Online"
+      - key: MAX_PLAYERS
+        value: "50"
+      - key: GVER
+        value: "1.0.0"
+      - key: NODE_ENV
+        value: "production"
+      - key: SSL
+        value: "true"
+      - key: CLIENT_REMOTE_HOST
+        value: "wordquest-online.onrender.com"
