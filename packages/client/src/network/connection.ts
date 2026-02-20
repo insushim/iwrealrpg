@@ -63,13 +63,15 @@ import type {
     CraftingPacketData,
     LootBagPacketData,
     CountdownPacketData,
-    InterfacePacketData
+    InterfacePacketData,
+    QuizPacketData
 } from '@kaetram/common/types/messages/outgoing';
 import type { TradePacketValues } from '@kaetram/common/network/impl/trade';
 import type { EquipmentPacketValues } from '@kaetram/common/network/impl/equipment';
 import type Resource from '../entity/objects/resource/resource';
 import type { ResourcePacketData } from '@kaetram/common/network/impl/resource';
 import type { NetworkPacketData } from '@kaetram/common/network/impl/network';
+import type { QuizQuestionData, QuizResultData } from '@kaetram/common/network/impl/quiz';
 
 export default class Connection {
     /**
@@ -176,6 +178,7 @@ export default class Connection {
         this.messages.onLootBag(this.handleLootBag.bind(this));
         this.messages.onCountdown(this.handleCountdown.bind(this));
         this.messages.onResource(this.handleResource.bind(this));
+        this.messages.onQuiz(this.handleQuiz.bind(this));
     }
 
     /**
@@ -1594,6 +1597,27 @@ export default class Connection {
         this.input.moveCursor();
 
         if (depleted) entity.updateSilhouette(false);
+    }
+
+    /**
+     * Handles the quiz packet from the server. This can either be a question
+     * that the player needs to answer or a result of a previously answered question.
+     * @param opcode The type of quiz action we are handling.
+     * @param data Contains information about the quiz question or result.
+     */
+
+    private handleQuiz(opcode: Opcodes.Quiz, data: QuizPacketData): void {
+        switch (opcode) {
+            case Opcodes.Quiz.Question: {
+                this.menu.getQuiz().question(data as QuizQuestionData);
+                break;
+            }
+
+            case Opcodes.Quiz.Result: {
+                this.menu.getQuiz().result(data as QuizResultData);
+                break;
+            }
+        }
     }
 
     /**

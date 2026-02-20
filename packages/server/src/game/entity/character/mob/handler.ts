@@ -103,8 +103,24 @@ export default class Handler {
                 // Register the kill as belonging to the player who dealt most amount of damage.
                 entity.killCallback?.(this.mob);
 
-                // Drop the mob's loot and pass the owner's username.
-                this.mob.drop(entity as Player);
+                let player = entity as Player;
+
+                // Quiz system: intercept drops if the player has quiz manager and no active quiz.
+                if (player.quizManager && !player.quizManager.hasActiveQuiz()) {
+                    let drops = this.mob.getDrops(player);
+
+                    if (drops.length > 0)
+                        player.quizManager.generateQuiz(
+                            this.mob.name,
+                            this.mob.level,
+                            drops,
+                            this.mob.x,
+                            this.mob.y,
+                            player.username
+                        );
+                }
+                // Fallback: normal drop if quiz is active or no quiz manager.
+                else this.mob.drop(player);
             }
         }
 

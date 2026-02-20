@@ -50,3 +50,4 @@ export { default as InterfacePacket } from './interface';
 export { default as LootBagPacket } from './lootbag';
 export { default as CountdownPacket } from './countdown';
 export { default as ResourcePacket } from './resource';
+export { default as QuizPacket } from './quiz';

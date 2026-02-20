@@ -40,6 +40,7 @@ import type {
     PoisonPacketCallback,
     PVPPacketCallback,
     QuestPacketCallback,
+    QuizPacketCallback,
     RankPacketCallback,
     ResourcePacketCallback,
     RespawnPacketCallback,
@@ -107,6 +108,7 @@ export default class Messages {
     private lootBagCallback?: LootBagPacketCallback;
     private countdownCallback?: CountdownPacketCallback;
     private resourceCallback?: ResourcePacketCallback;
+    private quizCallback?: QuizPacketCallback;
 
     /**
      * Do not clutter up the Socket class with callbacks,
@@ -169,6 +171,7 @@ export default class Messages {
         this.messages[Packets.LootBag] = () => this.lootBagCallback;
         this.messages[Packets.Countdown] = () => this.countdownCallback;
         this.messages[Packets.Resource] = () => this.resourceCallback;
+        this.messages[Packets.Quiz] = () => this.quizCallback;
     }
 
     /**
@@ -520,5 +523,9 @@ export default class Messages {
 
     public onResource(callback: ResourcePacketCallback): void {
         this.resourceCallback = callback;
+    }
+
+    public onQuiz(callback: QuizPacketCallback): void {
+        this.quizCallback = callback;
     }
 }

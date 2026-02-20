@@ -114,3 +114,9 @@ export interface LootBagPacket {
 export interface PetPacket {
     opcode: Opcodes.Pet;
 }
+
+export interface QuizPacket {
+    opcode: Opcodes.Quiz;
+    quizId: string;
+    selectedAnswer: number;
+}

@@ -10,6 +10,7 @@ import Equipments from './equipments';
 import Statistics from './statistics';
 import Trade from './trade';
 import Incoming from './incoming';
+import QuizManager from './quiz/quizmanager';
 
 import Mana from '../points/mana';
 import Character from '../character';
@@ -99,6 +100,7 @@ export default class Player extends Character {
     public statistics: Statistics;
     public friends: Friends;
     public trade: Trade;
+    public quizManager!: QuizManager;
 
     public handler: Handler;
 
@@ -213,6 +215,7 @@ export default class Player extends Character {
         this.statistics = new Statistics(this);
         this.friends = new Friends(this);
         this.trade = new Trade(this);
+        this.quizManager = new QuizManager(this);
         this.handler = new Handler(this);
 
         // Send the connected packet, begin the handshake process.
@@ -266,6 +269,7 @@ export default class Player extends Character {
         this.loadBank();
         this.loadStatistics();
         this.loadAbilities();
+        this.loadQuizStats();
 
         // Synchronize login with the hub's server list.
         this.world.client.send(
@@ -350,6 +354,14 @@ export default class Player extends Character {
 
     public loadAbilities(): void {
         this.database.loader?.loadAbilities(this, this.abilities.load.bind(this.abilities));
+    }
+
+    /**
+     * Loads the quiz stats data from the database.
+     */
+
+    public loadQuizStats(): void {
+        this.database.loader?.loadQuizStats(this, this.quizManager.load.bind(this.quizManager));
     }
 
     /**

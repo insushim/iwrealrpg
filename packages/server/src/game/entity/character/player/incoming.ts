@@ -35,7 +35,8 @@ import type {
     GuildPacket,
     CraftingPacket,
     PetPacket,
-    LootBagPacket
+    LootBagPacket,
+    QuizPacket
 } from '@kaetram/common/types/messages/incoming';
 import type { QuestPacketData } from '@kaetram/common/network/impl/quest';
 
@@ -145,6 +146,9 @@ export default class Incoming {
                     }
                     case Packets.Pet: {
                         return this.handlePet(message);
+                    }
+                    case Packets.Quiz: {
+                        return this.handleQuiz(message);
                     }
                 }
             } catch (error) {
@@ -843,5 +847,14 @@ export default class Incoming {
                 return;
             }
         }
+    }
+
+    /**
+     * Handles an incoming quiz answer from the client.
+     * @param data Contains the quiz ID and the selected answer.
+     */
+
+    private handleQuiz(data: QuizPacket): void {
+        this.player.quizManager?.handleAnswer(data.quizId, data.selectedAnswer);
     }
 }

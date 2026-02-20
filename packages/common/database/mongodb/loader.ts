@@ -14,6 +14,7 @@ import type { QuestData, SerializedQuest } from '@kaetram/common/network/impl/qu
 import type { SerializedSkills, SkillData } from '@kaetram/common/network/impl/skill';
 import type { SerializedContainer, SlotData } from '@kaetram/common/types/slot';
 import type { EquipmentData, SerializedEquipment } from '@kaetram/common/network/impl/equipment';
+import type { QuizStats } from '@kaetram/server/src/game/entity/character/player/quiz/quizmanager';
 
 export default class Loader {
     public constructor(private database?: Db) {}
@@ -190,6 +191,23 @@ export default class Loader {
             let [abilities] = info as SerializedAbility[];
 
             callback(abilities);
+        });
+    }
+
+    /**
+     * Loads the quiz stats from the database and returns them.
+     * @param player The player we are loading the quiz stats for.
+     * @param callback Contains the quiz stats data from the database.
+     */
+
+    public loadQuizStats(player: Player, callback: (quizStats: QuizStats) => void): void {
+        this.load(player.username, 'player_quiz_stats', (info: unknown) => {
+            if (!info)
+                return log.debug(`[player_quiz_stats] No quiz stats found for ${player.username}.`);
+
+            let [quizStats] = info as QuizStats[];
+
+            callback(quizStats);
         });
     }
 

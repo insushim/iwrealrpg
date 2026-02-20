@@ -238,3 +238,9 @@ export enum Interface {
     Open,
     Close
 }
+
+export enum Quiz {
+    Question,
+    Answer,
+    Result
+}

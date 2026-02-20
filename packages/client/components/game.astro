@@ -15,7 +15,7 @@
             <div id="close-welcome" class="close-container"></div>
 
             <div id="welcome-info">
-                <h1>Welcome to Kaetram!</h1>
+                <h1>WordQuest Online에 오신 것을 환영합니다!</h1>
 
                 <div id="welcome-stats">
                     <strong>Last login:</strong>
@@ -36,13 +36,13 @@
 
             <div id="welcome-play" class="slice-inner-container">
                 <div id="welcome-instructions">
-                    <h2>How to Play</h2>
+                    <h2>조작법</h2>
 
                     <div id="welcome-instructions-keyboard">
                         <span>
-                            Use <strong>WASD</strong>, the <strong>Arrow Keys</strong>, or <strong
-                                >Click</strong
-                            > to move around.
+                            <strong>WASD</strong>, <strong>방향키</strong>, 또는 <strong
+                                >클릭</strong
+                            >으로 이동할 수 있습니다.
                         </span>
 
                         <div class="welcome-controls">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div id="welcome-daily-rewards">
-                    <h2>Daily Rewards</h2>
+                    <h2>오늘의 보상</h2>
 
                     <div id="welcome-daily-rewards-items">
                         <div class="slice-item-slot"></div>
@@ -946,6 +946,28 @@
 
             <div class="slice-inner-container"></div>
             <div class="slice-inner-container"></div>
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <div id="quiz-overlay"></div>
+            <div id="quiz-panel" class="slice-container">
+                <h2 id="quiz-header">단어 퀴즈!</h2>
+                <p id="quiz-title"></p>
+                <div id="quiz-divider"></div>
+                <p id="quiz-question"></p>
+                <div id="quiz-options">
+                    <button id="quiz-option1" class="quiz-option slice-button stroke"></button>
+                    <button id="quiz-option2" class="quiz-option slice-button stroke"></button>
+                </div>
+                <div id="quiz-timer-container">
+                    <span id="quiz-timer" class="quiz-timer-text">남은 시간: 10초</span>
+                    <div id="quiz-timer-track">
+                        <div id="quiz-timer-bar" class="quiz-timer-fill"></div>
+                    </div>
+                </div>
+                <span id="quiz-streak" style="display: none;"></span>
+                <div id="quiz-result" style="display: none;"></div>
+            </div>
         </div>
     </div>
 </div>

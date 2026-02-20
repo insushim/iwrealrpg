@@ -59,6 +59,7 @@ enum Packets {
     Countdown,
     Pet,
     Resource,
+    Quiz,
 
     // Hub <-> Admin
     AdminSync

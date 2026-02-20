@@ -76,6 +76,7 @@ export default class Creator {
             this.saveSkills(player);
             this.saveStatistics(player);
             this.saveAbilities(player);
+            this.saveQuizStats(player);
         } catch (error: unknown) {
             log.error(`Could not save data for ${player.username}.`);
             log.error(error);
@@ -177,6 +178,16 @@ export default class Creator {
         let collection = this.database.collection('player_abilities');
 
         this.updateCollection(collection, player.username, player.abilities.serialize());
+    }
+
+    /**
+     * Serializes the player's quiz stats and stores them into the database.
+     */
+
+    private saveQuizStats(player: Player): void {
+        let collection = this.database.collection('player_quiz_stats');
+
+        this.updateCollection(collection, player.username, player.quizManager.serialize());
     }
 
     /**
