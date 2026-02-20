@@ -11,8 +11,6 @@ services:
         value: "0.0.0.0"
       - key: PORT
         value: "10000"
-      - key: SKIP_DATABASE
-        value: "true"
       - key: NAME
         value: "WordQuest Online"
       - key: MAX_PLAYERS
@@ -25,3 +23,25 @@ services:
         value: "true"
       - key: CLIENT_REMOTE_HOST
         value: "wordquest-online.onrender.com"
+      # MongoDB Atlas Configuration
+      - key: SKIP_DATABASE
+        value: "false"
+      - key: DATABASE
+        value: "mongodb"
+      - key: MONGODB_SRV
+        value: "true"
+      - key: MONGODB_TLS
+        value: "true"
+      - key: MONGODB_PORT
+        value: "0"
+      - key: MONGODB_DATABASE
+        value: "wordquest"
+      - key: MONGODB_AUTH_SOURCE
+        value: ""
+      # >>> Set these from your MongoDB Atlas dashboard <<<
+      - key: MONGODB_HOST
+        sync: false
+      - key: MONGODB_USER
+        sync: false
+      - key: MONGODB_PASSWORD
+        sync: false
