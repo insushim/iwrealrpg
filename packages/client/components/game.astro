@@ -105,7 +105,7 @@
             <div id="chat-frame"></div>
 
             <input
-                title="Enter your message!"
+                title="메시지를 입력하세요!"
                 id="chat-input"
                 type="text"
                 maxlength="256"
@@ -119,8 +119,8 @@
         </div>
 
         <div id="zoom-buttons">
-            <button id="zoom-in" title="Zoom in"></button>
-            <button id="zoom-out" title="Zoom out"></button>
+            <button id="zoom-in" title="확대"></button>
+            <button id="zoom-out" title="축소"></button>
         </div>
 
         <div id="ability-shortcut" hidden>
@@ -242,10 +242,10 @@
                 <div id="input-settings" class="slice-inner-container">
                     <div class="col">
                         <label>
-                            <span id="music-volume-text">Music Volume</span>
+                            <span id="music-volume-text">음악 볼륨</span>
 
                             <input
-                                title="Music Volume"
+                                title="음악 볼륨"
                                 id="music"
                                 type="range"
                                 min="0"
@@ -257,10 +257,10 @@
                         </label>
 
                         <label>
-                            <span id="sound-volume-text">Sound Volume</span>
+                            <span id="sound-volume-text">효과음 볼륨</span>
 
                             <input
-                                title="Sound Volume"
+                                title="효과음 볼륨"
                                 id="sound"
                                 type="range"
                                 min="0"
@@ -272,10 +272,10 @@
                         </label>
 
                         <label>
-                            <span id="brightness-text">Brightness</span>
+                            <span id="brightness-text">밝기</span>
 
                             <input
-                                title="Brightness"
+                                title="밝기"
                                 id="brightness"
                                 type="range"
                                 min="0"
@@ -287,21 +287,21 @@
                         </label>
 
                         <label id="audio-enabled-checkbox" class="check">
-                            <span id="audio-enabled-checkbox-text">Audio Enabled</span>
+                            <span id="audio-enabled-checkbox-text">오디오 활성화</span>
 
                             <input type="checkbox" aria-labelledby="audio-enabled-checkbox-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="low-power-checkbox" class="check">
-                            <span id="low-power-checkbox-text">Low Power Mode</span>
+                            <span id="low-power-checkbox-text">저전력 모드</span>
 
                             <input type="checkbox" aria-labelledby="low-power-checkbox-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="joystick-enabled-checkbox" class="check">
-                            <span id="joystick-enabled-checkbox-text">Joystick Enabled</span>
+                            <span id="joystick-enabled-checkbox-text">조이스틱 활성화</span>
 
                             <input
                                 type="checkbox"
@@ -313,42 +313,42 @@
 
                     <div class="col">
                         <label id="debug-mode-checkbox" class="check">
-                            <span id="debug-mode-checkbox-text">Debug Mode</span>
+                            <span id="debug-mode-checkbox-text">디버그 모드</span>
 
                             <input type="checkbox" aria-labelledby="debug-mode-checkbox-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="show-names-checkbox" class="check">
-                            <span id="show-names-checkbox-text">Show Names</span>
+                            <span id="show-names-checkbox-text">이름 표시</span>
 
                             <input type="checkbox" aria-labelledby="show-names-checkbox-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="show-levels-checkbox" class="check">
-                            <span id="show-levels-checkbox-text">Show Levels</span>
+                            <span id="show-levels-checkbox-text">레벨 표시</span>
 
                             <input type="checkbox" aria-labelledby="show-levels-checkbox-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="disable-region-caching-checkbox" class="check">
-                            <span id="disable-region-caching-text">Disable Caching</span>
+                            <span id="disable-region-caching-text">캐시 비활성화</span>
 
                             <input type="checkbox" aria-labelledby="disable-region-caching-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="webgl-checkbox" class="check">
-                            <span id="webgl-text">Enable WebGL</span>
+                            <span id="webgl-text">WebGL 활성화</span>
 
                             <input type="checkbox" aria-labelledby="webgl-text" />
                             <span class="checkmark"></span>
                         </label>
 
                         <label id="frame-throttle">
-                            <span id="frame-throttle-text">FPS Throttle</span>
+                            <span id="frame-throttle-text">FPS 제한</span>
 
                             <select
                                 id="frame-throttle-select"
@@ -365,12 +365,12 @@
                 <div id="action-settings">
                     <div id="game-info" class="slice-inner-container">
                         <span>
-                            <strong>Game Version:</strong>
+                            <strong>게임 버전:</strong>
                             <span id="game-info-version"></span>
                         </span>
 
                         <span>
-                            <strong>Game World:</strong>
+                            <strong>게임 서버:</strong>
                             <span id="game-info-world"></span>
                         </span>
                     </div>
@@ -385,7 +385,7 @@
                         onkeydown="if (event.keyCode === 13) location.reload();"
                         tabindex="0"
                     >
-                        Log Out
+                        로그아웃
                     </div>
                 </div>
             </div>
@@ -456,13 +456,13 @@
             <div id="close-trade" class="close-container"></div>
 
             <div id="trade-inventory">
-                <div class="title-decoration">Your Inventory</div>
+                <div class="title-decoration">내 인벤토리</div>
 
                 <div id="trade-inventory-slots" class="slice-inner-container">
                     <ul></ul>
 
                     <dialog id="trade-count" class="slice-dialog">
-                        <div class="dialog-title">Input Amount</div>
+                        <div class="dialog-title">수량 입력</div>
 
                         <input
                             title="Count"
@@ -500,7 +500,7 @@
                 </div>
 
                 <div id="trade-status"></div>
-                <div id="trade-accept" class="stroke slice-button">ACCEPT</div>
+                <div id="trade-accept" class="stroke slice-button">수락</div>
             </div>
         </div>
 
@@ -562,7 +562,7 @@
             </div>
 
             <dialog id="store-buy" class="slice-dialog">
-                <div class="dialog-title">Input Buy Amount</div>
+                <div class="dialog-title">구매 수량 입력</div>
 
                 <input
                     title="Count"
@@ -586,14 +586,14 @@
 
             <div id="leaderboards-search" class="slice-inner-container">
                 <input
-                    title="Enter a search term..."
+                    title="검색어를 입력하세요..."
                     id="leaderboards-search-input"
                     class="slice-input"
                     type="text"
                     maxlength="32"
                     autocomplete="off"
                     data-lpignore="true"
-                    placeholder="Enter a term to search..."
+                    placeholder="검색어를 입력하세요..."
                 />
 
                 <ul></ul>
@@ -670,29 +670,29 @@
 
             <div id="equipments-player-stats">
                 <div id="attack-stats">
-                    <p class="title">Attack Stats</p>
-                    <p class="crush">Crush:</p>
-                    <p class="slash">Slash:</p>
-                    <p class="stab">Stab:</p>
-                    <p class="archery">Archery:</p>
-                    <p class="magic">Magic:</p>
+                    <p class="title">공격 스탯</p>
+                    <p class="crush">타격:</p>
+                    <p class="slash">참격:</p>
+                    <p class="stab">찌르기:</p>
+                    <p class="archery">궁술:</p>
+                    <p class="magic">마법:</p>
                 </div>
 
                 <div id="defense-stats">
-                    <p class="title">Defense Stats</p>
-                    <p class="crush">Crush:</p>
-                    <p class="slash">Slash:</p>
-                    <p class="stab">Stab:</p>
-                    <p class="archery">Archery:</p>
-                    <p class="magic">Magic:</p>
+                    <p class="title">방어 스탯</p>
+                    <p class="crush">타격:</p>
+                    <p class="slash">참격:</p>
+                    <p class="stab">찌르기:</p>
+                    <p class="archery">궁술:</p>
+                    <p class="magic">마법:</p>
                 </div>
 
                 <div id="bonuses">
-                    <p class="title">Bonuses</p>
-                    <p class="accuracy">Accuracy:</p>
-                    <p class="strength">Strength:</p>
-                    <p class="archery">Archery:</p>
-                    <p class="magic">Magic:</p>
+                    <p class="title">보너스</p>
+                    <p class="accuracy">정확도:</p>
+                    <p class="strength">힘:</p>
+                    <p class="archery">궁술:</p>
+                    <p class="magic">마법:</p>
                 </div>
             </div>
         </div>
@@ -734,7 +734,7 @@
                         <p id="quests-logs-rewards"></p>
 
                         <h3 class="stroke">Requirements</h3>
-                        <p id="quests-logs-requirements">None</p>
+                        <p id="quests-logs-requirements">없음</p>
                     </div>
                 </div>
             </div>
@@ -769,7 +769,7 @@
             </div>
 
             <dialog id="action-drop" class="slice-dialog">
-                <div class="dialog-title">Input Drop Amount</div>
+                <div class="dialog-title">버리는 수량 입력</div>
 
                 <input
                     title="Count"
@@ -812,7 +812,7 @@
                 <li id="craft-ten" class="amount-button amount-ten"></li>
             </ul>
 
-            <div id="craft-button" class="stroke">Craft</div>
+            <div id="craft-button" class="stroke">제작</div>
         </div>
 
         <div id="guilds" class="slice-container">
@@ -824,12 +824,12 @@
             </div>
 
             <div id="guilds-list-container" class="stroke">
-                <div id="create-guild" class="element-button element-button stroke">Create</div>
+                <div id="create-guild" class="element-button element-button stroke">길드 만들기</div>
 
-                <div class="title-decoration">Guilds</div>
+                <div class="title-decoration">길드</div>
 
                 <div id="guilds-list" class="slice-inner-container">
-                    <p id="guilds-info" class="stroke">There are no guilds available...</p>
+                    <p id="guilds-info" class="stroke">길드가 없습니다...</p>
                     <ul></ul>
                 </div>
             </div>
@@ -854,7 +854,7 @@
                         maxlength="16"
                         autocomplete="off"
                         data-lpignore="true"
-                        placeholder="Enter a name..."
+                        placeholder="이름을 입력하세요..."
                         class="guilds-name-input-image stroke slice-input"
                     />
 
@@ -864,9 +864,9 @@
 
                     <div class="button-row stroke">
                         <div id="guilds-back-button" class="element-button element-button-red">
-                            Back
+                            뒤로
                         </div>
-                        <div id="guilds-create-button" class="element-button">Create</div>
+                        <div id="guilds-create-button" class="element-button">만들기</div>
                     </div>
                 </div>
             </div>
@@ -874,7 +874,7 @@
             <div id="guilds-info-container">
                 <div id="guilds-info-header">
                     <div id="guilds-leave" class="element-button element-button-red stroke">
-                        Leave
+                        탈퇴
                     </div>
 
                     <div id="guilds-name" class="title-decoration"></div>
@@ -889,14 +889,14 @@
                         </h2>
 
                         <div class="stroke button-row">
-                            <div id="guild-member-promote" class="element-button">Promote</div>
+                            <div id="guild-member-promote" class="element-button">승진</div>
 
                             <div id="guild-member-demote" class="element-button element-button-red">
-                                Demote
+                                강등
                             </div>
 
                             <div id="guild-member-kick" class="element-button element-button-red">
-                                Kick
+                                추방
                             </div>
                         </div>
                     </dialog>
@@ -910,7 +910,7 @@
                         maxlength="256"
                         autocomplete="off"
                         data-lpignore="true"
-                        placeholder="Enter your message here..."
+                        placeholder="메시지를 입력하세요..."
                         class="guilds-chat-input-image stroke slice-input"
                     />
                 </div>

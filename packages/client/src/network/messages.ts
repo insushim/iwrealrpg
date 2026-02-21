@@ -208,114 +208,112 @@ export default class Messages {
 
         switch (reason) {
             case 'worldfull': {
-                this.app.sendError('The servers are currently full!');
+                this.app.sendError('서버가 현재 가득 찼습니다!');
                 break;
             }
 
             case 'error': {
-                this.app.sendError('The server has responded with an error!');
+                this.app.sendError('서버에서 오류가 발생했습니다!');
                 break;
             }
 
             case 'banned': {
-                this.app.sendError('Your account has been disabled!');
+                this.app.sendError('계정이 비활성화되었습니다!');
                 break;
             }
 
             case 'disabledregister': {
-                this.app.sendError('Registration is currently disabled.');
+                this.app.sendError('현재 회원가입이 비활성화되어 있습니다.');
                 break;
             }
 
             case 'development': {
-                this.app.sendError('The game is currently in development mode.');
+                this.app.sendError('게임이 현재 개발 모드입니다.');
                 break;
             }
 
             case 'disallowed': {
-                this.app.sendError('The server is currently not accepting connections!');
+                this.app.sendError('서버가 현재 접속을 허용하지 않습니다!');
                 break;
             }
 
             case 'maintenance': {
-                this.app.sendError('Kaetram is currently under maintenance.');
+                this.app.sendError('WordQuest Online이 현재 점검 중입니다.');
                 break;
             }
 
             case 'userexists': {
-                this.app.sendError('The username you have entered already exists.');
+                this.app.sendError('이미 사용 중인 사용자 이름입니다.');
                 break;
             }
 
             case 'emailexists': {
-                this.app.sendError('The email you have entered is not available.');
+                this.app.sendError('이미 사용 중인 이메일 주소입니다.');
                 break;
             }
 
             case 'invalidinput': {
-                this.app.sendError(
-                    'The input you have entered is invalid. Please do not use special characters.'
-                );
+                this.app.sendError('잘못된 입력입니다. 특수문자를 사용하지 마세요.');
                 break;
             }
 
             case 'swappedworlds': {
-                this.app.sendError('You have recently swapped worlds, please wait 15 seconds.');
+                this.app.sendError('최근에 서버를 변경했습니다. 15초 후에 다시 시도하세요.');
                 break;
             }
 
             case 'loggedin': {
-                this.app.sendError('The player is already logged in!');
+                this.app.sendError('이미 접속 중인 플레이어입니다!');
                 break;
             }
 
             case 'invalidlogin': {
-                this.app.sendError('You have entered the wrong username or password.');
+                this.app.sendError('사용자 이름 또는 비밀번호가 올바르지 않습니다.');
                 break;
             }
 
             case 'toofast': {
-                this.app.sendError('You are trying to log in too fast from the same connection.');
+                this.app.sendError('로그인 시도가 너무 빠릅니다. 잠시 후 다시 시도하세요.');
                 break;
             }
 
             case 'timeout': {
-                this.app.sendError('You have been disconnected for being inactive for too long.');
+                this.app.sendError('오랫동안 활동이 없어 연결이 끊겼습니다.');
                 break;
             }
 
             case 'updated': {
-                this.app.sendError('The game has been updated. Please clear your browser cache.');
+                this.app.sendError('게임이 업데이트되었습니다. 브라우저 캐시를 지워주세요.');
                 break;
             }
 
             case 'cheating': {
-                this.app.sendError(`An error in client-server syncing has occurred.`);
+                this.app.sendError(`클라이언트-서버 동기화 오류가 발생했습니다.`);
                 break;
             }
 
             case 'lost': {
-                this.app.sendError('The connection to the server has been lost.');
+                this.app.sendError('서버 연결이 끊겼습니다.');
                 break;
             }
 
             case 'toomany': {
-                this.app.sendError('Too many devices from your IP address are connected.');
+                this.app.sendError('같은 IP에서 너무 많은 기기가 연결되어 있습니다.');
                 break;
             }
 
             case 'ratelimit': {
-                this.app.sendError('You are sending packets too fast.');
+                this.app.sendError('패킷 전송 속도가 너무 빠릅니다.');
                 break;
             }
 
             case 'invalidpassword': {
-                this.app.sendError('The password you have entered is invalid.');
+                this.app.sendError('비밀번호가 올바르지 않습니다.');
                 break;
             }
 
             default: {
-                this.app.sendError('An unknown error has occurred, please submit a bug report.');
+                this.app.sendError('알 수 없는 오류가 발생했습니다. 버그로 신고해 주세요.');
                 break;
             }
         }
