@@ -1,55 +1,55 @@
 {
-    "name": "Evil Santa",
-    "description": "The young sherpa on the mountain needs your help!|Okay so here's what's happening. You know how Santa is supposed to be nice and bring you presents? Well this one throws them in your face, so he must be stopped before he goes on one of his yearly rampages again!",
-    "rewards": ["Access to the ice world!"],
+    "name": "사악한 산타",
+    "description": "산 위의 어린 셰르파가 도움을 요청하고 있어요!|자, 이런 상황이에요. 산타는 착하게 선물을 나눠줘야 하는데, 이 산타는 선물을 얼굴에 던진다는 거예요. 그러니 매년 벌어지는 그 난동이 다시 시작되기 전에 막아야 해요!",
+    "rewards": ["얼음 세계 입장 권한!"],
     "stages": {
         "0": {
             "task": "talk",
             "npc": "snowshepherdboy",
             "text": [
-                "Oh dear adventurer, I'm so glad you're here!",
-                "I have discovered something sinister.",
-                "You see, I came up here looking for Santa.",
-                "But while I was looking through his factory",
-                "I've stumbled upon his evil plan to take over the world!",
-                "Please, you must help me defeat him.",
-                "In exchange I will show you how to get to the hidden ice world."
+                "아, 모험가님, 오셔서 정말 다행이에요!",
+                "엄청난 걸 발견했어요.",
+                "산타를 찾으러 이 위까지 올라왔는데요,",
+                "산타의 공장을 둘러보다가",
+                "세계 정복 음모를 발견해 버렸어요!",
+                "제발 산타를 막아주세요.",
+                "대신 숨겨진 얼음 세계로 가는 길을 알려드릴게요."
             ],
             "completedText": [
-                "Please start by exploring the factory on the northern side of the mountain.",
-                "Come back to me when you have found any information."
+                "먼저 산 북쪽의 공장을 탐험해 보세요.",
+                "무슨 정보라도 찾으면 저한테 돌아와요."
             ]
         },
         "1": {
             "task": "door",
             "npc": "santaelfnpc",
             "text": [
-                "Welcome to Santa's sweatshop, how may I help you?",
-                "Oh, an adventurer! Please, you must try to help me!",
-                "The other 50 of you died trying to take on Santa!",
-                "It's not worth it man, oh geez, just please, help me!",
-                "No, please, don't try to fight Santa, he's too strong!",
-                "But if you really insist you must first obtain a key..."
+                "산타의 작업장에 오신 걸 환영합니다, 어떻게 도와드릴까요?",
+                "어머, 모험가님이시군요! 제발 도와주세요!",
+                "앞서 간 모험가 50명이 산타한테 도전하다 죽었어요!",
+                "할 만한 일이 아니에요, 이보세요, 제발 도와주세요!",
+                "제발 산타랑 싸우려 하지 마세요, 너무 강해요!",
+                "그래도 꼭 하겠다면 먼저 열쇠를 구해야 해요..."
             ],
             "completedText": [
-                "If you really feel you can take him on, the only way",
-                "is by obtaining the magical key that lets you in his chamber."
+                "정말로 도전하고 싶다면,",
+                "그의 방에 들어갈 수 있는 마법 열쇠를 구해야 해요."
             ]
         },
         "2": {
             "task": "talk",
             "npc": "snowshepherdboy",
             "text": [
-                "You have some information don't you?",
-                "I see, you need a magical key to get into Santa's room.",
-                "I know the elves hold the key, but it's a hit or miss",
-                "if you'll be able to get one out of them. I guess you can try.",
-                "However I think there is a less dangerous way to get the key.",
-                "Perhaps it's worth checking out the underground factory?"
+                "정보를 찾았군요?",
+                "아, 산타 방에 들어가려면 마법 열쇠가 필요하군요.",
+                "요정들이 열쇠를 갖고 있는데, 얻을 수 있을지는 운에 달렸어요.",
+                "한 번 시도해 볼 수는 있겠지요.",
+                "하지만 덜 위험한 방법도 있을 것 같아요.",
+                "지하 공장을 조사해 보는 건 어떨까요?"
             ],
             "completedText": [
-                "Try finding a key in the underground factory.",
-                "If you manage, defeat the evil Santa and save the world!"
+                "지하 공장에서 열쇠를 찾아보세요.",
+                "찾으면 사악한 산타를 처치하고 세계를 구하세요!"
             ]
         },
         "3": {
@@ -61,13 +61,13 @@
             "task": "talk",
             "npc": "snowshepherdboy",
             "text": [
-                "Congratulations, you did it!",
-                "I will make sure to tell everyone about your heroic deeds.",
-                "I will open up a path for you to the ice world."
+                "축하해요, 해냈어요!",
+                "당신의 영웅적인 활약을 모두에게 알릴게요.",
+                "얼음 세계로 가는 길을 열어 드릴게요."
             ],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Evil Santa@green@ quest. You can now access the @crimson@Ice World@green@",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@사악한 산타@green@ 퀘스트를 완료했습니다. 이제 @crimson@얼음 세계@green@에 입장할 수 있어요.",
                 "colour": "#33cc33"
             }
         }

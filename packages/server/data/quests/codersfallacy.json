@@ -1,7 +1,7 @@
 {
-    "name": "Coder's Fallacy",
-    "description": "A distressed villager wants to talk to you.|Find him by the balloons desk in the village. It might be important. Might have something to do with something that someone (or perhaps you) did.",
-    "rewards": ["Key to a secret room"],
+    "name": "코더의 실수",
+    "description": "당황한 마을 주민이 당신과 이야기하고 싶어 해요.|마을의 풍선 데스크 근처에서 찾을 수 있어요. 중요한 일일 수도 있어요. 누군가가 (혹은 당신이) 한 일과 관계가 있는 것 같아요.",
+    "rewards": ["비밀 방 열쇠"],
     "questRequirements": ["codersglitch2", "anvilsechoes", "scientistspotion"],
     "skillRequirements": {
         "alchemy": 35,

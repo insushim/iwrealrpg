@@ -1,7 +1,7 @@
 {
-    "name": "The Coder's Glitch",
-    "description": "The coder requires your help sorting out his bugs.|The coder (as you were probably told about in the tutorial if you didn't skip it), requires your help with defeating the bugs he has created. He seeks the trophy of the first three bosses.",
-    "rewards": ["5000 strength experience", "A surprise weapon"],
+    "name": "코더의 버그",
+    "description": "코더가 자신의 버그를 해결하는 데 도움이 필요해요.|코더는 (튜토리얼에서 들으셨겠지만) 자신이 만들어낸 버그를 처치하는 데 도움이 필요해요. 처음 등장하는 보스 세 명의 탈리스만을 가져다 달라고 해요.",
+    "rewards": ["힘 경험치 5000", "깜짝 무기"],
     "questRequirements": ["foresting", "desertquest", "sorcery"],
     "skillRequirements": {
         "accuracy": 15,
@@ -14,19 +14,19 @@
             "task": "talk",
             "noc": "coder",
             "text": [
-                "Alright perfect, seems you have gotten the gist of how this world works.",
-                "One of my first glitches is the Skeleton King.",
-                "I created this entity due to needing a boss in this ga- I mean, world.",
-                "Turns out he's rather unstable and tends to attack random people in his",
-                "suspiciously boss-like-shaped room. I need you to defeat him and bring me",
-                "his head as a trophy.",
-                "The skeleton king resides east of the desert within",
-                "the volcano land known as Patsow."
+                "좋아요, 이제 이 세계가 어떻게 돌아가는지 파악이 됐죠?",
+                "제가 만든 첫 번째 버그는 스켈레톤 왕이에요.",
+                "이 게임에—아니, 이 세계에 보스가 필요해서 만든 존재예요.",
+                "그런데 불안정해서 자기 방에서 아무나 공격하거든요.",
+                "그 방이 보스룸처럼 생겼는데 말이에요. 그를 처치하고",
+                "트로피로 머리를 가져다 줘요.",
+                "스켈레톤 왕은 사막 동쪽",
+                "팟소우라는 화산 지대에 있어요."
             ],
 
             "completedText": [
-                "Find and defeat the Skeleton King. He's located east of the desert.",
-                "Within the lavalands known as Patsow. Bring me his talisman."
+                "스켈레톤 왕을 찾아 처치하세요. 사막 동쪽에 있어요.",
+                "팟소우라는 용암 지대 안에요. 그의 탈리스만을 가져오세요."
             ]
         },
 
@@ -39,13 +39,13 @@
             "task": "talk",
             "npc": "coder",
             "hasItemText": [
-                "Wow I really didn't think I'd see you aga-",
-                "Sorry, congratulations hero! Thank you for doing this task for me.",
-                "It is super important that you do this for me, as I need to test",
-                "the limits of the real cod- I mean, the limits of this world.",
-                "Well, regardless. I may have another task for you in the nearby future.",
-                "Why don't you go and explore the world a bit more? I'm sure you'll",
-                "find something or someone interesting..."
+                "와, 다시 볼 줄은 몰랐는-",
+                "아, 죄송해요, 축하해요 영웅님! 맡겨주신 임무를 해줘서 감사해요.",
+                "제가 이걸 부탁드린 건 정말 중요한 일이거든요.",
+                "실제 코- 아니, 이 세계의 한계를 시험해야 하니까요.",
+                "어쨌든 감사해요. 조만간 다른 임무가 생길 수도 있어요.",
+                "잠깐 세계를 좀 더 탐험해 보는 건 어떨까요? 분명 재미있는",
+                "무언가나 누군가를 만나게 될 거예요..."
             ],
             "itemRequirements": [
                 {
@@ -69,8 +69,8 @@
             ],
 
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Coder's Glitch@green@. You've been awarded @crimson@5000@green@ Strength experience!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@코더의 버그@green@를 완료했습니다. @crimson@힘 경험치 5000@green@을 획득했어요!",
                 "colour": "#33cc33"
             }
         }

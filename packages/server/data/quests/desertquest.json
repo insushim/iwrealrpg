@@ -1,7 +1,7 @@
 {
-    "name": "Desert Quest",
-    "description": "Help the dying adventurer send a letter to his wife.|The adventurer is dying and is in dire need of your help with super important matters prior to his death. You can find him in the desert.",
-    "rewards": ["Secret Reward"],
+    "name": "사막의 퀘스트",
+    "description": "죽어가는 모험가가 아내에게 편지를 전달해 달라고 해요.|모험가가 죽어가면서 마지막으로 중요한 일을 부탁하려 해요. 사막에서 그를 찾을 수 있어요.",
+    "rewards": ["비밀 보상"],
     "hideNPCs": {
         "lavanpc": "after"
     },
@@ -10,16 +10,16 @@
             "task": "talk",
             "npc": "lavanpc",
             "text": [
-                "Please dear adventurer, beware of what lies ahead.",
-                "I am no longer able to carry on forth.",
-                "Would you please be so kind as to aid me?",
-                "I must tell my wife I will no longer be coming home.",
-                "Could you deliver this CD for me?",
-                "She lives south of the desert."
+                "제발 모험가님, 앞에 무엇이 있는지 조심하세요.",
+                "저는 더 이상 앞으로 나아갈 수 없게 됐어요.",
+                "부탁 하나만 들어주실 수 있나요?",
+                "아내에게 제가 집에 돌아갈 수 없게 됐다고 전해줘야 해요.",
+                "이 CD를 대신 전해주실 수 있나요?",
+                "아내는 사막 남쪽에 살고 있어요."
             ],
             "completedText": [
-                "Please adventurer, deliver the CD.",
-                "It's my new Demo Tape, I must ensure she hears it."
+                "부탁드려요 모험가님, CD를 전달해 주세요.",
+                "제 새 데모 테이프예요, 꼭 들어봤으면 해요."
             ],
             "itemRewards": [
                 {
@@ -31,19 +31,18 @@
         "1": {
             "task": "talk",
             "npc": "villagegirl",
-            "text": ["Hello? Why are you in my house..?"],
+            "text": ["안녕하세요? 왜 우리 집에 계신 거예요?"],
             "hasItemText": [
-                "Who are you and why are you in my house?",
-                "Is it about my husband?",
-                "Oh my god I knew it, that bastard is cheating on me!",
-                "Wait, I can sorta read your thoughts.",
-                "Oh no, he's dying. That is super sad",
-                "He wanted me to have this CD?",
-                "That bastard is still trying to sell his",
-                "demo tape even on his death bed.",
-                "Tell him I'll take it but will probably never listen to it."
+                "누구세요? 왜 우리 집에 들어오신 거예요?",
+                "남편 때문에 오신 건가요?",
+                "세상에, 그럴 줄 알았어요, 그 나쁜 사람이 바람을 피우는 거잖아요!",
+                "잠깐, 생각을 조금 읽을 수 있을 것 같아요.",
+                "아, 죽어가고 있군요. 정말 슬프네요.",
+                "이 CD를 갖길 바랬다고요?",
+                "임종 직전에도 자기 데모 테이프를 팔려고 하다니.",
+                "받기는 받겠지만 아마 안 들을 거라고 전해줘요."
             ],
-            "completedText": ["Go on now, tell him."],
+            "completedText": ["가서 전해줘요."],
             "itemRequirements": [
                 {
                     "key": "cd",
@@ -55,14 +54,14 @@
             "task": "talk",
             "npc": "lavanpc",
             "text": [
-                "Well? Did you tell her? Was she super happy?",
-                "Oh she said she'll take it?",
-                "Well, at least I can die knowing I was unloved."
+                "어떻게 됐나요? 전해줬어요? 아내가 엄청 좋아했나요?",
+                "받기는 받겠다고 했어요?",
+                "뭐, 적어도 사랑받지 못했다는 걸 알고 죽을 수 있겠네요."
             ],
-            "completedText": ["Farewell adventurer, this may be the last time we meet."],
+            "completedText": ["잘 가요 모험가님, 이게 마지막 만남이 될 것 같아요."],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Desert Quest@green@. You have gained nothing out of that!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@사막의 퀘스트@green@를 완료했습니다. 아무것도 얻은 게 없네요!",
                 "colour": "#33cc33"
             }
         }

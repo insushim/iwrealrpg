@@ -1,32 +1,31 @@
 {
-    "name": "Sorcery and Stuff",
-    "description": "Learn the basics to sorcery|The sorcerer needs your help to re-assemble a long-lost magic staff that he lost on the beach. Help him out and perhaps he may teach you a thing or two about sorcery and stuff.",
-    "rewards": ["A Magic Staff", "Access to Sorcerer's store"],
+    "name": "마법과 그 이것저것",
+    "description": "마법의 기초를 배우세요.|마법사가 해변에서 잃어버린 오래된 마법 지팡이를 다시 조립하는 데 도움이 필요해요. 도와주면 마법에 대해 이것저것 가르쳐 줄지도 몰라요.",
+    "rewards": ["마법 지팡이", "마법사 상점 이용 권한"],
     "stages": {
         "0": {
             "task": "talk",
             "npc": "sorcerer",
             "text": [
-                "Oh dear adventurer, it's you! One of the thousands",
-                "I've trained and definitely not someone I don't remember.",
-                "Listen, I'm on vacation here and was relaxing on the beach",
-                "when all of the sudden I lost my entire magic contrband!",
-                "I can't run a business if I don't have my equipment.",
-                "Tell you what, if you bring me back 3 magic beads, I'll",
-                "grant you access to my shop!",
-                "You'll be taught how to",
-                "craft your own magic staffs!"
+                "오, 모험가님이군요! 수천 명 중에 한 분으로,",
+                "당연히 얼굴을 기억하고 있었죠.",
+                "있잖아요, 여기서 휴가를 즐기다가 해변에서 쉬는 중에",
+                "마법 비품을 전부 잃어버렸어요!",
+                "장비가 없으면 장사를 할 수가 없잖아요.",
+                "마법 구슬 3개를 가져다 주시면 제 상점을 이용할 수 있게 해드릴게요!",
+                "마법 지팡이를 직접",
+                "제작하는 법도 가르쳐 드릴게요!"
             ],
             "completedText": [
-                "Please bring me 3 magic beads.",
-                "If I recall correctly, some big macho crab took it",
-                "and then retreated in a cave west of here."
+                "마법 구슬 3개를 가져다 주세요.",
+                "기억이 맞다면, 거대한 근육질 게가 가져가서",
+                "여기서 서쪽 동굴로 숨어들어갔어요."
             ]
         },
         "1": {
             "task": "talk",
             "npc": "sorcerer",
-            "hasItemText": ["Perfect, just perfect. These will surely be great."],
+            "hasItemText": ["완벽해요, 아주 완벽해요. 이거면 충분하겠어요."],
             "itemRequirements": [
                 {
                     "key": "bead",
@@ -40,8 +39,8 @@
                 }
             ],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Sorcery and Stuff@green@ quest. You have received a @crimson@Magic Staff@green@!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@마법과 그 이것저것@green@ 퀘스트를 완료했습니다. @crimson@마법 지팡이@green@를 받았어요!",
                 "colour": "#33cc33"
             }
         }

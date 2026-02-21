@@ -1,43 +1,43 @@
 {
-    "name": "Scavenger",
-    "description": "The local village girl needs your help to get out of her responsibilities.|Quick, there is a village girl who does not want to fulfill her duties towards her grandmother and you must go help her immediately. I think this quest involves scavenging for ingredients and stuff but I'm not particularly sure.",
-    "rewards": ["Nothing in particular, but it'll be fun!"],
+    "name": "수집가",
+    "description": "마을 소녀가 할머니에 대한 책임을 피하려고 도움을 요청해요.|빨리요, 할머니에게 할 도리를 다하기 싫은 마을 소녀가 있어요. 당장 도와주러 가야 해요. 재료 수집 같은 것이 포함된 퀘스트인 것 같긴 한데 확실하지는 않아요.",
+    "rewards": ["특별한 보상은 없지만 재미있을 거예요!"],
     "stages": {
         "0": {
             "task": "talk",
             "npc": "villagegirl2",
             "text": [
-                "Hey you, you look like someone particularly du-",
-                "I mean, you look like someone who can help me.",
-                "You see, my grandmother asked me to bring her some flowers",
-                "and blueberries, and some mushrooms, and some coal, and some logs",
-                "and some tomatoes, and some potatoes, and some string, and some strawberries",
-                "anyway, I won't have you bring all that.",
-                "Can you go check on my grandma first, she's probably in one of those houses",
-                "I'm not sure, try looking around."
+                "야, 너 좀 멍청해 보이는-",
+                "아니, 날 도와줄 수 있을 것 같아 보여.",
+                "할머니가 꽃이랑 블루베리, 버섯, 석탄, 통나무",
+                "토마토, 감자, 실, 딸기 같은 걸 가져다 달래.",
+                "뭐, 그걸 다 가져다 달라진 않을게.",
+                "일단 우리 할머니가 어디 계신지 좀 확인해 줄 수 있어?",
+                "집 어딘가에 계실 것 같은데",
+                "잘 모르겠어, 한번 찾아봐."
             ],
-            "completedText": ["Look through the houses for my grandma and see what she needs."]
+            "completedText": ["할머니 집에 가서 뭐가 필요하신지 확인해 봐 줘."]
         },
         "1": {
             "task": "talk",
             "npc": "oldlady",
             "text": [
-                "Oh hello, please don't mind the random tent in my house.",
-                "I've been waiting for my granddaughter to bring me some ingredients",
-                "but that was months ago. Do you think you can help me out?",
-                "I only ask that you bring me 2 tomatoes, 2 strawberries, and a piece of string.",
-                "I will grant you a reward if you do.",
-                "You can find those ingredients throughout the world, just look around."
+                "어서오세요, 집 안에 텐트가 있는 건 신경 쓰지 마세요.",
+                "손녀가 재료를 가져다 주기로 했는데",
+                "그게 몇 달 전 얘기네요. 도와줄 수 있나요?",
+                "토마토 2개, 딸기 2개, 그리고 실 1개만 가져다 주면 돼요.",
+                "대신 보상을 드릴게요.",
+                "세상 곳곳을 돌아다니면 찾을 수 있어요."
             ],
-            "completedText": ["Please bring me 2 tomatoes, 2 strawberries, and a piece of string."]
+            "completedText": ["토마토 2개, 딸기 2개, 그리고 실 1개를 가져다 주세요."]
         },
         "2": {
             "task": "talk",
             "npc": "oldlady",
             "hasItemText": [
-                "Thank you so much young one. You're so helpful.",
-                "Unlike that granddaughter of mine.",
-                "Here, take this gold as a reward for your troubles."
+                "고마워요, 정말 착하네요.",
+                "저 손녀랑은 달리.",
+                "자, 수고하셨으니 이 금을 받아요."
             ],
             "itemRequirements": [
                 {
@@ -60,8 +60,8 @@
                 }
             ],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Scavenger@green@. You've been awarded @crimson@7500@green@ gold coins!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@수집가@green@를 완료했습니다. @crimson@골드 7500@green@을 받았어요!",
                 "colour": "#33cc33"
             }
         }

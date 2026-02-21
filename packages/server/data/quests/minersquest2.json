@@ -1,7 +1,7 @@
 {
-    "name": "Miner's Quest II",
-    "description": "The miner is at it again, this time he doesn't just need ores.|The miner requires your help once again, this time his sketch creations include bars of metals and stuff like that. You should probably go see what he's up to and whatnot.",
-    "rewards": ["Access to the mining cave"],
+    "name": "광부의 퀘스트 II",
+    "description": "광부가 또 나타났어요. 이번엔 광석만이 아니에요.|광부가 또 도움을 요청해요. 이번에는 금속 주괴 같은 것들도 필요하대요. 뭘 꾸미고 있는지 직접 가서 확인해 보세요.",
+    "rewards": ["채굴 동굴 입장 권한"],
     "skillRequirements": {
         "mining": 30
     },
@@ -11,26 +11,26 @@
             "task": "talk",
             "npc": "miner",
             "text": [
-                "Oh it's you again, seems you didn't learn your lesson last time.",
-                "Anyway, what do you say you help me out again, this time I need",
-                "to do something with the ores I've collected.",
-                "But I'm not gonna give them to you, you have to actually go",
-                "and collect ores again and this time smelt them.",
-                "Doesn't that sound like an amazing deal where only I benefit?",
-                "Tell you what, you help me out and I will give you access to",
-                "my special secret cave where only miners are allowed.",
-                "Okay so anyway, I need you to bring me 5 tin bars, 5 copper bars."
+                "아, 또 왔군요. 지난번에 교훈을 못 얻었나 보죠?",
+                "어쨌든, 이번에도 한 번 더 도와줄 의향이 있나요? 이번엔",
+                "모아둔 광석으로 뭔가를 만들어야 해요.",
+                "물론 제가 가진 걸 드리진 않겠어요. 직접",
+                "광석을 채굴해서 이번엔 제련도 해야 해요.",
+                "저만 이득인 거래처럼 들리죠? 맞아요.",
+                "그래도 도와주시면 제 비밀 동굴에 입장할 수 있게 해드릴게요.",
+                "광부만 들어갈 수 있는 특별한 곳이에요.",
+                "어쨌든, 주석 주괴 5개, 구리 주괴 5개를 가져다 주세요."
             ],
-            "completedText": ["Please hurry, the time is ticking!", "Bring me 5 tin bars and 5 copper bars."]
+            "completedText": ["서둘러 주세요, 시간이 없어요!", "주석 주괴 5개와 구리 주괴 5개를 가져다 주세요."]
         },
         "1": {
             "task": "talk",
             "npc": "miner",
             "hasItemText": [
-                "Oh wonderful, but unfortunately it's not enough.",
-                "I want you to bring me 5 bronze bars."
+                "오, 잘하셨네요. 근데 아직 부족해요.",
+                "청동 주괴 5개도 가져다 주세요."
             ],
-            "completedText": ["Please hurry, the time is ticking!", "Bring me 5 bronze bars."],
+            "completedText": ["서둘러 주세요, 시간이 없어요!", "청동 주괴 5개를 가져다 주세요."],
             "itemRequirements": [
                 {
                     "key": "tinbar",
@@ -46,10 +46,9 @@
             "task": "talk",
             "npc": "miner",
             "hasItemText": [
-                "Okay fine, I think I'm done sending you on errands.",
-                "For now that is, who knows maybe I'll need you in",
-                "the future for redundant tasks like these.",
-                "Thank you for your help, I guess you can use my cave now."
+                "좋아요, 이번엔 그만 시켜먹어야겠네요.",
+                "당분간은요. 나중에 또 이런 쓸데없는 심부름이 생길 수도 있어요.",
+                "도움 주셔서 감사해요. 이제 제 동굴을 써도 돼요."
             ],
             "itemRequirements": [
                 {
@@ -58,8 +57,8 @@
                 }
             ],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Miner's Quest II@green@. You've been awarded @crimson@Access to the mining cave@green@!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@광부의 퀘스트 II@green@를 완료했습니다. @crimson@채굴 동굴 입장 권한@green@을 받았어요!",
                 "colour": "#33cc33"
             }
         }

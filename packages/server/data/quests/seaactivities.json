@@ -1,52 +1,51 @@
 {
-    "name": "Sea Activities",
-    "description": "A mysterious being needs your help under the sea.|Venture under the sea by unlocking a secret entrance on the beach and talk to a fishy being about some underwater sea activities. If I remember correctly he may need your help with something.",
-    "rewards": ["1000 gold"],
+    "name": "바다 활동",
+    "description": "바다 아래에 사는 신비로운 존재가 도움을 요청해요.|해변의 비밀 통로를 열어 바닷속으로 들어가서 어떤 바다 생물에게 말을 걸어 보세요. 기억하기로는 뭔가 도움이 필요한 것 같았어요.",
+    "rewards": ["골드 1000"],
     "stages": {
         "0": {
             "task": "talk",
             "npc": "sponge",
             "text": [
-                "HELP ME PLEASE!",
-                "THE EVIL SEA CUCUMBER STOLE MY MONEY",
-                "I SWEAR!",
-                "PLEASE HE WENT SOMEWHERE SOUTH OF HERE",
-                "FIND HIM PLEASE AND GET MY MONEY BACK!"
+                "제발 도와주세요!",
+                "사악한 해삼이 제 돈을 훔쳐갔어요!",
+                "진짜예요!",
+                "여기서 남쪽으로 갔어요!",
+                "제발 찾아서 제 돈 돌려받아 주세요!"
             ],
-            "completedText": ["FIND THE SEA CUCUMBER PLEASE!"]
+            "completedText": ["해삼을 찾아주세요!"]
         },
         "1": {
             "task": "talk",
             "npc": "picklenpc",
             "text": [
-                "Wait why are you here in my house?",
-                "Is it about that stupid sponge?",
-                "Listen man, I only took his money because he owed me",
-                "a lot of money for the last 10 years.",
-                "I'm not giving it back.",
-                "Now get out of my house."
+                "왜 내 집에 있는 거예요?",
+                "저 스펀지 때문에 온 거예요?",
+                "그 돈은 10년 동안 나한테 진 빚을 받은 거예요.",
+                "돌려줄 생각 없어요.",
+                "이제 나가 주세요."
             ],
-            "completedText": ["I said I'm not giving it back, now beat it."]
+            "completedText": ["안 돌려준다고 했잖아요, 이제 나가요."]
         },
         "2": {
             "task": "talk",
             "npc": "sponge",
             "text": [
-                "Did you get my money back?",
-                "He doesn't want to give it back?",
-                "Tell that stupid cucumber to give it back or else!"
+                "돈 돌려받았어요?",
+                "안 돌려준대요?",
+                "저 멍청한 해삼한테 가서 돌려주지 않으면 가만 안 두겠다고 해요!"
             ],
-            "completedText": ["Go tell him to give me my money back!"]
+            "completedText": ["가서 돌려달라고 해줘요!"]
         },
         "3": {
             "task": "talk",
             "npc": "picklenpc",
             "text": [
-                "Okay you know what, I asked you to leave my house",
-                "if you don't want to do that, then I'll have to fight you.",
-                "I'll meet you in my personal arena then."
+                "좋아요, 나가라고 했는데",
+                "그러기 싫다면 싸움을 해야겠죠.",
+                "제 개인 경기장에서 봐요."
             ],
-            "completedText": ["Go through the door and fight me fair and square!"]
+            "completedText": ["문으로 들어와서 공정하게 싸워 봐요!"]
         },
         "4": {
             "task": "kill",
@@ -57,8 +56,8 @@
             "task": "talk",
             "npc": "picklenpc",
             "text": [
-                "All right all right. You win, I'll give that stupid sponge his gold.",
-                "Here, now get out of here and leave me alone."
+                "알겠어요 알겠어. 졌어요. 저 스펀지한테 금을 돌려줄게요.",
+                "자, 이제 나가서 날 좀 내버려 두세요."
             ],
             "itemRewards": [
                 {
@@ -67,8 +66,8 @@
                 }
             ],
             "popup": {
-                "title": "Item acquired!",
-                "text": "The mysterious pickle-looking cucumber just gave you 1 whole gold coin!",
+                "title": "아이템 획득!",
+                "text": "신비로운 피클 같이 생긴 해삼이 골드 1개를 줬어요!",
                 "colour": "#33cc33"
             }
         },
@@ -76,8 +75,8 @@
             "task": "talk",
             "npc": "sponge",
             "hasItemText": [
-                "Thank you adventurer! With this gold I can finally buy a new house!",
-                "Just you look at me, Mr. Sponge, homeowner!"
+                "감사해요 모험가님! 이 돈으로 드디어 새 집을 살 수 있겠어요!",
+                "봐봐요, 저 스펀지씨, 집주인이 됐어요!"
             ],
             "itemRequirements": [
                 {
@@ -92,8 +91,8 @@
                 }
             ],
             "popup": {
-                "title": "Quest completed!",
-                "text": "@green@You have just finished @crimson@Sea Activities@green@. You have gained 10000 gold!",
+                "title": "퀘스트 완료!",
+                "text": "@green@방금 @crimson@바다 활동@green@을 완료했습니다. 골드 10000을 획득했어요!",
                 "colour": "#33cc33"
             }
         }
