@@ -39,8 +39,9 @@ ENV SKIP_DATABASE=true
 ENV HOST=0.0.0.0
 ENV PORT=10000
 
-# Build client + server
-RUN yarn build
+# Build only required packages (client + server)
+# admin, e2e, hub, tools don't have build scripts and would cause errors
+RUN yarn workspace @kaetram/client build && yarn workspace @kaetram/server build
 
 ENV NODE_ENV=production
 
