@@ -18,18 +18,18 @@
                 <h1>WordQuest Online에 오신 것을 환영합니다!</h1>
 
                 <div id="welcome-stats">
-                    <strong>Last login:</strong>
-                    <strong>Time played:</strong>
+                    <strong>마지막 접속:</strong>
+                    <strong>플레이 시간:</strong>
                 </div>
 
                 <div id="welcome-changelog" class="slice-inner-container">
                     <ul>
-                        <li>Version 0.3.4-beta</li>
-                        <li>- Added new stuff</li>
-                        <li>- Added more new stuff</li>
-                        <li>- Added even more new stuff</li>
-                        <li>- Added new stuff</li>
-                        <li>- Added new stuff</li>
+                        <li>버전 0.3.4-beta</li>
+                        <li>- 영어 퀴즈 시스템 추가</li>
+                        <li>- 튜토리얼 완전 한국어화</li>
+                        <li>- 리마스터 그래픽 개선</li>
+                        <li>- 날씨 파티클 효과 추가</li>
+                        <li>- 전체 UI 한국어 번역</li>
                     </ul>
                 </div>
             </div>
@@ -67,11 +67,11 @@
         <div id="quest" class="slice-container">
             <div id="close-quest" class="close-container"></div>
 
-            <h3 class="quest-title">Quest Name</h3>
+            <h3 class="quest-title">퀘스트 이름</h3>
             <div class="quest-description"></div>
             <ul class="quest-rewards"></ul>
 
-            <div id="quest-button" class="slice-button stroke">Start Quest</div>
+            <div id="quest-button" class="slice-button stroke">퀘스트 시작</div>
         </div>
 
         <div id="in-app-store" class="slice-container-fancy">
@@ -137,7 +137,7 @@
                         <span id="profile-level"></span>
                     </span>
                     <span>
-                        <strong>Total Exp:</strong>
+                        <strong>총 경험치:</strong>
                         <span id="profile-experience"></span>
                     </span>
 
@@ -354,7 +354,7 @@
                                 id="frame-throttle-select"
                                 aria-labelledby="frame-throttle-text"
                             >
-                                <option value="0">OFF</option>
+                                <option value="0">제한 없음</option>
                                 <option value="1">50 FPS</option>
                                 <option value="2">30 FPS</option>
                             </select>
@@ -465,7 +465,7 @@
                         <div class="dialog-title">수량 입력</div>
 
                         <input
-                            title="Count"
+                            title="수량"
                             type="number"
                             class="dialog-count"
                             min="1"
@@ -565,7 +565,7 @@
                 <div class="dialog-title">구매 수량 입력</div>
 
                 <input
-                    title="Count"
+                    title="수량"
                     type="number"
                     class="dialog-count"
                     min="1"
@@ -724,16 +724,16 @@
                 <div id="quests-list" class="slice-inner-container stroke"><ul></ul></div>
                 <div id="quests-logs" class="slice-inner-container">
                     <div id="quests-logs-container">
-                        <h1 id="quests-logs-title" class="stroke">Quest Title</h1>
+                        <h1 id="quests-logs-title" class="stroke">퀘스트 제목</h1>
                         <p id="quests-logs-shortdesc"></p>
 
-                        <h3 class="stroke">Description</h3>
+                        <h3 class="stroke">설명</h3>
                         <p id="quests-logs-description"></p>
 
-                        <h3 class="stroke">Reward</h3>
+                        <h3 class="stroke">보상</h3>
                         <p id="quests-logs-rewards"></p>
 
-                        <h3 class="stroke">Requirements</h3>
+                        <h3 class="stroke">조건</h3>
                         <p id="quests-logs-requirements">없음</p>
                     </div>
                 </div>
@@ -772,7 +772,7 @@
                 <div class="dialog-title">버리는 수량 입력</div>
 
                 <input
-                    title="Count"
+                    title="수량"
                     type="number"
                     class="dialog-count"
                     min="1"

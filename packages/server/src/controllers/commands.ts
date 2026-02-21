@@ -59,11 +59,7 @@ export default class Commands {
                     population = players.length,
                     singular = population === 1;
 
-                this.player.notify(
-                    `There ${singular ? 'is' : 'are'} currently ${population} ${
-                        singular ? 'person' : 'people'
-                    } online.`
-                );
+                this.player.notify(`현재 ${population}명이 접속 중입니다.`);
 
                 // Show the names of the players that are online.
                 if (this.player.isAdmin()) this.player.notify(players.join(', '));
@@ -122,20 +118,18 @@ export default class Commands {
             case 'guild': {
                 let subCommand = blocks.shift()!;
 
-                if (!this.player.guild) return this.player.notify('You are not in a guild.');
+                if (!this.player.guild) return this.player.notify('길드에 소속되어 있지 않습니다.');
 
                 switch (subCommand) {
                     case 'kick': {
                         let username = blocks.join(' ');
 
                         if (!username)
-                            return this.player.notify(
-                                'Malformed command, expected /guild kick [username]'
-                            );
+                            return this.player.notify('명령어 오류: /guild kick [사용자명]');
 
                         this.world.guilds.kick(this.player, username);
 
-                        this.player.notify(`You have kicked ${username} from your guild.`);
+                        this.player.notify(`${username}님을 길드에서 추방했습니다.`);
 
                         break;
                     }
@@ -146,27 +140,25 @@ export default class Commands {
 
                         if (!rank || !username)
                             return this.player.notify(
-                                'Malformed command, expected /guild rank [rank 0-6] [username]'
+                                '명령어 오류: /guild rank [등급 0-6] [사용자명]'
                             );
 
                         // Prevent the player from setting the rank to landlord.
                         if (parseInt(rank) === 7 || rank === 'landlord')
-                            return this.player.notify('You cannot set a rank to landlord.');
+                            return this.player.notify('그 등급으로는 설정할 수 없습니다.');
 
                         let guild = await this.world.guilds.getGuild(this.player.guild);
 
-                        if (!guild) return this.player.notify('You are not in a guild.');
+                        if (!guild) return this.player.notify('길드에 소속되어 있지 않습니다.');
 
                         let member = await this.world.guilds.getMember(guild, username);
 
                         if (!member)
-                            return this.player.notify(
-                                `Could not find a member with the name: ${username}.`
-                            );
+                            return this.player.notify(`${username} 멤버를 찾을 수 없습니다.`);
 
                         this.world.guilds.setRank(guild, this.player, member, parseInt(rank));
 
-                        this.player.notify(`You have set ${username}'s rank to ${rank}.`);
+                        this.player.notify(`${username}님의 등급을 ${rank}로 설정했습니다.`);
 
                         break;
                     }
@@ -193,18 +185,15 @@ export default class Commands {
                     targetName = blocks.join(' ').toLowerCase();
 
                 if (!duration || !targetName)
-                    return this.player.notify(
-                        'Malformed command, expected /ban(mute) [duration] [username]'
-                    );
+                    return this.player.notify('명령어 오류: /ban(mute) [시간] [사용자명]');
 
                 // Prevent banning yourself.
                 if (targetName === this.player.username)
-                    return this.player.notify(`You cannot ban yourself you silly. Thanks James.`);
+                    return this.player.notify(`자기 자신을 차단할 수 없습니다.`);
 
                 let user: Player = this.world.getPlayerByName(targetName);
 
-                if (!user)
-                    return this.player.notify(`Could not find player with name: ${targetName}.`);
+                if (!user) return this.player.notify(`${targetName} 플레이어를 찾을 수 없습니다.`);
 
                 // Moderators can only mute/ban people within certain limits.
                 if (this.player.isMod()) {
@@ -223,14 +212,14 @@ export default class Commands {
                     user.mute = timeFrame;
                     user.save();
 
-                    this.player.notify(`${user.username} has been muted for ${hours} hours.`);
+                    this.player.notify(`${user.username}님을 ${hours}시간 동안 채팅 금지했습니다.`);
                 } else if (command === 'ban') {
                     user.ban = timeFrame;
 
                     user.connection.sendUTF8('ban');
                     user.connection.close('banned');
 
-                    this.player.notify(`${user.username} has been banned for ${hours} hours.`);
+                    this.player.notify(`${user.username}님을 ${hours}시간 동안 차단했습니다.`);
                 }
 
                 return;
@@ -240,13 +229,14 @@ export default class Commands {
                 let uTargetName = blocks.join(' '),
                     uUser = this.world.getPlayerByName(uTargetName);
 
-                if (!uTargetName) return this.player.notify(`Player ${uTargetName} not found.`);
+                if (!uTargetName)
+                    return this.player.notify(`${uTargetName} 플레이어를 찾을 수 없습니다.`);
 
                 uUser.mute = Date.now() - 3600;
 
                 uUser.save();
 
-                this.player.notify(`${uUser.username} has been unmuted.`);
+                this.player.notify(`${uUser.username}님의 채팅 금지를 해제했습니다.`);
 
                 return;
             }
@@ -255,13 +245,11 @@ export default class Commands {
             case 'forcekick': {
                 let username = blocks.join(' ');
 
-                if (!username)
-                    return this.player.notify(`Malformed command, expected /kick username`);
+                if (!username) return this.player.notify(`명령어 오류: /kick [사용자명]`);
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player)
-                    return this.player.notify(`Could not find player with name: ${username}`);
+                if (!player) return this.player.notify(`${username} 플레이어를 찾을 수 없습니다.`);
 
                 player.connection.close(
                     `${this.player.username} kicked ${username}`,
@@ -276,14 +264,11 @@ export default class Commands {
                     username = blocks.join(' ');
 
                 if (!duration || !username)
-                    return this.player.notify(
-                        'Malformed command, expected /jail [duration] [username]'
-                    );
+                    return this.player.notify('명령어 오류: /jail [시간] [사용자명]');
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player)
-                    return this.player.notify(`Could not find player with name: ${username}`);
+                if (!player) return this.player.notify(`${username} 플레이어를 찾을 수 없습니다.`);
 
                 // Limit the duration of the jail sentence for mods.
                 if (this.player.isMod() && duration > 12) duration = 12;
@@ -296,8 +281,8 @@ export default class Commands {
                 player.jail = Date.now() + duration;
                 player.sendToSpawn();
 
-                player.notify(`You have been jailed for ${hours} hours.`, 'crimsonred');
-                this.player.notify(`${player.username} has been jailed for ${hours} hours.`);
+                player.notify(`${hours}시간 동안 감금되었습니다.`, 'crimsonred');
+                this.player.notify(`${player.username}님을 ${hours}시간 동안 감금했습니다.`);
 
                 break;
             }
@@ -305,19 +290,17 @@ export default class Commands {
             case 'unjail': {
                 let username = blocks.join(' ');
 
-                if (!username)
-                    return this.player.notify(`Malformed command, expected /unjail [username]`);
+                if (!username) return this.player.notify(`명령어 오류: /unjail [사용자명]`);
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player)
-                    return this.player.notify(`Could not find player with name: ${username}`);
+                if (!player) return this.player.notify(`${username} 플레이어를 찾을 수 없습니다.`);
 
                 player.jail = 0;
                 player.sendToSpawn();
 
-                player.notify(`You have been unjailed.`);
-                this.player.notify(`${player.username} has been unjailed.`);
+                player.notify(`감금이 해제되었습니다.`);
+                this.player.notify(`${player.username}님의 감금을 해제했습니다.`);
             }
         }
     }
@@ -358,7 +341,8 @@ export default class Commands {
 
                 item = new Item(key, -1, -1, true, 1);
 
-                if (!item.exists) return this.player.notify(`No item with key ${key} exists.`);
+                if (!item.exists)
+                    return this.player.notify(`키 ${key}에 해당하는 아이템이 없습니다.`);
 
                 item.count = count;
 
@@ -374,22 +358,22 @@ export default class Commands {
 
                 if (!index || !username)
                     return this.player.notify(
-                        'Invalid command, usage /take [index] [container=bank/inventory] [username]'
+                        '명령어 오류: /take [인덱스] [bank/inventory] [사용자명]'
                     );
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player) return this.player.notify(`Player ${username} not found.`);
+                if (!player) return this.player.notify(`${username} 플레이어를 찾을 수 없습니다.`);
 
                 let containerType = container === 'inventory' ? player.inventory : player.bank,
                     slot = containerType.get(index);
 
                 if (!slot.key)
-                    return this.player.notify(`Player ${username} has no item at index ${index}.`);
+                    return this.player.notify(`${username}의 ${index}번 슬롯에 아이템이 없습니다.`);
 
                 containerType.remove(index, slot.count);
 
-                this.player.notify(`Took ${slot.count}x ${slot.key} from ${username}.`);
+                this.player.notify(`${username}에게서 ${slot.key} ${slot.count}개를 가져왔습니다.`);
 
                 return;
             }
@@ -402,18 +386,18 @@ export default class Commands {
 
                 if (!key || !username || (container !== 'inventory' && container !== 'bank'))
                     return this.player.notify(
-                        'Invalid command, usage /takeitem [key] [count] [container=bank/inventory] [username]'
+                        '명령어 오류: /takeitem [키] [수량] [bank/inventory] [사용자명]'
                     );
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player) return this.player.notify(`Player ${username} not found.`);
+                if (!player) return this.player.notify(`${username} 플레이어를 찾을 수 없습니다.`);
 
                 let containerType = container === 'inventory' ? player.inventory : player.bank;
 
                 containerType.removeItem(key, count);
 
-                this.player.notify(`Took ${count}x ${key} from ${username}.`);
+                this.player.notify(`${username}에게서 ${key} ${count}개를 가져왔습니다.`);
 
                 return;
             }
@@ -422,12 +406,11 @@ export default class Commands {
             case 'copyinventory': {
                 let username = blocks.join(' ');
 
-                if (!username)
-                    return this.player.notify('Invalid command, usage /copybank [username]');
+                if (!username) return this.player.notify('명령어 오류: /copybank [사용자명]');
 
                 let player = this.world.getPlayerByName(username);
 
-                if (!player) return this.player.notify(`Player ${username} is not online.`);
+                if (!player) return this.player.notify(`${username} 플레이어가 온라인이 아닙니다.`);
 
                 if (command === 'copybank') {
                     this.player.bank.empty();
@@ -443,7 +426,7 @@ export default class Commands {
                     );
                 }
 
-                this.player.notify(`Copied ${username}'s ${command} to your ${command}.`);
+                this.player.notify(`${username}의 ${command}를 복사했습니다.`);
 
                 break;
             }
@@ -510,11 +493,11 @@ export default class Commands {
                 if (this.player.status.has(Modules.Effects.Invincible)) {
                     this.player.status.remove(Modules.Effects.Invincible);
 
-                    this.player.notify('You are no longer invincible.');
+                    this.player.notify('무적 상태가 해제되었습니다.');
                 } else {
                     this.player.status.add(Modules.Effects.Invincible);
 
-                    this.player.notify('You are now invincible.');
+                    this.player.notify('무적 상태가 되었습니다.');
                 }
                 return;
             }
@@ -522,7 +505,7 @@ export default class Commands {
             case 'mob': {
                 target = blocks.shift()!;
 
-                if (!target) return this.player.notify('No mob specified.');
+                if (!target) return this.player.notify('몬스터를 지정해주세요.');
 
                 this.entities.spawnMob(target, this.player.x, this.player.y);
 
@@ -533,12 +516,9 @@ export default class Commands {
                 region = this.world.map.regions.get(this.player.region);
                 target = blocks.shift()!;
 
-                if (!target)
-                    return this.player.notify(
-                        `Invalid command. Usage: /allattack [target_instance]`
-                    );
+                if (!target) return this.player.notify(`명령어 오류: /allattack [대상 인스턴스]`);
 
-                if (!region) return this.player.notify('Bro what.');
+                if (!region) return this.player.notify('지역을 찾을 수 없습니다.');
 
                 targetEntity = this.entities.get(target) as Character;
 
@@ -592,7 +572,7 @@ export default class Commands {
             }
 
             case 'getregion': {
-                this.player.notify(`Current Region: ${this.player.region}`);
+                this.player.notify(`현재 지역: ${this.player.region}`);
                 return;
             }
 
@@ -624,19 +604,17 @@ export default class Commands {
                 username = blocks.join(' ');
 
                 if (!username || !key || !x)
-                    return this.player.notify(
-                        'Malformed command, expected /setlevel [skill] [level] [username]'
-                    );
+                    return this.player.notify('명령어 오류: /setlevel [스킬] [레벨] [사용자명]');
 
                 player = this.world.getPlayerByName(username);
 
-                if (!player) return this.player.notify(`Player ${username} is not online.`);
+                if (!player) return this.player.notify(`${username} 플레이어가 온라인이 아닙니다.`);
 
                 key = key.charAt(0).toUpperCase() + key.slice(1);
 
                 let skill = player.skills.get(Modules.Skills[key as keyof typeof Modules.Skills]);
 
-                if (!skill) return this.player.notify('Invalid skill.');
+                if (!skill) return this.player.notify('유효하지 않은 스킬입니다.');
 
                 if (x < skill.level) {
                     skill.setExperience(0);
@@ -704,12 +682,12 @@ export default class Commands {
                 let movementSpeed = parseInt(blocks.shift()!);
 
                 if (!movementSpeed) {
-                    this.player.notify('No movement speed specified.');
+                    this.player.notify('이동 속도를 지정해주세요.');
                     return;
                 }
 
                 if (isNaN(movementSpeed)) {
-                    this.player.notify('Invalid movement speed specified.');
+                    this.player.notify('유효하지 않은 이동 속도입니다.');
                     return;
                 }
 
@@ -726,8 +704,8 @@ export default class Commands {
 
             case 'popup': {
                 this.player.popup(
-                    'New Quest Found!',
-                    '@blue@New @darkblue@quest @green@has@red@ been discovered!'
+                    '새 퀘스트 발견!',
+                    '@blue@새 @darkblue@퀘스트가 @green@발견@red@되었습니다!'
                 );
 
                 break;
@@ -736,11 +714,11 @@ export default class Commands {
             case 'undostage': {
                 key = blocks.shift()!;
 
-                if (!key) return this.player.notify('No quest specified.');
+                if (!key) return this.player.notify('퀘스트를 지정해주세요.');
 
                 let quest = this.player.quests.get(key);
 
-                if (!quest) return this.player.notify('Could not find quest.');
+                if (!quest) return this.player.notify('퀘스트를 찾을 수 없습니다.');
 
                 quest.setStage(quest.getStage() - 1);
 
@@ -757,7 +735,7 @@ export default class Commands {
             case 'resetquest': {
                 key = blocks.shift()!;
 
-                if (!key) return this.player.notify('No quest specified.');
+                if (!key) return this.player.notify('퀘스트를 지정해주세요.');
 
                 let quest = this.player.quests.get(key);
 
@@ -781,11 +759,11 @@ export default class Commands {
                 y = parseInt(blocks.shift()!);
 
                 if (!instance)
-                    return this.player.notify(`Malformed command, expected /movenpc instance x y`);
+                    return this.player.notify(`명령어 오류: /movenpc [인스턴스] [x] [y]`);
 
                 entity = this.entities.get(instance) as Character;
 
-                if (!entity) return this.player.notify(`Entity not found.`);
+                if (!entity) return this.player.notify(`엔티티를 찾을 수 없습니다.`);
 
                 if (entity.isMob()) entity.setPosition(x, y);
 
@@ -798,17 +776,17 @@ export default class Commands {
                 target = blocks.shift()!;
 
                 if (!instance || !target)
-                    return this.player.notify(`Malformed command, expected /nvn instance target`);
+                    return this.player.notify(`명령어 오류: /nvn [인스턴스] [대상]`);
 
                 entity = this.entities.get(instance) as Character;
                 targetEntity = this.entities.get(target) as Character;
 
                 if (!entity || !targetEntity)
-                    return this.player.notify(`Could not find entity instances specified.`);
+                    return this.player.notify(`엔티티 인스턴스를 찾을 수 없습니다.`);
 
                 entity.combat.attack(targetEntity);
 
-                this.player.notify(`${entity.name} is attacking ${targetEntity.name}`);
+                this.player.notify(`${entity.name}이(가) ${targetEntity.name}을(를) 공격합니다.`);
 
                 break;
             }
@@ -816,10 +794,7 @@ export default class Commands {
             case 'kill': {
                 username = blocks.join(' ');
 
-                if (!username)
-                    return this.player.notify(
-                        `Malformed command, expected /kill username/instance`
-                    );
+                if (!username) return this.player.notify(`명령어 오류: /kill [사용자명/인스턴스]`);
 
                 player = this.world.getPlayerByName(username);
 
