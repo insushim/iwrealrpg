@@ -129,7 +129,7 @@ export default class Renderer {
     protected lightings: { [instance: string]: RendererLighting } = {};
     protected darkMask: DarkMask = new DarkMask({
         lights: [],
-        color: 'rgba(0, 0, 0, 0.84)'
+        color: 'rgba(8, 4, 20, 0.86)'
     });
 
     // Toggles for rendering

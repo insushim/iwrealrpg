@@ -115,5 +115,11 @@ void main()
 
     vec4 color = getColor(imgIndex, tileCoord + offsetInTileFlipped);
 
-    gl_FragColor = vec4(color.rgb, color.a * uAlpha);
+    // Remaster: colour grading — saturation + contrast boost
+    float lum = dot(color.rgb, vec3(0.2126, 0.7152, 0.0722));
+    vec3 graded = mix(vec3(lum), color.rgb, 1.18);
+    graded = (graded - 0.5) * 1.05 + 0.5;
+    graded = clamp(graded, 0.0, 1.0);
+
+    gl_FragColor = vec4(graded, color.a * uAlpha);
 }

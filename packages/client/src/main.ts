@@ -1,5 +1,6 @@
 import App from './app';
 import Game from './game';
+import Weather from './renderer/effects/weather';
 
 import './lib/i18n';
 import './lib/sentry';
@@ -11,4 +12,11 @@ import './lib/sentry';
 
 window.addEventListener('load', () => {
     new Game(new App());
+
+    // Remaster: start ambient floating particles after the game canvas is ready.
+    setTimeout(() => {
+        let weather = new Weather();
+
+        weather.startAmbient();
+    }, 2500);
 });
