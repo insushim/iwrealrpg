@@ -499,7 +499,7 @@ export default class Player extends Character {
             this.notify(`misc:PEOPLE_ONLINE;population=${population}`, '', '', true);
 
         if (activeEvent)
-            this.notify(`The ${activeEvent} event is currently active!`, 'crimsonred', '', true);
+            this.notify(`현재 ${activeEvent} 이벤트가 진행 중입니다!`, 'crimsonred', '', true);
 
         if (this.isJailed())
             this.notify(`misc:JAILED;duration=${this.getJailDuration()}`, 'crimsonred', '', true);

@@ -12,13 +12,15 @@ body,
 button,
 input,
 select {
-    font-family: Monogram, 'AdvoCut Fallback', arial, sans-serif;
+    font-family: Monogram, 'AdvoCut Fallback', arial, 'Malgun Gothic', 'Apple SD Gothic Neo',
+        'Noto Sans KR', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Fibberish, Monogram, AdvoCut, arial, sans-serif;
+    font-family: Fibberish, Monogram, AdvoCut, arial, 'Malgun Gothic', 'Apple SD Gothic Neo',
+        'Noto Sans KR', sans-serif;
 }
 
 select {

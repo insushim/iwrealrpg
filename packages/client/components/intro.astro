@@ -3,6 +3,7 @@ import { t, getLanguage } from '@kaetram/common/i18n';
 
 let currentLanguage = getLanguage(),
     languages = [
+        { locale: 'ko', name: '한국어' },
         { locale: 'en', name: 'English' },
         { locale: 'de', name: 'Deutsch' },
         { locale: 'es', name: 'Español' },
@@ -10,7 +11,7 @@ let currentLanguage = getLanguage(),
         { locale: 'pt', name: 'Português' },
         { locale: 'ro', name: 'Română' },
         { locale: 'ru', name: 'Русский' },
-        { locale: 'tl', name: 'Tagalog'}
+        { locale: 'tl', name: 'Tagalog' }
     ];
 ---
 
@@ -26,8 +27,8 @@ let currentLanguage = getLanguage(),
                     id="login-name-input"
                     class="stroke slice-input"
                     name="player-name"
-                    placeholder="Username"
-                    aria-label="Username"
+                    placeholder="사용자 이름"
+                    aria-label="사용자 이름"
                     maxlength="32"
                     autocomplete="off"
                 />
@@ -36,8 +37,8 @@ let currentLanguage = getLanguage(),
                     id="login-password-input"
                     class="stroke slice-input"
                     name="player-password"
-                    placeholder="Password"
-                    aria-label="Password"
+                    placeholder="비밀번호"
+                    aria-label="비밀번호"
                     maxlength="64"
                     autocomplete="off"
                 />
@@ -49,13 +50,13 @@ let currentLanguage = getLanguage(),
                         <input type="checkbox" aria-labelledby="remember-me-text" />
                         <span class="checkmark"></span>
 
-                        <span id="remember-me-text">Remember Me</span>
+                        <span id="remember-me-text">자동 로그인</span>
                     </label>
                     <label id="guest" class="check">
                         <input type="checkbox" aria-labelledby="guest-text" />
                         <span class="checkmark"></span>
 
-                        <span id="guest-text">Play as a guest</span>
+                        <span id="guest-text">손님으로 플레이</span>
                     </label>
                 </div>
 
@@ -92,8 +93,8 @@ let currentLanguage = getLanguage(),
                     id="register-name-input"
                     class="stroke slice-input"
                     name="player-name"
-                    placeholder="Username"
-                    aria-label="Username"
+                    placeholder="사용자 이름"
+                    aria-label="사용자 이름"
                     maxlength="32"
                     autocomplete="off"
                 />
@@ -102,8 +103,8 @@ let currentLanguage = getLanguage(),
                     id="register-password-input"
                     class="stroke slice-input"
                     name="player-password"
-                    placeholder="Password"
-                    aria-label="Password"
+                    placeholder="비밀번호"
+                    aria-label="비밀번호"
                     maxlength="64"
                     autocomplete="off"
                 />
@@ -112,8 +113,8 @@ let currentLanguage = getLanguage(),
                     id="register-password-confirmation-input"
                     class="stroke slice-input"
                     name="player-password2"
-                    placeholder="Confirm Password"
-                    aria-label="Confirm Password"
+                    placeholder="비밀번호 확인"
+                    aria-label="비밀번호 확인"
                     maxlength="64"
                     autocomplete="off"
                 />
@@ -122,8 +123,8 @@ let currentLanguage = getLanguage(),
                     id="register-email-input"
                     class="stroke slice-input"
                     name="player-email"
-                    placeholder="Email Address"
-                    aria-label="Email Address"
+                    placeholder="이메일 주소"
+                    aria-label="이메일 주소"
                     maxlength="64"
                     autocomplete="off"
                 />
@@ -138,7 +139,7 @@ let currentLanguage = getLanguage(),
                         id="cancel-register"
                         class="stroke slice-button"
                     >
-                        CANCEL
+                        취소
                     </button>
                     <button
                         title="Play"
@@ -147,7 +148,7 @@ let currentLanguage = getLanguage(),
                         id="play"
                         class="stroke slice-button"
                     >
-                        PLAY
+                        플레이
                     </button>
                 </div>
             </form>
@@ -156,7 +157,7 @@ let currentLanguage = getLanguage(),
         <article id="reset-password">
             <h1>
                 <span class="left-ornament"></span>
-                 Reset Password
+                 비밀번호 재설정
                 <span class="right-ornament"></span>
             </h1>
 
@@ -166,8 +167,8 @@ let currentLanguage = getLanguage(),
                     id="email-reset-input"
                     class="stroke slice-input"
                     name="player-email"
-                    placeholder="Email Address"
-                    aria-label="Email Address"
+                    placeholder="이메일 주소"
+                    aria-label="이메일 주소"
                     maxlength="32"
                     autocomplete="off"
                 />
@@ -182,7 +183,7 @@ let currentLanguage = getLanguage(),
                         id="cancel-forget"
                         class="stroke slice-button"
                     >
-                        CANCEL
+                        취소
                     </button>
                     <button
                         title="Submit"
@@ -191,7 +192,7 @@ let currentLanguage = getLanguage(),
                         id="continue-forget"
                         class="stroke slice-button"
                     >
-                        CONTINUE
+                        계속
                     </button>
                 </div>
             </form>
@@ -200,7 +201,7 @@ let currentLanguage = getLanguage(),
         <article id="world-select">
             <h1>
                 <span class="left-ornament"></span>
-                 World Select
+                 서버 선택
                 <span class="right-ornament"></span>
             </h1>
 
@@ -215,7 +216,7 @@ let currentLanguage = getLanguage(),
                         id="cancel-worlds"
                         class="stroke slice-button"
                     >
-                        CANCEL
+                        취소
                     </button>
                     <button
                         title="Continue"
@@ -224,14 +225,14 @@ let currentLanguage = getLanguage(),
                         id="continue-worlds"
                         class="stroke slice-button"
                     >
-                        CONTINUE
+                        계속
                     </button>
                 </div>
             </form>
         </article>
 
         <article id="credits">
-            <h1 class="title-decoration">Credits</h1>
+            <h1 class="title-decoration">크레딧</h1>
 
             <p>
                 <br />
@@ -305,7 +306,7 @@ let currentLanguage = getLanguage(),
             </p>
 
             <div class="close-about">
-                <span>-- Click anywhere to close --</span>
+                <span>-- 클릭하여 닫기 --</span>
             </div>
         </article>
 
@@ -327,7 +328,7 @@ let currentLanguage = getLanguage(),
             </p>
 
             <div class="close-about">
-                <span>-- Click anywhere to close --</span>
+                <span>-- 클릭하여 닫기 --</span>
             </div>
         </article>
 

@@ -11,7 +11,7 @@ import type World from '../game/world';
 export default class Events {
     public activeEvent = '';
 
-    private events = ['double drops', '1.5x experience', 'lumberjacking', 'mining'];
+    private events = ['드롭 2배', '경험치 1.5배', '벌목', '채광'];
 
     // Store constants of the altered values.
     public doubleDropProbability = Modules.Constants.DROP_PROBABILITY / 2;
@@ -43,11 +43,11 @@ export default class Events {
         this.activeEvent = this.events[this.getWeekNumber() % this.events.length];
 
         // Broadcast the event to all the players.
-        this.world.globalMessage('WORLD', `The ${this.activeEvent} event has started.`);
+        this.world.globalMessage('WORLD', `${this.activeEvent} 이벤트가 시작되었습니다!`);
 
         // Enable the double harvesting.
-        if (this.activeEvent === 'lumberjacking') Utils.doubleLumberjacking = true;
-        if (this.activeEvent === 'mining') Utils.doubleMining = true;
+        if (this.activeEvent === '벌목') Utils.doubleLumberjacking = true;
+        if (this.activeEvent === '채광') Utils.doubleMining = true;
     }
 
     /**
@@ -56,7 +56,7 @@ export default class Events {
 
     private disable(): void {
         if (this.activeEvent)
-            this.world.globalMessage('WORLD', `The ${this.activeEvent} event has ended.`);
+            this.world.globalMessage('WORLD', `${this.activeEvent} 이벤트가 종료되었습니다.`);
 
         this.activeEvent = '';
 
@@ -84,7 +84,7 @@ export default class Events {
      */
 
     public isDoubleDrop(): boolean {
-        return this.activeEvent === 'double drops';
+        return this.activeEvent === '드롭 2배';
     }
 
     /**
@@ -92,6 +92,6 @@ export default class Events {
      */
 
     public isIncreasedExperience(): boolean {
-        return this.activeEvent === '1.5x experience';
+        return this.activeEvent === '경험치 1.5배';
     }
 }
