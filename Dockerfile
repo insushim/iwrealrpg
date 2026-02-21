@@ -28,8 +28,9 @@ RUN yarn install --immutable || yarn install
 # Copy all source
 COPY . .
 
-# Create .env file (dotenv-extended reads files, not just process.env)
-RUN printf "ACCEPT_LICENSE=true\nSKIP_DATABASE=true\n" > .env
+# Create .env file with ALL required settings
+# dotenv-extended reads from files only, not process.env or Docker ENV vars!
+RUN printf "ACCEPT_LICENSE=true\nSKIP_DATABASE=true\nPORT=10000\nHOST=0.0.0.0\nSSL=true\nCLIENT_REMOTE_HOST=wordquest-online.onrender.com\n" > .env
 
 # Set env vars needed for client build (baked into client bundle)
 ENV CLIENT_REMOTE_HOST=wordquest-online.onrender.com
@@ -51,4 +52,4 @@ EXPOSE 10000
 WORKDIR /app/packages/server
 
 # Start the game server directly (avoids yarn workspace CWD issues)
-CMD ["node", "dist/main.js"]
+CMD ["node", "--max-old-space-size=400", "dist/main.js"]
