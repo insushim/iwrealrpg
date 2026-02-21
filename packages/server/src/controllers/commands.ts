@@ -105,6 +105,20 @@ export default class Commands {
                 break;
             }
 
+            case 'skiptutorial': {
+                let tutorial = this.player.quests.get('tutorial');
+
+                if (!tutorial) return this.player.notify('튜토리얼을 찾을 수 없습니다.');
+
+                if (tutorial.isFinished())
+                    return this.player.notify('튜토리얼이 이미 완료되었습니다.');
+
+                tutorial.setStage(9999);
+                this.player.notify('튜토리얼을 건너뛰었습니다!');
+
+                break;
+            }
+
             case 'guild': {
                 let subCommand = blocks.shift()!;
 

@@ -35,6 +35,7 @@
 @use 'impl/quest';
 @use 'impl/quiz';
 @use 'impl/inappstore';
+@use 'impl/remaster';
 
 body.game {
     background: #000;
