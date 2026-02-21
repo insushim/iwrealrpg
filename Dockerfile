@@ -47,5 +47,8 @@ ENV NODE_ENV=production
 
 EXPOSE 10000
 
-# Start only the game server (it serves client static files too)
-CMD ["yarn", "workspace", "@kaetram/server", "start"]
+# Change to server directory so relative paths (../../.env) work correctly
+WORKDIR /app/packages/server
+
+# Start the game server directly (avoids yarn workspace CWD issues)
+CMD ["node", "dist/main.js"]
