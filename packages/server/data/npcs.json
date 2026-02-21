@@ -1,469 +1,422 @@
 {
     "king": {
-        "name": "King",
+        "name": "왕",
         "text": [
-            "Welcome to the kingdom of Kaetram!",
-            "You have travelled long and far, and for that you have my respect."
+            "WordQuest Online 왕국에 오신 것을 환영합니다!",
+            "멀리서 오셨군요. 정말 대단합니다."
         ]
     },
 
     "king2": {
-        "name": "King"
+        "name": "왕"
     },
 
     "prisoner": {
-        "name": "Prisoner",
+        "name": "죄수",
         "text": [
-            "Oh hey there, it's been so long since I've seen a new face.",
-            "I've been trapped here for ages.",
-            "But you'll probably be fine to be honest.",
-            "I'm guessing you did something to get in here?",
-            "Let me let you in on a little secret.",
-            "This whole world is a prison.",
-            "I don't even think it's real.",
-            "I think it's just a simulation.",
-            "I think we're all just a simulation.",
-            "I think I'm just a simulation.",
-            "I think you're just a simulation.",
-            "Anyway, hang in there and when your time runs out,",
-            "You can just teleport back.",
-            "As for me, I'll stay here...",
-            "Forever..."
+            "어, 안녕하세요! 새로운 얼굴을 보니 반갑네요.",
+            "오래전부터 여기 갇혀 있었어요.",
+            "그래도 당신은 괜찮을 거예요, 솔직히.",
+            "뭔가 잘못해서 들어오셨나요?",
+            "비밀 하나 알려드릴게요.",
+            "이 세상 전체가 감옥이에요.",
+            "이게 현실인지도 모르겠어요.",
+            "그냥 시뮬레이션 같아요.",
+            "우리 모두가 시뮬레이션인 것 같아요.",
+            "나도 시뮬레이션인 것 같고요.",
+            "당신도 시뮬레이션인 것 같아요.",
+            "아무튼, 힘내세요. 시간이 지나면,",
+            "그냥 순간이동해서 돌아갈 수 있어요.",
+            "저는요... 여기 있을게요.",
+            "영원히..."
         ]
     },
 
     "villagegirl": {
-        "name": "Wife",
-        "text": ["Please, call me Azaria."]
+        "name": "아내",
+        "text": ["저를 아자리아라고 불러주세요."]
     },
 
     "villagegirl2": {
-        "name": "Village Girl",
-        "text": ["Hope you're having a good day!"]
+        "name": "마을 소녀",
+        "text": ["좋은 하루 보내세요!"]
     },
 
     "villagegirl3": {
-        "name": "Another Village Girl",
-        "text": ["How's yous doings?"]
+        "name": "마을 소녀",
+        "text": ["어떻게 지내세요?"]
     },
 
     "villagegirl4": {
-        "name": "Another Village Girl",
-        "text": ["How's yous doings?"]
+        "name": "마을 소녀",
+        "text": ["어떻게 지내세요?"]
     },
 
     "villagegirl5": {
-        "name": "Yet Another Village Girl",
-        "text": ["How's yous doings?"]
+        "name": "마을 소녀",
+        "text": ["어떻게 지내세요?"]
     },
 
     "villagegirl6": {
-        "name": "Just Village Girl",
-        "text": ["How's yous doings?"]
+        "name": "마을 소녀",
+        "text": ["어떻게 지내세요?"]
     },
 
     "villagegirl7": {
-        "name": "Village Girl",
-        "text": ["How's yous doings?"]
+        "name": "마을 소녀",
+        "text": ["어떻게 지내세요?"]
     },
 
     "forestnpc": {
-        "name": "Forester",
-        "text": ["Good day to you!"],
+        "name": "산림꾼",
+        "text": ["안녕하세요!"],
         "store": "forester"
     },
 
     "miner": {
-        "name": "Miner",
-        "text": ["Leave me alone, I'm busy pretending to work!"],
+        "name": "광부",
+        "text": ["방해하지 마세요, 일하는 척 바쁩니다!"],
         "store": "miner"
     },
 
     "miner2": {
-        "name": "Yet Another Miner",
-        "text": ["Leave me alone, I'm busy pretending to work!"],
+        "name": "또 다른 광부",
+        "text": ["방해하지 마세요, 일하는 척 바쁩니다!"],
         "store": "miner"
     },
 
     "beachnpc": {
-        "name": "Bubba",
+        "name": "버바",
         "text": [
-            "Well, thanks for the help.",
-            "Not really doing much but thanks regardless.",
-            "Though I did hear some crunbling east of here, a cave might've opened up.",
-            "This might just be an urban legend but it is said that an entire",
-            "underworld exists beneath the surface of this beach."
+            "도와주셔서 감사해요.",
+            "사실 별로 한 건 없지만 감사해요.",
+            "그나저나 동쪽에서 이상한 소리가 들렸어요. 동굴이 생긴 것 같아요.",
+            "이건 소문일 수도 있지만,",
+            "이 해변 아래에 지하 세계가 있다고 하더라고요."
         ]
     },
 
     "agent": {
-        "name": "Secret Agent",
+        "name": "비밀 요원",
         "text": [
-            "Hello there, would you be so kind as to assist me?",
-            "It seems I have stumbled upon this strange phenomenon.",
-            "You see, this cave I am heavily guarding appears to be",
-            "exhibiting a warm-hole like situation.",
-            "Regardless, I feel its best to send a stup-",
-            "I mean, brave adventurer in there rather than me."
+            "안녕하세요, 좀 도와주실 수 있나요?",
+            "이상한 현상을 발견했어요.",
+            "제가 열심히 지키고 있는 이 동굴이요,",
+            "웜홀 같은 현상이 나타나고 있어요.",
+            "어쨌든, 저 대신 용감한 모험가를 보내는 게 좋을 것 같아요.",
+            "아... 용감한 모험가 말이에요."
         ]
     },
 
     "nyan": {
-        "name": "Nyan Cat (Stale Meme)"
+        "name": "냥캣 (오래된 밈)"
     },
 
     "rick": {
-        "name": "Rick",
+        "name": "릭",
         "text": [
-            "We're no strangers to love...",
-            "You know the rules and so do I...",
-            "A full commitment's what I'm thinking of...",
-            "You wouldn't get this from any other guy...",
-            "I just wanna tell you how I'm feeling...",
-            "Gotta make you understand...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "We've known each other for so long...",
-            "Your heart's been aching but you're too shy to say it...",
-            "Inside we both know what's been going on...",
-            "We know the game and we're gonna play it...",
-            "And if you ask me how I'm feeling...",
-            "Don't tell me you're too blind to see...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "Never gonna give, never gonna give...",
-            "(Give you up)",
-            "(Ooh) Never gonna give, never gonna give...",
-            "(Give you up)",
-            "We've known each other for so long...",
-            "Your heart's been aching but you're too shy to say it...",
-            "Inside we both know what's been going on..."
+            "우린 사랑에 낯선 사람이 아니잖아요...",
+            "당신도 알고 나도 알잖아요...",
+            "진심으로 헌신하고 싶어요...",
+            "다른 사람에게선 이런 걸 못 받을 거예요...",
+            "내 마음을 전하고 싶어요...",
+            "이해해 주셔야 해요...",
+            "절대 포기하지 않을 거예요...",
+            "절대 실망시키지 않을 거예요...",
+            "절대 도망가지 않을 거예요...",
+            "절대 울게 하지 않을 거예요...",
+            "절대 작별 인사 하지 않을 거예요...",
+            "절대 거짓말로 상처 주지 않을 거예요...",
+            "우린 서로를 오래 알아왔잖아요...",
+            "마음이 아프지만 말을 못 하고 있잖아요...",
+            "우리 둘 다 무슨 일이 일어나는지 알잖아요...",
+            "게임도 알고 우리 계속 할 거잖아요...",
+            "내 마음이 어떤지 묻는다면...",
+            "눈 먼 척 하지 마세요...",
+            "절대 포기하지 않을 거예요..."
         ]
     },
 
     "rick2": {
-        "name": "Rick",
+        "name": "릭",
         "text": [
-            "We're no strangers to love...",
-            "You know the rules and so do I...",
-            "A full commitment's what I'm thinking of...",
-            "You wouldn't get this from any other guy...",
-            "I just wanna tell you how I'm feeling...",
-            "Gotta make you understand...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "We've known each other for so long...",
-            "Your heart's been aching but you're too shy to say it...",
-            "Inside we both know what's been going on...",
-            "We know the game and we're gonna play it...",
-            "And if you ask me how I'm feeling...",
-            "Don't tell me you're too blind to see...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "Never gonna give you up...",
-            "Never gonna let you down...",
-            "Never gonna run around and desert you...",
-            "Never gonna make you cry...",
-            "Never gonna say goodbye...",
-            "Never gonna tell a lie and hurt you...",
-            "Never gonna give, never gonna give...",
-            "(Give you up)",
-            "(Ooh) Never gonna give, never gonna give...",
-            "(Give you up)",
-            "We've known each other for so long...",
-            "Your heart's been aching but you're too shy to say it...",
-            "Inside we both know what's been going on..."
+            "우린 사랑에 낯선 사람이 아니잖아요...",
+            "당신도 알고 나도 알잖아요...",
+            "절대 포기하지 않을 거예요...",
+            "절대 실망시키지 않을 거예요...",
+            "절대 도망가지 않을 거예요...",
+            "절대 울게 하지 않을 거예요...",
+            "절대 작별 인사 하지 않을 거예요...",
+            "절대 거짓말로 상처 주지 않을 거예요..."
         ]
     },
 
     "priest": {
-        "name": "Priest"
+        "name": "신부"
     },
 
     "guard": {
-        "name": "Guard",
-        "text": ["We're seriously busy at the moment."]
+        "name": "경비원",
+        "text": ["지금 굉장히 바쁩니다."]
     },
 
     "guard2": {
-        "name": "Royal Guard",
-        "text": ["Any form of defiance will be met with death."]
+        "name": "왕실 경비원",
+        "text": ["어떠한 반항도 용납하지 않습니다."]
     },
 
     "scientist": {
-        "name": "Scientist"
+        "name": "과학자"
     },
 
     "madscientist": {
-        "name": "Mad Scientisto"
+        "name": "미친 과학자"
     },
 
     "desertnpc": {
-        "name": "Billey"
+        "name": "빌리"
     },
 
     "lavanpc": {
-        "name": "Dying Soldier",
-        "text": ["Thank you for all your help. I will perish in your absence."]
+        "name": "죽어가는 병사",
+        "text": ["도와주셔서 감사합니다. 당신이 없으면 저는 사라질 거예요."]
     },
 
     "boxingman": {
-        "name": "Bike Lyson",
-        "text": ["Woosh."]
+        "name": "바이크 라이슨",
+        "text": ["슈욱."]
     },
 
     "vampire": {
-        "name": "Vampire"
+        "name": "뱀파이어"
     },
 
     "doctor": {
-        "name": "Doctor",
-        "text": ["I'm a doctor, not a magician."]
+        "name": "의사",
+        "text": ["저는 의사지 마법사가 아니에요."]
     },
 
     "oddeyecat": {
-        "name": "Odd-Eyed Cat"
+        "name": "오드아이 고양이"
     },
 
     "sorcerer": {
-        "name": "Sorcerer",
+        "name": "마법사",
         "store": "sorcerer"
     },
 
     "coder": {
-        "name": "Programmer",
+        "name": "프로그래머",
         "text": [
-            "Well well, hello there. Seems you managed to esca- I mean,",
-            "find your way out of that tutorial.",
-            "Listen, your first task should be to discover the world around you.",
-            "Why don't you go talk to the villagers for starters?",
-            "After that, maybe we can look into getting you some tasks to do."
+            "어, 안녕하세요! 튜토리얼을 탈출- 아니,",
+            "잘 빠져나오셨네요.",
+            "첫 번째 할 일은 이 세상을 탐험하는 거예요.",
+            "마을 사람들과 이야기해 보시는 건 어떨까요?",
+            "그 후에 임무들을 알아볼게요."
         ]
     },
 
     "villager": {
-        "name": "Villager",
-        "text": ["Howdy!"]
+        "name": "마을 사람",
+        "text": ["안녕하세요!"]
     },
 
     "villager2": {
-        "name": "Villager",
-        "text": ["Howdy!"]
+        "name": "마을 사람",
+        "text": ["안녕하세요!"]
     },
 
     "villager3": {
-        "name": "Villager",
-        "text": ["Howdy!"]
+        "name": "마을 사람",
+        "text": ["안녕하세요!"]
     },
 
     "villager4": {
-        "name": "Villager",
-        "text": ["Howdy!"]
+        "name": "마을 사람",
+        "text": ["안녕하세요!"]
     },
 
     "octocat": {
-        "name": "Octocat",
+        "name": "옥토캣",
         "text": [
-            "Hey there!",
-            "I am the Octocat, the programmer and I",
-            "are very well acquainted.",
-            "In case you did not know, Kaetram is completely open-source.",
-            "You can <a target=\"_blank\" href=\"https://github.com/Kaetram/Kaetram-Open\">check out the source on GitHub!</a>"
+            "안녕하세요!",
+            "저는 옥토캣이에요. 프로그래머와 잘 아는 사이랍니다.",
+            "혹시 모르신다면, 이 게임은 오픈소스예요.",
+            "WordQuest Online은 Kaetram-Open을 기반으로 만들었어요.",
+            "<a target=\"_blank\" href=\"https://github.com/insushim/iwrealrpg\">GitHub에서 소스코드를 확인해 보세요!</a>"
         ]
     },
 
     "soldier": {
-        "name": "Soldier"
+        "name": "병사"
     },
 
     "fisherman": {
-        "name": "Fisherman",
+        "name": "어부",
         "store": "fishingstore"
     },
 
     "octopus": {
-        "name": "Octopus"
+        "name": "문어"
     },
 
     "mermaidnpc": {
-        "name": "Mermaid"
+        "name": "인어"
     },
 
     "sponge": {
-        "name": "Sponge"
+        "name": "스펀지"
     },
 
     "fairynpc": {
-        "name": "Fairy"
+        "name": "요정"
     },
 
     "shepherdboy": {
-        "name": "Shepherd Boy"
+        "name": "양치기 소년"
     },
 
     "zombiegf": {
-        "name": "Zombie Girlfriend"
+        "name": "좀비 여자친구"
     },
 
     "pirategirlnpc": {
-        "name": "Pirate Girl",
-        "text": ["Hi"]
+        "name": "해적 소녀",
+        "text": ["안녕!"]
     },
 
     "bluebikinigirlnpc": {
-        "name": "Pretzel"
+        "name": "프레첼"
     },
 
     "redbikinigirlnpc": {
-        "name": "Flaris"
+        "name": "플라리스"
     },
 
     "iamverycoldnpc": {
-        "name": "Babushka",
+        "name": "바부시카",
         "store": "ingredientsstore"
     },
 
     "iceelfnpc": {
-        "name": "Ice Elf"
+        "name": "얼음 엘프"
     },
 
     "elfnpc": {
-        "name": "Elf"
+        "name": "엘프"
     },
 
     "snowshepherdboy": {
-        "name": "Sherpa",
-        "text": ["Hello dear adventurer!", "Hope you're enjoying the beautiful sights!"]
+        "name": "셰르파",
+        "text": ["안녕하세요, 모험가 님!", "아름다운 경치를 즐기고 계신가요?"]
     },
 
     "angelnpc": {
-        "name": "Angel"
+        "name": "천사"
     },
 
     "momangelnpc": {
-        "name": "Archangel"
+        "name": "대천사"
     },
 
     "superiorangelnpc": {
-        "name": "Mentor"
+        "name": "멘토"
     },
 
     "firstsonangelnpc": {
-        "name": "Angel"
+        "name": "천사"
     },
 
     "secondsonangelnpc": {
-        "name": "Superior Angel"
+        "name": "상위 천사"
     },
 
     "mojojojonpc": {
-        "name": "Monky"
+        "name": "몽키"
     },
 
     "ancientmanumentnpc": {
-        "name": "Ancient Monument"
+        "name": "고대 기념물"
     },
 
     "vendingmachine": {
-        "name": "Enchantment Vendor",
+        "name": "마법 부여 상인",
         "role": "enchanter"
     },
 
     "redstoremannpc": {
-        "name": "Banker",
+        "name": "은행원",
         "role": "banker"
     },
 
     "purplestoremannpc": {
-        "name": "Kosmetics Vendor",
+        "name": "코스메틱 상인",
         "store": "cosmetics"
     },
 
     "bluestoremannpc": {
-        "name": "Clerk",
+        "name": "점원",
         "store": "startshop"
     },
 
     "royalguard": {
-        "name": "Royal Guard",
-        "text": ["There shall be no trespassing!"]
+        "name": "왕실 경비원",
+        "text": ["출입 금지입니다!"]
     },
 
     "royalguard2": {
-        "name": "Royal Guard",
-        "text": ["There shall be no trespassing!"]
+        "name": "왕실 경비원",
+        "text": ["출입 금지입니다!"]
     },
 
     "royalguard3": {
-        "name": "Royal Guard",
-        "text": ["There shall be no trespassing!"]
+        "name": "왕실 경비원",
+        "text": ["출입 금지입니다!"]
     },
 
     "picklenpc": {
-        "name": "Sea Cucumber"
+        "name": "해삼"
     },
 
     "guildnpc": {
-        "name": "Guild Master"
+        "name": "길드 마스터"
     },
 
     "santaelfnpc": {
-        "name": "Santa's Helper",
-        "text": ["What do you want? I'm busy being overworked."]
+        "name": "산타 도우미",
+        "text": ["뭐가 필요하세요? 저는 정말 바쁩니다."]
     },
 
     "oldlady": {
-        "name": "Old Lady",
-        "text": ["Hello there dear adventurer!", "Make sure you're careful on your adventures."]
+        "name": "할머니",
+        "text": ["안녕하세요, 모험가 님!", "모험하실 때 조심하세요."]
     },
 
     "oldlady2": {
-        "name": "Old Lady"
+        "name": "할머니"
     },
 
     "ratnpc": {
-        "name": "Rat",
-        "text": ["Squeak!"]
+        "name": "쥐",
+        "text": ["찍찍!"]
     },
 
     "blacksmith": {
-        "name": "Blacksmith",
-        "text": ["Hi!"]
+        "name": "대장장이",
+        "text": ["안녕하세요!"]
     },
 
     "blacksmith2": {
-        "name": "Blacksmith",
-        "text": ["Hi!"]
+        "name": "대장장이",
+        "text": ["안녕하세요!"]
     },
 
     "herbalist": {
-        "name": "Herby Mc. Herb",
-        "text": ["Hi!"]
+        "name": "약초꾼",
+        "text": ["안녕하세요!"]
     },
     "rickgf": {
-        "name": "Lena",
-        "text": ["Oh, it's been so long since I've seen another soul.", "Have you seen my love, Rick?"]
+        "name": "레나",
+        "text": ["아, 다른 사람을 본 게 정말 오랜만이에요.", "혹시 릭을 보셨나요?"]
     }
 }
