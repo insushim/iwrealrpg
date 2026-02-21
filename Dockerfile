@@ -28,6 +28,9 @@ RUN yarn install --immutable || yarn install
 # Copy all source
 COPY . .
 
+# Create .env file (dotenv-extended reads files, not just process.env)
+RUN printf "ACCEPT_LICENSE=true\nSKIP_DATABASE=true\n" > .env
+
 # Set env vars needed for client build (baked into client bundle)
 ENV CLIENT_REMOTE_HOST=wordquest-online.onrender.com
 ENV SSL=true
