@@ -47,6 +47,7 @@ export default class QuizManager {
     public stats: QuizStats;
     private words: Map<number, VocabWord[]> = new Map();
     private pendingDamage = 0;
+    private usedWordIds: Set<string> = new Set(); // Per-session duplicate tracking
 
     public constructor(private player: Player) {
         // Initialize stats
@@ -103,15 +104,28 @@ export default class QuizManager {
     ): void {
         if (this.activeQuiz) return; // Already has active quiz
 
-        let vocabLevel = this.getVocabLevel(mobLevel),
+        // Use player's grade level instead of mob level for vocabulary selection
+        let vocabLevel = this.player.gradeLevel || this.getVocabLevel(mobLevel),
             wordPool = this.words.get(vocabLevel);
 
         if (!wordPool || wordPool.length < 2) return;
 
-        // Pick a random word
-        let wordIndex = Utils.randomInt(0, wordPool.length - 1),
-            word = wordPool[wordIndex],
-            // Determine quiz type (0 = en->ko, 1 = ko->en)
+        // Filter out already-used words this session
+        let availableWords = wordPool.filter((w) => !this.usedWordIds.has(w.id));
+
+        // If all words exhausted, reset tracking (allow repeats)
+        if (availableWords.length < 2) {
+            this.usedWordIds.clear();
+            availableWords = wordPool;
+        }
+
+        // Pick a random word from available pool
+        let wordIndex = Utils.randomInt(0, availableWords.length - 1),
+            word = availableWords[wordIndex];
+        // Mark word as used this session
+        this.usedWordIds.add(word.id);
+
+        let // Determine quiz type (0 = en->ko, 1 = ko->en)
             type = Math.random() < 0.5 ? 0 : 1,
             // Generate wrong answer from same category first, fallback to same level
             wrongWord: VocabWord,

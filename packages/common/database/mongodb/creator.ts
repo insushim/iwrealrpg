@@ -46,6 +46,7 @@ export interface PlayerInfo {
     pet: string;
     playerClass: number;
     studyLanguage: string;
+    gradeLevel: number;
     resetToken?: ResetToken;
 }
 
@@ -317,6 +318,7 @@ export default class Creator {
             pet: player.pet ? player.pet.key : '',
             playerClass: player.playerClass || 0,
             studyLanguage: player.studyLanguage || 'english',
+            gradeLevel: player.gradeLevel || 1,
             resetToken: undefined // Save token as undefined to prevent it from being saved.
         };
     }

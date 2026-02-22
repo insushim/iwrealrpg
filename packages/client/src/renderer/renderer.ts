@@ -332,7 +332,13 @@ export default class Renderer {
      */
 
     private drawHoveringCell(): void {
-        if (this.mobile || this.game.input.keyMovement || this.game.player.moving) return;
+        if (
+            this.mobile ||
+            this.game.input.keyMovement ||
+            this.game.player.moving ||
+            this.game.player.hasKeyboardMovement()
+        )
+            return;
 
         let location = this.game.input.getCoords();
 
@@ -362,7 +368,8 @@ export default class Renderer {
         if (
             !this.game.input.selectedCellVisible ||
             this.game.input.keyMovement ||
-            this.game.player.moving
+            this.game.player.moving ||
+            this.game.player.hasKeyboardMovement()
         )
             return;
 

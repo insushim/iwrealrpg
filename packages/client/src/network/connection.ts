@@ -234,7 +234,8 @@ export default class Connection {
                 password,
                 email,
                 playerClass: this.app.getPlayerClass(),
-                studyLanguage: this.app.getStudyLanguage()
+                studyLanguage: this.app.getStudyLanguage(),
+                gradeLevel: this.app.getGradeLevel()
             });
 
         // Send login packet if the user is logging in.

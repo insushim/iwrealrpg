@@ -126,6 +126,7 @@ export default class Player extends Character {
     public guild = '';
     public playerClass = 0;
     public studyLanguage = 'english';
+    public gradeLevel = 1; // 1=3학년, 2=4학년, 3=5학년, 4=6학년
 
     public rank: Modules.Ranks = Modules.Ranks.None;
 
@@ -258,6 +259,7 @@ export default class Player extends Character {
         this.lastGlobalChat = data.lastGlobalChat || 0;
         this.playerClass = data.playerClass || 0;
         this.studyLanguage = data.studyLanguage || 'english';
+        this.gradeLevel = data.gradeLevel || 1;
 
         this.setPoison(data.poison.type, Date.now() - data.poison.remaining);
         this.setLastWarp(data.lastWarp);

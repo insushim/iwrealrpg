@@ -639,6 +639,20 @@ export default class App {
     }
 
     /**
+     * @returns The selected grade level for vocabulary difficulty.
+     */
+
+    public getGradeLevel(): number {
+        if (!this.isRegistering()) return 1;
+
+        let selected = document.querySelector<HTMLInputElement>(
+            'input[name="grade-level"]:checked'
+        );
+
+        return selected ? parseInt(selected.value) : 1;
+    }
+
+    /**
      * Returns a static string for the loader dots. We're
      * essentially creating a `span` HTML element that
      * we can just pull when needed.

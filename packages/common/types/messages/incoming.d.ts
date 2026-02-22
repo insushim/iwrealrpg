@@ -15,6 +15,7 @@ export interface LoginPacket {
     email?: string;
     playerClass?: number;
     studyLanguage?: string;
+    gradeLevel?: number;
 }
 
 export interface EquipmentPacket {
