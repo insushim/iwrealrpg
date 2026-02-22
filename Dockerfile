@@ -28,28 +28,29 @@ RUN yarn install --immutable || yarn install
 # Copy all source
 COPY . .
 
-# Create .env file with ALL required settings
-# dotenv-extended reads from files only, not process.env or Docker ENV vars!
+# Create build-time .env (SKIP_DATABASE=true only for build phase, not runtime)
 RUN printf "ACCEPT_LICENSE=true\nSKIP_DATABASE=true\nPORT=10000\nHOST=0.0.0.0\nSSL=true\nCLIENT_REMOTE_HOST=wordquest-online.onrender.com\n" > .env
 
 # Set env vars needed for client build (baked into client bundle)
 ENV CLIENT_REMOTE_HOST=wordquest-online.onrender.com
 ENV SSL=true
 ENV ACCEPT_LICENSE=true
-ENV SKIP_DATABASE=true
 ENV HOST=0.0.0.0
 ENV PORT=10000
 
 # Build only required packages (client + server)
-# admin, e2e, hub, tools don't have build scripts and would cause errors
 RUN yarn workspace @kaetram/client build && yarn workspace @kaetram/server build
 
 ENV NODE_ENV=production
 
 EXPOSE 10000
 
+# Copy entrypoint script and make executable
+COPY docker-entrypoint.sh /app/docker-entrypoint.sh
+RUN chmod +x /app/docker-entrypoint.sh
+
 # Change to server directory so relative paths (../../.env) work correctly
 WORKDIR /app/packages/server
 
-# Start the game server directly (avoids yarn workspace CWD issues)
-CMD ["node", "--max-old-space-size=400", "dist/main.js"]
+# Use entrypoint that writes runtime env vars to .env before starting
+CMD ["/app/docker-entrypoint.sh"]
