@@ -169,6 +169,9 @@ export default class Skills {
                 '#9933ff'
             );
 
+            // Level-up visual effect (gold sparkle)
+            this.player.status.addWithTimeout(Modules.Effects.Healing, 3000);
+
             // Update the player's max health if they have gained a level in health skill.
             if (type === Modules.Skills.Health)
                 this.player.setHitPoints(Formulas.getMaxHitPoints(level));

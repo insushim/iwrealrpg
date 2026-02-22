@@ -1,293 +1,201 @@
 {
     "startshop": {
         "items": [
-            {
-                "key": "arrow",
-                "price": 5,
-                "count": -1
-            },
-            {
-                "key": "knife",
-                "price": 500,
-                "count": -1
-            },
-            {
-                "key": "flask",
-                "count": 500,
-                "price": 100
-            },
-            {
-                "key": "manaflask",
-                "count": 500,
-                "price": 85
-            },
-            {
-                "key": "burger",
-                "count": 100,
-                "price": 450
-            },
-            {
-                "key": "bigflask",
-                "count": 100,
-                "price": 550
-            },
-            {
-                "key": "bigmanaflask",
-                "count": 100,
-                "price": 500
-            },
-            {
-                "key": "pendant1",
-                "count": 1
-            },
-            {
-                "key": "ring1",
-                "count": 1
-            }
+            { "key": "flask", "count": -1, "price": 50 },
+            { "key": "manaflask", "count": -1, "price": 40 },
+            { "key": "bigflask", "count": -1, "price": 200 },
+            { "key": "bigmanaflask", "count": -1, "price": 180 },
+            { "key": "arrow", "count": -1, "price": 3 },
+            { "key": "firearrow", "count": -1, "price": 15 },
+            { "key": "coppersword", "count": 10, "price": 200 },
+            { "key": "tinsword", "count": 10, "price": 500 },
+            { "key": "bronzesword", "count": 5, "price": 1500 },
+            { "key": "woodenbow", "count": 5, "price": 300 },
+            { "key": "copperhelmet", "count": 10, "price": 150 },
+            { "key": "leatherchest", "count": 10, "price": 200 },
+            { "key": "leatherhelmet", "count": 10, "price": 100 },
+            { "key": "woodenshield", "count": 10, "price": 150 },
+            { "key": "coppershield", "count": 5, "price": 400 },
+            { "key": "leatherboots", "count": 10, "price": 100 },
+            { "key": "leatherleggings", "count": 10, "price": 120 },
+            { "key": "bronzeaxe", "count": 10, "price": 300 },
+            { "key": "bronzepickaxe", "count": 10, "price": 300 },
+            { "key": "pendant1", "count": 3, "price": 500 },
+            { "key": "ring1", "count": 3, "price": 500 },
+            { "key": "shardt1", "count": 5, "price": 1000 }
         ],
-        "refresh": 30000,
+        "refresh": 60000,
+        "currency": "gold"
+    },
+    "ironshop": {
+        "items": [
+            { "key": "flask", "count": -1, "price": 50 },
+            { "key": "manaflask", "count": -1, "price": 40 },
+            { "key": "bigflask", "count": -1, "price": 200 },
+            { "key": "bigmanaflask", "count": -1, "price": 180 },
+            { "key": "burger", "count": -1, "price": 350 },
+            { "key": "arrow", "count": -1, "price": 3 },
+            { "key": "firearrow", "count": -1, "price": 15 },
+            { "key": "poisonarrow", "count": -1, "price": 25 },
+            { "key": "ironsword", "count": 5, "price": 5000 },
+            { "key": "ironspear", "count": 5, "price": 6000 },
+            { "key": "ironscythe", "count": 3, "price": 7000 },
+            { "key": "ironbattleaxe", "count": 3, "price": 8000 },
+            { "key": "ironhelmet", "count": 5, "price": 4000 },
+            { "key": "ironchestplate", "count": 5, "price": 5500 },
+            { "key": "ironshield", "count": 5, "price": 3500 },
+            { "key": "ironboots", "count": 5, "price": 3000 },
+            { "key": "ironlegplates", "count": 5, "price": 3200 },
+            { "key": "tinshield", "count": 5, "price": 2000 },
+            { "key": "ironaxe", "count": 5, "price": 3000 },
+            { "key": "ironpickaxe", "count": 5, "price": 3000 },
+            { "key": "shardt1", "count": 10, "price": 800 },
+            { "key": "shardt2", "count": 5, "price": 3000 },
+            { "key": "bronzering", "count": 3, "price": 2000 }
+        ],
+        "refresh": 60000,
+        "currency": "gold"
+    },
+    "goldshop": {
+        "items": [
+            { "key": "flask", "count": -1, "price": 50 },
+            { "key": "manaflask", "count": -1, "price": 40 },
+            { "key": "bigflask", "count": -1, "price": 200 },
+            { "key": "bigmanaflask", "count": -1, "price": 180 },
+            { "key": "burger", "count": -1, "price": 350 },
+            { "key": "arrow", "count": -1, "price": 3 },
+            { "key": "firearrow", "count": -1, "price": 15 },
+            { "key": "icearrow", "count": -1, "price": 30 },
+            { "key": "lightningarrow", "count": -1, "price": 40 },
+            { "key": "goldsword", "count": 3, "price": 20000 },
+            { "key": "goldspear", "count": 3, "price": 22000 },
+            { "key": "goldscythe", "count": 2, "price": 25000 },
+            { "key": "goldbattleaxe", "count": 2, "price": 28000 },
+            { "key": "goldhelmet", "count": 3, "price": 18000 },
+            { "key": "goldchestplate", "count": 3, "price": 24000 },
+            { "key": "goldshield", "count": 3, "price": 16000 },
+            { "key": "goldboots", "count": 3, "price": 14000 },
+            { "key": "goldlegplates", "count": 3, "price": 15000 },
+            { "key": "goldaxe", "count": 3, "price": 12000 },
+            { "key": "goldpickaxe", "count": 3, "price": 12000 },
+            { "key": "shardt2", "count": 10, "price": 2500 },
+            { "key": "shardt3", "count": 5, "price": 8000 },
+            { "key": "ironring", "count": 3, "price": 5000 }
+        ],
+        "refresh": 90000,
+        "currency": "gold"
+    },
+    "eliteshop": {
+        "items": [
+            { "key": "bigflask", "count": -1, "price": 200 },
+            { "key": "bigmanaflask", "count": -1, "price": 180 },
+            { "key": "burger", "count": -1, "price": 350 },
+            { "key": "icearrow", "count": -1, "price": 30 },
+            { "key": "lightningarrow", "count": -1, "price": 40 },
+            { "key": "cobaltspear", "count": 2, "price": 60000 },
+            { "key": "cobaltscythe", "count": 2, "price": 65000 },
+            { "key": "cobaltbattleaxe", "count": 2, "price": 70000 },
+            { "key": "cobalthelmet", "count": 2, "price": 50000 },
+            { "key": "cobaltchestplate", "count": 2, "price": 65000 },
+            { "key": "cobaltshield", "count": 2, "price": 45000 },
+            { "key": "cobaltlegplates", "count": 2, "price": 42000 },
+            { "key": "cobaltaxe", "count": 2, "price": 35000 },
+            { "key": "cobaltpickaxe", "count": 2, "price": 35000 },
+            { "key": "shardt3", "count": 10, "price": 6000 },
+            { "key": "shardt4", "count": 3, "price": 20000 },
+            { "key": "greenpendant", "count": 2, "price": 15000 },
+            { "key": "goldring", "count": 2, "price": 20000 }
+        ],
+        "refresh": 120000,
         "currency": "gold"
     },
     "forester": {
         "items": [
-            {
-                "key": "bronzeaxe",
-                "count": 15,
-                "price": 1000
-            },
-
-            {
-                "key": "ironaxe",
-                "count": 15,
-                "price": 5000
-            }
+            { "key": "bronzeaxe", "count": 15, "price": 1000 },
+            { "key": "ironaxe", "count": 15, "price": 5000 },
+            { "key": "goldaxe", "count": 5, "price": 15000 },
+            { "key": "cobaltaxe", "count": 3, "price": 40000 }
         ],
         "allowedItems": [
-            "logs",
-            "palmlogs",
-            "pinelogs",
-            "icelogs",
-            "icepalmlogs",
-            "icepinelogs",
-            "aquasilliuslogs",
-            "alkythnlogs",
-            "heliphatitlogs",
-            "zoncillogs",
-            "zondullogs",
-            "bloodwoodlogs"
+            "logs", "palmlogs", "pinelogs", "icelogs", "icepalmlogs",
+            "icepinelogs", "aquasilliuslogs", "alkythnlogs",
+            "heliphatitlogs", "zoncillogs", "zondullogs", "bloodwoodlogs"
         ],
         "refresh": 120000,
         "currency": "gold"
     },
     "sorcerer": {
         "items": [
-            {
-                "key": "aquastaff",
-                "count": 5
-            },
-            {
-                "key": "lightningstaff",
-                "count": 3
-            },
-            {
-                "key": "naturestaff",
-                "count": 3
-            },
-            {
-                "key": "firestaff",
-                "count": 3
-            },
-            {
-                "key": "cursestaff",
-                "count": 3
-            }
+            { "key": "aquastaff", "count": 5, "price": 2000 },
+            { "key": "lightningstaff", "count": 3, "price": 10000 },
+            { "key": "naturestaff", "count": 3, "price": 15000 },
+            { "key": "firestaff", "count": 3, "price": 25000 },
+            { "key": "cursestaff", "count": 2, "price": 50000 },
+            { "key": "wizardhatblue", "count": 5, "price": 1500 },
+            { "key": "wizardhatred", "count": 3, "price": 5000 },
+            { "key": "wizardhatblack", "count": 2, "price": 15000 },
+            { "key": "mysticchest", "count": 5, "price": 3000 },
+            { "key": "bluemysticchest", "count": 3, "price": 12000 }
         ],
         "refresh": 180000,
         "currency": "gold"
     },
     "miner": {
         "items": [
-            {
-                "key": "coal",
-                "count": 100,
-                "price": 50
-            },
-            {
-                "key": "copperore",
-                "count": 25,
-                "price": 150
-            },
-            {
-                "key": "tinore",
-                "count": 25,
-                "price": 150
-            },
-            {
-                "key": "bronzeore",
-                "count": 15,
-                "price": 200
-            },
-            {
-                "key": "goldore",
-                "count": 5,
-                "price": 500
-            },
-            {
-                "key": "goldnugget",
-                "count": 0,
-                "price": 500
-            },
-            {
-                "key": "nisocore",
-                "count": 0,
-                "price": 450
-            },
-            {
-                "key": "cinnabarore",
-                "count": 0,
-                "price": 500
-            },
-            {
-                "key": "pytharore",
-                "count": 0,
-                "price": 600
-            },
-            {
-                "key": "iboore",
-                "count": 0,
-                "price": 700
-            },
-            {
-                "key": "moonrockore",
-                "count": 0,
-                "price": 1000
-            }
+            { "key": "coal", "count": 100, "price": 50 },
+            { "key": "copperore", "count": 25, "price": 150 },
+            { "key": "tinore", "count": 25, "price": 150 },
+            { "key": "bronzeore", "count": 15, "price": 200 },
+            { "key": "goldore", "count": 5, "price": 500 },
+            { "key": "goldnugget", "count": 0, "price": 500 },
+            { "key": "nisocore", "count": 0, "price": 450 },
+            { "key": "cinnabarore", "count": 0, "price": 500 },
+            { "key": "pytharore", "count": 0, "price": 600 },
+            { "key": "iboore", "count": 0, "price": 700 },
+            { "key": "moonrockore", "count": 0, "price": 1000 }
         ],
         "alloweditems": [
-            "coal",
-            "copperore",
-            "tinore",
-            "bronzeore",
-            "goldore",
-            "nisocore",
-            "cinnabarore",
-            "pytharore",
-            "goldnugget",
-            "iboore",
-            "moonrockore"
+            "coal", "copperore", "tinore", "bronzeore", "goldore",
+            "nisocore", "cinnabarore", "pytharore", "goldnugget",
+            "iboore", "moonrockore"
         ],
         "refresh": 120000,
         "currency": "gold"
     },
     "cosmetics": {
         "items": [
-            {
-                "key": "lolipop",
-                "count": 5,
-                "price": 15
-            },
-            {
-                "key": "spoon",
-                "count": 5,
-                "price": 15
-            },
-            {
-                "key": "cellobello",
-                "count": 5,
-                "price": 15
-            },
-            {
-                "key": "taekwondo",
-                "count": 5,
-                "price": 15
-            },
-
-            {
-                "key": "danbo",
-                "count": 5,
-                "price": 15
-            },
-
-            {
-                "key": "danboblue",
-                "count": 5,
-                "price": 15
-            },
-
-            {
-                "key": "danbogreen",
-                "count": 5,
-                "price": 15
-            },
-
-            {
-                "key": "danbored",
-                "count": 5,
-                "price": 15
-            },
-
-            {
-                "key": "ratpet",
-                "count": 5,
-                "price": 30
-            },
-
-            {
-                "key": "rathatpet",
-                "count": 5,
-                "price": 30
-            }
+            { "key": "lolipop", "count": 5, "price": 15 },
+            { "key": "spoon", "count": 5, "price": 15 },
+            { "key": "cellobello", "count": 5, "price": 15 },
+            { "key": "taekwondo", "count": 5, "price": 15 },
+            { "key": "danbo", "count": 5, "price": 15 },
+            { "key": "danboblue", "count": 5, "price": 15 },
+            { "key": "danbogreen", "count": 5, "price": 15 },
+            { "key": "danbored", "count": 5, "price": 15 },
+            { "key": "ratpet", "count": 5, "price": 30 },
+            { "key": "rathatpet", "count": 5, "price": 30 }
         ],
         "refresh": 600000,
         "restricted": true,
         "currency": "token"
     },
-
     "ingredientsstore": {
         "items": [
-            {
-                "key": "bluelily",
-                "count": 1000
-            },
-            {
-                "key": "tomato",
-                "count": 100
-            },
-            {
-                "key": "mushroom1",
-                "count": 100
-            },
-            {
-                "key": "mushroom2",
-                "count": 100
-            },
-            {
-                "key": "egg",
-                "count": 10
-            },
-            {
-                "key": "corn",
-                "count": 10
-            },
-            {
-                "key": "rawpork",
-                "count": 100
-            },
-            {
-                "key": "rawchicken",
-                "count": 100
-            }
+            { "key": "bluelily", "count": 1000 },
+            { "key": "tomato", "count": 100 },
+            { "key": "mushroom1", "count": 100 },
+            { "key": "mushroom2", "count": 100 },
+            { "key": "egg", "count": 10 },
+            { "key": "corn", "count": 10 },
+            { "key": "rawpork", "count": 100 },
+            { "key": "rawchicken", "count": 100 }
         ],
         "refresh": 600000,
         "currency": "gold"
     },
-
     "fishingstore": {
         "items": [
-            {
-                "key": "fishingpole",
-                "count": -1
-            }
+            { "key": "fishingpole", "count": -1 }
         ],
         "refresh": 600000,
         "currency": "gold"
