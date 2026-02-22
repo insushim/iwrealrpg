@@ -235,7 +235,7 @@ export default {
      */
 
     isValidUsername(text: string): boolean {
-        return /^[\w ]+$/.test(text);
+        return /^[\w \u3131-\u3163\uAC00-\uD7AF]+$/.test(text);
     },
 
     /**
