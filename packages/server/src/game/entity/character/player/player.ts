@@ -124,6 +124,8 @@ export default class Player extends Character {
     public email = '';
     public userAgent = '';
     public guild = '';
+    public playerClass = 0;
+    public studyLanguage = 'english';
 
     public rank: Modules.Ranks = Modules.Ranks.None;
 
@@ -254,6 +256,8 @@ export default class Player extends Character {
         this.userAgent = data.userAgent;
         this.regionsLoaded = data.regionsLoaded || [];
         this.lastGlobalChat = data.lastGlobalChat || 0;
+        this.playerClass = data.playerClass || 0;
+        this.studyLanguage = data.studyLanguage || 'english';
 
         this.setPoison(data.poison.type, Date.now() - data.poison.remaining);
         this.setLastWarp(data.lastWarp);
@@ -485,6 +489,7 @@ export default class Player extends Character {
 
     public welcome(): void {
         if (this.isNew()) {
+            this.giveStartingEquipment();
             this.save();
 
             return this.notify(`misc:WELCOME;name=${config.name}`);
@@ -503,6 +508,196 @@ export default class Player extends Character {
 
         if (this.isJailed())
             this.notify(`misc:JAILED;duration=${this.getJailDuration()}`, 'crimsonred', '', true);
+
+        // Process daily login streak and rewards.
+        this.processLoginRewards();
+
+        // Check for new titles on login.
+        let level = this.skills.getCombatLevel(),
+            newTitles = this.statistics.checkTitleUnlocks(level);
+
+        for (let title of newTitles)
+            this.notify(`🎖️ 새 칭호 획득: "${title}"`, 'rgb(255, 215, 0)', '', true);
+
+        // Show karma tier info.
+        let karmaTier = this.statistics.getKarmaTier();
+
+        this.notify(
+            `칭호: ${this.statistics.title || '없음'} | 카르마: ${karmaTier} | 연속 출석: ${
+                this.statistics.loginStreak
+            }일`,
+            'rgb(180, 180, 255)',
+            '',
+            true
+        );
+    }
+
+    /**
+     * Processes daily login rewards based on login streak.
+     * Consecutive daily logins give increasing gold rewards.
+     */
+
+    private processLoginRewards(): void {
+        let streakDay = this.statistics.processLoginStreak();
+
+        if (streakDay <= 0) return; // Already claimed today
+
+        // Gold rewards scale with login streak (base 10, +5 per day, max 200)
+        let goldReward = Math.min(200, 10 + streakDay * 5);
+
+        this.inventory.add(new Item('gold', -1, -1, false, goldReward));
+
+        this.notify(
+            `📅 ${streakDay}일 연속 출석! 보상: ${goldReward} 골드`,
+            'rgb(255, 215, 0)',
+            '',
+            true
+        );
+
+        // Bonus rewards at milestones.
+        if (streakDay === 7)
+            this.notify('🎁 7일 연속 출석 보너스! 특별 보상 지급!', 'rgb(255, 180, 50)', '', true);
+        else if (streakDay === 30)
+            this.notify('🏅 30일 연속 출석 달성! 전설의 개근상!', 'rgb(255, 100, 255)', '', true);
+    }
+
+    /**
+     * Gives the player starting equipment based on their class.
+     * Knight: sword + shield, Fairy: bow + arrows, Wizard: staff + hat.
+     */
+
+    private giveStartingEquipment(): void {
+        let startingItems: {
+            type: Modules.Equipment;
+            key: string;
+            count: number;
+            enchantments: { [key: string]: never };
+        }[] = [];
+
+        switch (this.playerClass) {
+            case Modules.Classes.Knight: {
+                startingItems = [
+                    {
+                        type: Modules.Equipment.Weapon,
+                        key: 'coppersword',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Shield,
+                        key: 'woodenshield',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Helmet,
+                        key: 'copperhelmet',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Chestplate,
+                        key: 'leatherchest',
+                        count: 1,
+                        enchantments: {}
+                    }
+                ];
+                break;
+            }
+
+            case Modules.Classes.Fairy: {
+                startingItems = [
+                    {
+                        type: Modules.Equipment.Weapon,
+                        key: 'woodenbow',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    { type: Modules.Equipment.Arrows, key: 'arrow', count: 100, enchantments: {} },
+                    {
+                        type: Modules.Equipment.Helmet,
+                        key: 'leatherhelmet',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Chestplate,
+                        key: 'leatherchest',
+                        count: 1,
+                        enchantments: {}
+                    }
+                ];
+                break;
+            }
+
+            case Modules.Classes.Wizard: {
+                startingItems = [
+                    {
+                        type: Modules.Equipment.Weapon,
+                        key: 'aquastaff',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Helmet,
+                        key: 'wizardhatblue',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Chestplate,
+                        key: 'mysticchest',
+                        count: 1,
+                        enchantments: {}
+                    }
+                ];
+                break;
+            }
+
+            default: {
+                startingItems = [
+                    {
+                        type: Modules.Equipment.Weapon,
+                        key: 'coppersword',
+                        count: 1,
+                        enchantments: {}
+                    },
+                    {
+                        type: Modules.Equipment.Chestplate,
+                        key: 'leatherchest',
+                        count: 1,
+                        enchantments: {}
+                    }
+                ];
+                break;
+            }
+        }
+
+        this.equipment.load(startingItems);
+
+        // Give class-specific starting skill experience
+        switch (this.playerClass) {
+            case Modules.Classes.Knight: {
+                this.skills.get(Modules.Skills.Strength).addExperience(50, false);
+                this.skills.get(Modules.Skills.Defense).addExperience(30, false);
+                this.skills.get(Modules.Skills.Accuracy).addExperience(20, false);
+                break;
+            }
+
+            case Modules.Classes.Fairy: {
+                this.skills.get(Modules.Skills.Archery).addExperience(50, false);
+                this.skills.get(Modules.Skills.Accuracy).addExperience(30, false);
+                this.skills.get(Modules.Skills.Health).addExperience(20, false);
+                break;
+            }
+
+            case Modules.Classes.Wizard: {
+                this.skills.get(Modules.Skills.Magic).addExperience(50, false);
+                this.skills.get(Modules.Skills.Health).addExperience(30, false);
+                this.skills.get(Modules.Skills.Defense).addExperience(20, false);
+                break;
+            }
+        }
     }
 
     /**
@@ -1689,20 +1884,35 @@ export default class Player extends Character {
      */
 
     public override getDisplayInfo(): EntityDisplayInfo {
+        // Minigame team colours take priority.
+        if (this.inMinigame())
+            return {
+                instance: this.instance,
+                colour: this.team === Team.Red ? 'red' : 'blue'
+            };
+
+        // Karma-based name colour (blue for grinders, red for PKers).
+        let colour = this.statistics.getNameColour();
+
+        if (colour)
+            return {
+                instance: this.instance,
+                colour
+            };
+
         return {
-            instance: this.instance,
-            colour: this.team === Team.Red ? 'red' : 'blue'
+            instance: this.instance
         };
     }
 
     /**
-     * Override for the superclass `hasDisplayInfo()`. Relies on whether
-     * or not the player is in a minigame currently.
-     * @returns Whether or not the player is in a minigame.
+     * Override for the superclass `hasDisplayInfo()`. Players always have
+     * display info now due to karma-based name colours.
+     * @returns Whether or not the player has display info.
      */
 
     public override hasDisplayInfo(): boolean {
-        return this.inMinigame();
+        return true;
     }
 
     /**
@@ -2388,18 +2598,26 @@ export default class Player extends Character {
         withExperience = false,
         withMana = false
     ): PlayerData {
-        let data = super.serialize() as PlayerData;
+        let data = super.serialize() as PlayerData,
+            // Sprite key is the armour key.
+            name = Utils.formatName(this.username);
 
-        // Sprite key is the armour key.
-        data.name = Utils.formatName(this.username);
+        // Prepend equipped title to name for other players.
+        if (this.statistics.title) name = `[${this.statistics.title}] ${name}`;
+
+        data.name = name;
         data.rank = this.rank;
-        data.level = this.skills.getCombatLevel();
+
+        // Only show level to the player themselves (when requesting experience data).
+        if (withExperience) data.level = this.skills.getCombatLevel();
+
         data.hitPoints = this.hitPoints.getHitPoints();
         data.maxHitPoints = this.hitPoints.getMaxHitPoints();
         data.attackRange = this.attackRange;
         data.movementSpeed = this.getMovementSpeed();
 
-        if (this.inTeamWar()) data.displayInfo = this.getDisplayInfo();
+        // Always include display info for karma-based name colours.
+        data.displayInfo = this.getDisplayInfo();
 
         // Include equipment only when necessary.
         if (withEquipment) data.equipments = this.equipment.serialize(true).equipments;

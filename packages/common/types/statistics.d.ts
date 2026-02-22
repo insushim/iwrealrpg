@@ -13,4 +13,14 @@ export interface StatisticsData {
     loginCount: number;
 
     cheater: boolean;
+
+    // MMORPG systems
+    karma: number; // Positive = good (mob grinder), Negative = bad (PKer)
+    title: string; // Currently equipped title
+    unlockedTitles: string[]; // All unlocked titles
+    killStreak: number; // Current consecutive mob kills without dying
+    bestKillStreak: number; // Best ever kill streak
+    loginStreak: number; // Consecutive daily logins
+    lastLoginDate: string; // YYYY-MM-DD format for daily login tracking
+    totalGoldEarned: number; // Lifetime gold earned
 }

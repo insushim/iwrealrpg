@@ -25,6 +25,8 @@ export interface GuildData {
     owner: string;
     inviteOnly: boolean;
     experience: number;
+    treasury?: number;
+    announcement?: string;
     decoration: Decoration;
     members: Member[];
 }

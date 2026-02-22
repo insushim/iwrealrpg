@@ -611,6 +611,34 @@ export default class App {
     }
 
     /**
+     * @returns The selected player class (0=Knight, 1=Fairy, 2=Wizard).
+     */
+
+    public getPlayerClass(): number {
+        if (!this.isRegistering()) return 0;
+
+        let selected = document.querySelector<HTMLInputElement>(
+            'input[name="player-class"]:checked'
+        );
+
+        return selected ? parseInt(selected.value) : 0;
+    }
+
+    /**
+     * @returns The selected study language for quiz.
+     */
+
+    public getStudyLanguage(): string {
+        if (!this.isRegistering()) return 'english';
+
+        let selected = document.querySelector<HTMLInputElement>(
+            'input[name="study-language"]:checked'
+        );
+
+        return selected ? selected.value : 'english';
+    }
+
+    /**
      * Returns a static string for the loader dots. We're
      * essentially creating a `span` HTML element that
      * we can just pull when needed.

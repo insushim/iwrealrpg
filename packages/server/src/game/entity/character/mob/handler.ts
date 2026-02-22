@@ -68,7 +68,13 @@ export default class Handler {
     protected handleHit(damage: number, attacker?: Character): void {
         if (!attacker) return;
 
-        if (attacker.isPlayer()) attacker.handleExperience(damage);
+        if (attacker.isPlayer()) {
+            let player = attacker as Player;
+
+            // Accumulate damage in quiz manager instead of granting experience immediately.
+            if (player.quizManager) player.quizManager.accumulateDamage(damage);
+            else attacker.handleExperience(damage);
+        }
 
         // This may get called simulatneously with the death callback, so we check here.
         if (this.mob.isDead()) return;
@@ -105,19 +111,18 @@ export default class Handler {
 
                 let player = entity as Player;
 
-                // Quiz system: intercept drops if the player has quiz manager and no active quiz.
+                // Quiz system: always generate quiz on kill for experience + drops.
                 if (player.quizManager && !player.quizManager.hasActiveQuiz()) {
                     let drops = this.mob.getDrops(player);
 
-                    if (drops.length > 0)
-                        player.quizManager.generateQuiz(
-                            this.mob.name,
-                            this.mob.level,
-                            drops,
-                            this.mob.x,
-                            this.mob.y,
-                            player.username
-                        );
+                    player.quizManager.generateQuiz(
+                        this.mob.name,
+                        this.mob.level,
+                        drops,
+                        this.mob.x,
+                        this.mob.y,
+                        player.username
+                    );
                 }
                 // Fallback: normal drop if quiz is active or no quiz manager.
                 else this.mob.drop(player);

@@ -113,6 +113,12 @@ export enum MenuActions {
 
 export enum InteractActions {}
 
+export enum Classes {
+    Knight,
+    Fairy,
+    Wizard
+}
+
 export enum Hits {
     Normal,
     Poison,

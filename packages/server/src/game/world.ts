@@ -7,6 +7,7 @@ import Entities from '../controllers/entities';
 import Stores from '../controllers/stores';
 import Warps from '../controllers/warps';
 import Guilds from '../controllers/guilds';
+import Territories from '../controllers/territories';
 import Crafting from '../controllers/crafting';
 import API from '../network/api';
 import Network from '../network/network';
@@ -51,6 +52,7 @@ export default class World {
     public enchanter: Enchanter = new Enchanter();
     public crafting: Crafting = new Crafting();
     public guilds: Guilds;
+    public territories: Territories;
     public client: Client;
     public events: Events;
 
@@ -75,6 +77,7 @@ export default class World {
         this.network = new Network(this);
         this.minigames = new Minigames(this);
         this.guilds = new Guilds(this);
+        this.territories = new Territories(this);
         this.client = new Client(this);
         this.events = new Events(this);
 

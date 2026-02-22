@@ -1,3 +1,5 @@
+import Item from '../game/entity/objects/item';
+
 import log from '@kaetram/common/util/log';
 import config from '@kaetram/common/config';
 import { Modules, Opcodes } from '@kaetram/common/network';
@@ -11,6 +13,15 @@ import type { GuildPacketData } from '@kaetram/common/types/messages/outgoing';
 
 export default class Guilds {
     private database: MongoDB;
+
+    // Guild level thresholds: [requiredXP, maxMembers]
+    private static readonly LEVEL_THRESHOLDS: [number, number][] = [
+        [0, 10], // Level 1: 0 XP, 10 members
+        [10_000, 15], // Level 2: 10,000 XP, 15 members
+        [50_000, 20], // Level 3: 50,000 XP, 20 members
+        [150_000, 30], // Level 4: 150,000 XP, 30 members
+        [500_000, 50] // Level 5: 500,000 XP, 50 members
+    ];
 
     public constructor(private world: World) {
         this.database = world.database;
@@ -65,6 +76,8 @@ export default class Guilds {
             creationDate: Date.now(),
             inviteOnly: false,
             experience: 0,
+            treasury: 0,
+            announcement: '',
             owner: player.username,
             members: [
                 {
@@ -164,9 +177,11 @@ export default class Guilds {
             );
         }
 
-        // Ensure the guild isn't full.
-        if (guild.members.length >= Modules.Constants.MAX_GUILD_MEMBERS)
-            return player.notify('guilds:GUILD_FULL');
+        // Ensure the guild isn't full (use level-based max members).
+        let guildLevel = this.getGuildLevel(guild.experience || 0),
+            maxMembers = this.getMaxMembers(guildLevel);
+
+        if (guild.members.length >= maxMembers) return player.notify('guilds:GUILD_FULL');
 
         // Append the player to the guild's member list.
         guild.members.push({
@@ -401,6 +416,155 @@ export default class Guilds {
         this.synchronize(guild.members, Opcodes.Guild.Experience, {
             experience: guild.experience
         });
+    }
+
+    /**
+     * Deposits gold from a player's inventory into the guild treasury.
+     * @param player The player depositing gold.
+     * @param amount The amount of gold to deposit.
+     */
+
+    public async depositGold(player: Player, amount: number): Promise<void> {
+        if (!player.guild) return player.notify('You must be in a guild to deposit gold.');
+
+        if (amount <= 0) return player.notify('Invalid deposit amount.');
+
+        if (!player.inventory.hasItem('gold', amount)) return player.notify('Not enough gold.');
+
+        let guild = await this.database.loader.loadGuild(player.guild);
+
+        if (!guild)
+            return log.general(
+                `Player ${player.username} tried to deposit gold into a guild that doesn't exist.`
+            );
+
+        // Remove gold from player's inventory
+        player.inventory.removeItem('gold', amount);
+
+        // Add gold to guild treasury
+        guild.treasury = (guild.treasury || 0) + amount;
+
+        this.database.creator.saveGuild(guild);
+
+        player.notify(`Deposited ${amount} gold into the guild treasury.`);
+
+        log.info(
+            `[Guild] ${player.username} deposited ${amount} gold into ${guild.name} treasury (total: ${guild.treasury})`
+        );
+    }
+
+    /**
+     * Withdraws gold from the guild treasury into the player's inventory.
+     * Only the guild leader (Landlord rank) can withdraw.
+     * @param player The player withdrawing gold.
+     * @param amount The amount of gold to withdraw.
+     */
+
+    public async withdrawGold(player: Player, amount: number): Promise<void> {
+        if (!player.guild) return player.notify('You must be in a guild to withdraw gold.');
+
+        if (amount <= 0) return player.notify('Invalid withdrawal amount.');
+
+        let guild = await this.database.loader.loadGuild(player.guild);
+
+        if (!guild)
+            return log.general(
+                `Player ${player.username} tried to withdraw gold from a guild that doesn't exist.`
+            );
+
+        // Only the guild owner can withdraw
+        if (player.username !== guild.owner)
+            return player.notify('Only the guild leader can withdraw from the treasury.');
+
+        let treasury = guild.treasury || 0;
+
+        if (amount > treasury)
+            return player.notify(`The guild treasury only has ${treasury} gold.`);
+
+        // Remove gold from treasury
+        guild.treasury = treasury - amount;
+
+        this.database.creator.saveGuild(guild);
+
+        // Add gold to player's inventory
+        player.inventory.add(new Item('gold', -1, -1, false, amount));
+
+        player.notify(`Withdrew ${amount} gold from the guild treasury.`);
+
+        log.info(
+            `[Guild] ${player.username} withdrew ${amount} gold from ${guild.name} treasury (remaining: ${guild.treasury})`
+        );
+    }
+
+    /**
+     * Sets the guild announcement. Only the guild leader or officers (Master rank and above) can set.
+     * @param player The player setting the announcement.
+     * @param message The announcement message.
+     */
+
+    public async setAnnouncement(player: Player, message: string): Promise<void> {
+        if (!player.guild) return player.notify('You must be in a guild to set an announcement.');
+
+        let guild = await this.database.loader.loadGuild(player.guild);
+
+        if (!guild)
+            return log.general(
+                `Player ${player.username} tried to set an announcement for a guild that doesn't exist.`
+            );
+
+        // Check if the player has sufficient rank (Master or Landlord)
+        let member = guild.members.find((m) => m.username === player.username);
+
+        if (!member || member.rank === undefined || member.rank < Modules.GuildRank.Master)
+            return player.notify('Only officers and the guild leader can set announcements.');
+
+        // Limit announcement length
+        if (message.length > 200)
+            return player.notify('Announcement must be 200 characters or fewer.');
+
+        guild.announcement = message;
+
+        this.database.creator.saveGuild(guild);
+
+        // Notify all guild members about the new announcement
+        this.synchronize(guild.members, Opcodes.Guild.Chat, {
+            username: player.username,
+            serverId: config.serverId,
+            message: `[Announcement] ${message}`
+        });
+
+        log.info(`[Guild] ${player.username} set announcement for ${guild.name}: ${message}`);
+    }
+
+    /**
+     * Returns the guild level based on the accumulated experience.
+     * Level thresholds: 1=0xp, 2=10000xp, 3=50000xp, 4=150000xp, 5=500000xp
+     * @param experience The guild's total experience.
+     * @returns The guild level (1-5).
+     */
+
+    public getGuildLevel(experience: number): number {
+        let level = 1;
+
+        for (let i = Guilds.LEVEL_THRESHOLDS.length - 1; i >= 0; i--)
+            if (experience >= Guilds.LEVEL_THRESHOLDS[i][0]) {
+                level = i + 1;
+                break;
+            }
+
+        return level;
+    }
+
+    /**
+     * Returns the maximum number of members allowed based on the guild level.
+     * @param level The guild level (1-5).
+     * @returns The maximum number of members.
+     */
+
+    public getMaxMembers(level: number): number {
+        let index = Math.max(0, Math.min(level - 1, Guilds.LEVEL_THRESHOLDS.length - 1));
+
+        return Guilds.LEVEL_THRESHOLDS[index][1];
     }
 
     /**

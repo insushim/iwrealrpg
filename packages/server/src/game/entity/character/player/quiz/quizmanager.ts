@@ -11,6 +11,11 @@ interface VocabWord {
     id: string;
     english: string;
     korean: string;
+    japanese: string;
+    chinese: string;
+    french: string;
+    spanish: string;
+    german: string;
     category: string;
     difficulty: number;
 }
@@ -41,6 +46,7 @@ export default class QuizManager {
     private activeQuiz: ActiveQuiz | null = null;
     public stats: QuizStats;
     private words: Map<number, VocabWord[]> = new Map();
+    private pendingDamage = 0;
 
     public constructor(private player: Player) {
         // Initialize stats
@@ -124,11 +130,14 @@ export default class QuizManager {
         let correctAnswer = Math.random() < 0.5 ? 1 : 2,
             question: string,
             option1: string,
-            option2: string;
+            option2: string,
+            // Get the study language field name
+            studyLang = this.player.studyLanguage || 'english',
+            targetField = studyLang as keyof VocabWord;
 
         if (type === 0) {
-            // English -> Korean
-            question = word.english;
+            // Target language -> Korean
+            question = word[targetField] as string;
 
             if (correctAnswer === 1) {
                 option1 = word.korean;
@@ -138,15 +147,15 @@ export default class QuizManager {
                 option2 = word.korean;
             }
         } else {
-            // Korean -> English
+            // Korean -> Target language
             question = word.korean;
 
             if (correctAnswer === 1) {
-                option1 = word.english;
-                option2 = wrongWord.english;
+                option1 = word[targetField] as string;
+                option2 = wrongWord[targetField] as string;
             } else {
-                option1 = wrongWord.english;
-                option2 = word.english;
+                option1 = wrongWord[targetField] as string;
+                option2 = word[targetField] as string;
             }
         }
 
@@ -222,12 +231,15 @@ export default class QuizManager {
 
             if (idx > -1) this.stats.recentWrong.splice(idx, 1);
 
-            // Drop items with multiplier
+            // Grant pending experience and drop items with multiplier
+            this.grantPendingExperience();
+
             let multiplier = this.getDropMultiplier();
 
             this.spawnDrops(multiplier);
         } else {
             this.stats.currentStreak = 0;
+            this.pendingDamage = 0; // Discard experience on wrong answer
 
             // Add to wrong list
             if (!this.stats.recentWrong.includes(this.activeQuiz.word.id)) {
@@ -240,11 +252,13 @@ export default class QuizManager {
         // Check for level up
         this.checkLevelUp();
 
-        // Build correct answer string
-        let correctAnswerStr =
+        // Build correct answer string based on study language
+        let studyLang = this.player.studyLanguage || 'english',
+            targetField = studyLang as keyof VocabWord,
+            correctAnswerStr =
                 this.activeQuiz.type === 0
                     ? this.activeQuiz.word.korean
-                    : this.activeQuiz.word.english,
+                    : (this.activeQuiz.word[targetField] as string),
             // Send result
             goldReward = correct ? Utils.randomInt(5, 20) * this.getDropMultiplier() : 0;
 
@@ -273,6 +287,7 @@ export default class QuizManager {
 
         this.stats.totalQuestions++;
         this.stats.currentStreak = 0;
+        this.pendingDamage = 0; // Discard experience on timeout
 
         // Add to wrong list
         if (!this.stats.recentWrong.includes(this.activeQuiz.word.id)) {
@@ -281,8 +296,12 @@ export default class QuizManager {
             if (this.stats.recentWrong.length > 50) this.stats.recentWrong.shift();
         }
 
-        let correctAnswerStr =
-            this.activeQuiz.type === 0 ? this.activeQuiz.word.korean : this.activeQuiz.word.english;
+        let studyLang = this.player.studyLanguage || 'english',
+            targetField = studyLang as keyof VocabWord,
+            correctAnswerStr =
+                this.activeQuiz.type === 0
+                    ? this.activeQuiz.word.korean
+                    : (this.activeQuiz.word[targetField] as string);
 
         this.player.send(
             new QuizPacket(Opcodes.Quiz.Result, {
@@ -354,6 +373,27 @@ export default class QuizManager {
     /**
      * @returns Whether or not the player has an active quiz.
      */
+
+    /**
+     * Accumulates damage dealt during combat for pending experience.
+     * Experience is only granted when the quiz is answered correctly.
+     * @param damage The damage dealt by the player.
+     */
+
+    public accumulateDamage(damage: number): void {
+        this.pendingDamage += damage;
+    }
+
+    /**
+     * Grants the accumulated pending experience to the player.
+     */
+
+    private grantPendingExperience(): void {
+        if (this.pendingDamage > 0) {
+            this.player.handleExperience(this.pendingDamage);
+            this.pendingDamage = 0;
+        }
+    }
 
     public hasActiveQuiz(): boolean {
         return this.activeQuiz !== null;

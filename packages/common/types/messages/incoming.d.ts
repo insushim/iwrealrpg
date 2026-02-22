@@ -13,6 +13,8 @@ export interface LoginPacket {
     username?: string;
     password?: string;
     email?: string;
+    playerClass?: number;
+    studyLanguage?: string;
 }
 
 export interface EquipmentPacket {

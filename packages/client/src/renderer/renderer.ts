@@ -332,7 +332,7 @@ export default class Renderer {
      */
 
     private drawHoveringCell(): void {
-        if (this.mobile) return;
+        if (this.mobile || this.game.input.keyMovement) return;
 
         let location = this.game.input.getCoords();
 
@@ -1114,6 +1114,20 @@ export default class Renderer {
             levelY = this.drawLevels ? y : y - 7,
             levelText = `Level ${entity.level}`;
 
+        // For other players, show relative strength indicator instead of exact level.
+        if (entity.isPlayer() && entity.instance !== this.game.player.instance) {
+            let myLevel = this.game.player.level,
+                diff = entity.level - myLevel;
+
+            if (entity.level === 0 || !entity.level) levelText = '???';
+            else if (diff >= 20) levelText = '⚠️ 매우 강함';
+            else if (diff >= 10) levelText = '🔴 강함';
+            else if (diff >= 3) levelText = '🟠 위험';
+            else if (diff > -3) levelText = '🟡 비슷함';
+            else if (diff > -10) levelText = '🟢 약함';
+            else levelText = '⚪ 매우 약함';
+        }
+
         // NPCs will have their name displayed closer to their sprite.
         if (entity.isNPC()) nameY = y - 2;
 
@@ -1128,7 +1142,7 @@ export default class Renderer {
         if (entity.isPlayer() && entity.rank !== Modules.Ranks.None)
             colour = Modules.RankColours[entity.rank];
 
-        // If the entity is the same as our character, we draw a gold name.1
+        // If the entity is the same as our character, we draw a gold name.
         if (entity.instance === this.game.player.instance) colour = 'rgba(252,218,92, 1)';
 
         // If an entity has a custom name colour we use that.
@@ -1138,7 +1152,9 @@ export default class Renderer {
         if (drawNames) this.drawText(entity.name, x, nameY, true, true, colour);
 
         // Draw the level if we're drawing levels.
-        if (drawLevels && entity.level) this.drawText(levelText, x, levelY, true, true, colour);
+        // For other players, show strength indicator even when level is hidden (0/undefined).
+        if (drawLevels && (entity.level || entity.isPlayer()))
+            this.drawText(levelText, x, levelY, true, true, colour);
     }
 
     /**

@@ -32,7 +32,7 @@ type WeatherType = 'none' | 'rain' | 'snow' | 'ambient';
 
 export default class Weather {
     private canvas: HTMLCanvasElement;
-    private ctx: CanvasRenderingContext2D;
+    private ctx!: CanvasRenderingContext2D;
     private rafId = 0;
     private type: WeatherType = 'none';
 

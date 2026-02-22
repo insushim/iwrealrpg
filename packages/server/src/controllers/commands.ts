@@ -56,8 +56,7 @@ export default class Commands {
         switch (command) {
             case 'players': {
                 let players = this.world.entities.getPlayerUsernames(),
-                    population = players.length,
-                    singular = population === 1;
+                    population = players.length;
 
                 this.player.notify(`현재 ${population}명이 접속 중입니다.`);
 
@@ -111,6 +110,68 @@ export default class Commands {
 
                 tutorial.setStage(9999);
                 this.player.notify('튜토리얼을 건너뛰었습니다!');
+
+                break;
+            }
+
+            case 'title': {
+                let titleName = blocks.join(' ');
+
+                if (!titleName) {
+                    // Show current title and list all unlocked titles.
+                    let current = this.player.statistics.title || '없음',
+                        unlocked = this.player.statistics.unlockedTitles;
+
+                    this.player.notify(`현재 칭호: ${current}`);
+
+                    if (unlocked.length === 0)
+                        this.player.notify(
+                            '획득한 칭호가 없습니다. 몬스터를 처치하고 레벨을 올려보세요!'
+                        );
+                    else this.player.notify(`보유 칭호: ${unlocked.join(', ')}`);
+
+                    this.player.notify('칭호 변경: /title [칭호명] | 해제: /title off');
+
+                    return;
+                }
+
+                if (titleName === 'off' || titleName === '해제') {
+                    this.player.statistics.title = '';
+                    this.player.notify('칭호를 해제했습니다.');
+                    this.player.sync();
+                    return;
+                }
+
+                if (!this.player.statistics.unlockedTitles.includes(titleName))
+                    return this.player.notify(`"${titleName}" 칭호를 보유하고 있지 않습니다.`);
+
+                this.player.statistics.title = titleName;
+                this.player.notify(`칭호를 "${titleName}"(으)로 변경했습니다.`);
+                this.player.sync();
+
+                break;
+            }
+
+            case 'karma':
+            case 'stats': {
+                let stats = this.player.statistics;
+
+                this.player.notify(`--- 내 전적 ---`);
+                this.player.notify(`카르마: ${stats.karma} (${stats.getKarmaTier()})`);
+                this.player.notify(
+                    `몬스터 처치: ${stats.getTotalMobKills().toLocaleString()}마리 | PK: ${
+                        stats.pvpKills
+                    }회 | 사망: ${stats.pvpDeaths}회`
+                );
+                this.player.notify(
+                    `킬 스트릭: ${stats.killStreak} (최고: ${stats.bestKillStreak})`
+                );
+                this.player.notify(
+                    `출석: ${stats.loginStreak}일 연속 | 총 접속: ${stats.loginCount}회`
+                );
+                this.player.notify(
+                    `칭호: ${stats.title || '없음'} | 보유 칭호: ${stats.unlockedTitles.length}개`
+                );
 
                 break;
             }

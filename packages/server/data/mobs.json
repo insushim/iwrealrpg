@@ -8,13 +8,15 @@
                 "chance": 5
             }
         ],
-        "dropTables": ["ordinary"],
+        "dropTables": [
+            "ordinary"
+        ],
         "hitPoints": 20,
         "level": 1,
         "aggroRange": 1,
         "attackRate": 1400,
         "movementSpeed": 450,
-        "respawnDelay": 10000,
+        "respawnDelay": 30000,
         "attackStats": {
             "crush": 1,
             "slash": 1,
@@ -43,18 +45,19 @@
             "magic": 0
         }
     },
-
     "bat": {
         "name": "Batterfly",
         "description": "A bat that is also a butterfly, what a strange creature.",
-        "dropTables": ["ordinary"],
+        "dropTables": [
+            "ordinary"
+        ],
         "hitPoints": 65,
         "level": 4,
         "aggroRange": 1,
         "aggressive": true,
         "attackRate": 1100,
         "movementSpeed": 420,
-        "respawnDelay": 20000,
+        "respawnDelay": 30000,
         "attackStats": {
             "crush": 3,
             "slash": 3,
@@ -76,17 +79,18 @@
             "magic": 0
         }
     },
-
     "crab": {
         "name": "Crab",
         "description": "I wonder if I can eat this.",
-        "dropTables": ["ordinary"],
+        "dropTables": [
+            "ordinary"
+        ],
         "hitPoints": 15,
         "level": 1,
         "aggroRange": 1,
         "attackRate": 1200,
         "movementSpeed": 500,
-        "respawnDelay": 20000,
+        "respawnDelay": 30000,
         "attackStats": {
             "crush": 2,
             "slash": 1,
@@ -108,7 +112,6 @@
             "magic": 0
         }
     },
-
     "wizard": {
         "name": "Wizard",
         "description": "Why does every MMORPG have one of these things?",
@@ -158,7 +161,10 @@
                 "chance": 10000
             }
         ],
-        "dropTables": ["ordinary", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "unusual"
+        ],
         "hitPoints": 130,
         "level": 11,
         "aggroRange": 3,
@@ -189,7 +195,6 @@
             "magic": 3
         }
     },
-
     "goblin": {
         "name": "Goblin",
         "description": "Didn't I see this same style of goblin in RuneScape?",
@@ -207,7 +212,14 @@
                 "chance": 10000
             }
         ],
-        "dropTables": ["ordinary", "arrows", "unusual", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "arrows",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 90,
         "level": 7,
         "aggroRange": 1,
@@ -235,7 +247,6 @@
             "magic": 0
         }
     },
-
     "skeleton": {
         "name": "Spooky Skeleton",
         "description": "I wonder if this skeleton is made out of bones.",
@@ -255,7 +266,10 @@
                 "status": "started"
             }
         ],
-        "dropTables": ["ordinary", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "arrows"
+        ],
         "hitPoints": 140,
         "level": 14,
         "aggroRange": 1,
@@ -284,7 +298,6 @@
             "magic": 0
         }
     },
-
     "ogre": {
         "name": "Ogre",
         "description": "I really feel like the developers had to include generic fantasy creatures.",
@@ -302,7 +315,13 @@
                 "chance": 10000
             }
         ],
-        "dropTables": ["ordinary", "unusual", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 150,
         "level": 18,
         "aggroRange": 1,
@@ -331,7 +350,6 @@
             "magic": 0
         }
     },
-
     "skeleton2": {
         "name": "Scary Skeleton",
         "description": "Ah yes, it's not spooky, this one is scary.",
@@ -349,7 +367,12 @@
                 "chance": 10000
             }
         ],
-        "dropTables": ["ordinary", "shards", "arrows", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "arrows",
+            "unusual"
+        ],
         "hitPoints": 375,
         "level": 30,
         "aggroRange": 2,
@@ -378,11 +401,12 @@
             "magic": 0
         }
     },
-
     "snek": {
         "name": "Snek",
         "description": "Snek, where you going? Snek, stahp!",
-        "dropTables": ["ordinary"],
+        "dropTables": [
+            "ordinary"
+        ],
         "hitPoints": 85,
         "level": 16,
         "aggroRange": 1,
@@ -412,7 +436,6 @@
             "magic": 0
         }
     },
-
     "spectre": {
         "name": "Spectre",
         "description": "Has a scythe and looks like it's floating.",
@@ -426,7 +449,11 @@
                 "chance": 100
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 270,
         "level": 32,
         "aggroRange": 1,
@@ -455,11 +482,13 @@
             "magic": 6
         }
     },
-
     "lavaslime": {
         "name": "Lava Slime",
         "description": "A cute little slime made out of molten rock.",
-        "dropTables": ["ordinary", "shards"],
+        "dropTables": [
+            "ordinary",
+            "shards"
+        ],
         "hitPoints": 270,
         "level": 32,
         "aggroRange": 1,
@@ -488,7 +517,6 @@
             "magic": 6
         }
     },
-
     "eye": {
         "name": "Eye",
         "description": [
@@ -501,10 +529,14 @@
                 "chance": 1000
             }
         ],
-        "dropTables": ["ordinary", "unusual", "shards"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "shards"
+        ],
         "hitPoints": 160,
         "level": 33,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 1100,
         "movementSpeed": 350,
         "respawnDelay": 35000,
@@ -527,13 +559,17 @@
             "strength": 6,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "deathknight": {
         "name": "Death Knight",
         "description": "Seriously, who comes up with the names for these things?",
-        "dropTables": ["ordinary", "unusual", "shards"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "shards"
+        ],
         "hitPoints": 185,
         "level": 40,
         "aggroRange": 4,
@@ -562,7 +598,6 @@
             "magic": 0
         }
     },
-
     "adherer": {
         "name": "Dark Mage",
         "description": "I heard that these things drop roses that I can then use to hit things with.",
@@ -576,7 +611,11 @@
                 "chance": 20
             }
         ],
-        "dropTables": ["ordinary", "unusual", "shards"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "shards"
+        ],
         "hitPoints": 200,
         "level": 38,
         "aggroRange": 6,
@@ -607,11 +646,14 @@
             "magic": 16
         }
     },
-
     "regionhenchman": {
         "name": "Dark Region Henchman",
         "description": "I heard that these things drop roses that I can then use to hit things with.",
-        "dropTables": ["ordinary", "unusual", "shards"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "shards"
+        ],
         "hitPoints": 200,
         "level": 38,
         "aggroRange": 6,
@@ -642,7 +684,6 @@
             "magic": 16
         }
     },
-
     "angel": {
         "name": "Angel",
         "description": "Holy moly, this is nothing like how they're described in the bible.",
@@ -674,11 +715,15 @@
             "magic": 10
         }
     },
-
     "ant": {
         "name": "Worker Ant",
         "description": "A hardworking small itty bitty ant!",
-        "dropTables": ["ordinary", "fruits", "mushrooms", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "fruits",
+            "mushrooms",
+            "vegetables"
+        ],
         "hitPoints": 300,
         "level": 46,
         "aggroRange": 1,
@@ -707,7 +752,6 @@
             "magic": 0
         }
     },
-
     "beetle": {
         "name": "Beetle",
         "description": "Ever heard of a Dung Beetle, well I'm better!",
@@ -739,13 +783,12 @@
             "magic": 0
         }
     },
-
     "card": {
         "name": "Poker Card",
         "description": "What's it gonna do, gamble me to death?",
         "hitPoints": 1300,
         "level": 104,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -769,15 +812,15 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "card2": {
         "name": "Another Card",
         "description": "Okay but like, how does this even make sense as a mob?",
         "hitPoints": 1300,
         "level": 102,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -801,13 +844,20 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "cowwarrior": {
         "name": "Cow Warrior",
         "description": "The cows are rising up!",
-        "dropTables": ["ordinary", "shards", "unusual", "fruits", "mushrooms", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "fruits",
+            "mushrooms",
+            "vegetables"
+        ],
         "hitPoints": 800,
         "level": 54,
         "aggroRange": 1,
@@ -836,7 +886,6 @@
             "magic": 0
         }
     },
-
     "rooster": {
         "name": "Angry Rooster",
         "description": "It's a sleeping rooster that attacks you...",
@@ -846,7 +895,14 @@
                 "chance": 3000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "fruits", "mushrooms", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "fruits",
+            "mushrooms",
+            "vegetables"
+        ],
         "hitPoints": 320,
         "level": 54,
         "aggroRange": 1,
@@ -875,7 +931,6 @@
             "magic": 0
         }
     },
-
     "pirateskeleton": {
         "name": "Pirate Skeleton",
         "drops": [
@@ -884,7 +939,11 @@
                 "chance": 2500
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 460,
         "level": 54,
         "aggroRange": 4,
@@ -913,11 +972,14 @@
             "magic": 0
         }
     },
-
     "greenpirateskeleton": {
         "name": "Green Pirate Skeleton",
         "description": "Isn't this just a skeleton but wearing a pirate hat?",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 585,
         "level": 64,
         "aggroRange": 1,
@@ -946,10 +1008,13 @@
             "magic": 0
         }
     },
-
     "redpirateskeleton": {
         "name": "Red Pirate Skeleton",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 640,
         "level": 69,
         "aggroRange": 1,
@@ -978,11 +1043,14 @@
             "magic": 0
         }
     },
-
     "blackpirateskeleton": {
         "name": "Blue Pirate Skeleton",
         "description": "Isn't this just a skeleton but wearing a pirate hat?",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 625,
         "level": 70,
         "aggroRange": 1,
@@ -1011,7 +1079,6 @@
             "magic": 0
         }
     },
-
     "piratecaptain": {
         "name": "Pirate Captain",
         "hitPoints": 4750,
@@ -1043,13 +1110,17 @@
             "strength": 28,
             "archery": 0,
             "magic": 18
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "blackwizard": {
         "name": "Dark Wizard",
         "description": "They don't look all that different from the other ones.",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 170,
         "level": 32,
         "aggroRange": 6,
@@ -1080,7 +1151,6 @@
             "magic": 16
         }
     },
-
     "icewizard": {
         "name": "Ice Wizard",
         "description": "It's like similar to some other type of wizard I've encountered before.",
@@ -1090,7 +1160,11 @@
                 "chance": 5000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 470,
         "level": 92,
         "aggroRange": 6,
@@ -1122,14 +1196,16 @@
             "magic": 16
         }
     },
-
     "babyspider": {
         "name": "Baby Spooder",
         "description": "It's cute now but give it a while...",
-        "dropTables": ["ordinary", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "unusual"
+        ],
         "hitPoints": 400,
         "level": 34,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -1152,12 +1228,16 @@
             "strength": 2,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "spider": {
         "name": "Spooder",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 650,
         "level": 47,
         "aggroRange": 1,
@@ -1187,11 +1267,14 @@
             "magic": 0
         }
     },
-
     "poisonspider": {
         "name": "Poison Spooder",
         "description": "I swear this thing is gonna poison me as soon as I engage it.",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 990,
         "level": 49,
         "aggroRange": 1,
@@ -1221,11 +1304,14 @@
             "magic": 0
         }
     },
-
     "firespider": {
         "name": "Fire Spooder",
         "description": "Damn, that is one hot spider.",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 850,
         "level": 61,
         "aggroRange": 1,
@@ -1254,14 +1340,17 @@
             "magic": 11
         }
     },
-
     "blazespider": {
         "name": "Blaze Spooder",
         "description": "I wonder how high this spider is...",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 1350,
         "level": 77,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -1284,13 +1373,17 @@
             "strength": 6,
             "archery": 0,
             "magic": 14
-        }
+        },
+        "aggressive": true
     },
-
     "hellspider": {
         "name": "Hell Spooder",
         "description": "Aren't all spiders technically from hell?",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 780,
         "level": 56,
         "aggroRange": 1,
@@ -1320,10 +1413,15 @@
             "magic": 15
         }
     },
-
     "bluepreta": {
         "name": "Blue Preta",
-        "dropTables": ["ordinary", "shards", "unusual", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 600,
         "level": 85,
         "aggroRange": 1,
@@ -1352,11 +1450,17 @@
             "magic": 10
         }
     },
-
     "cactus": {
         "name": "Cactus",
         "description": "So it's like, a cactus, that can move?",
-        "dropTables": ["ordinary", "shards", "unusual", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 160,
         "level": 16,
         "aggroRange": 2,
@@ -1387,7 +1491,6 @@
             "magic": 0
         }
     },
-
     "cat": {
         "name": "Cat",
         "hitPoints": 600,
@@ -1418,14 +1521,18 @@
             "magic": 0
         }
     },
-
     "clam": {
         "name": "Clam",
         "description": "Now this would make a good stew!",
-        "dropTables": ["ordinary", "shards", "unusual", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "mushrooms"
+        ],
         "hitPoints": 450,
         "level": 66,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -1448,9 +1555,9 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "cobra": {
         "name": "Cobra",
         "hitPoints": 1150,
@@ -1481,14 +1588,17 @@
             "magic": 0
         }
     },
-
     "crystalscorpion": {
         "name": "Crystal Scorpion",
         "description": "It's a scorpion that is made out of crystal, that's really original.",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 1450,
         "level": 105,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1512,15 +1622,19 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "cursedhahoemask": {
         "name": "Cursed Hahoe Mask",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 2100,
         "level": 115,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1544,15 +1658,19 @@
             "strength": 0,
             "archery": 0,
             "magic": 13
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "curseddjangseung": {
         "name": "Cursed Djangseung",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 1900,
         "level": 110,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1576,13 +1694,18 @@
             "strength": 0,
             "archery": 0,
             "magic": 12
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "darkogre": {
         "name": "Dark Ogre",
         "description": "It didn't get to see much sun...",
-        "dropTables": ["ordinary", "shards", "unusual", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "mushrooms"
+        ],
         "hitPoints": 900,
         "level": 68,
         "aggroRange": 1,
@@ -1611,13 +1734,17 @@
             "magic": 0
         }
     },
-
     "darkscorpion": {
         "name": "Dark Scorpion",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1150,
         "level": 101,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1641,12 +1768,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "darkskeleton": {
         "name": "Dark Skeleton",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 740,
         "level": 76,
         "aggroRange": 1,
@@ -1675,10 +1807,14 @@
             "magic": 0
         }
     },
-
     "desertscorpion": {
         "name": "Desert Scorpion",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 124,
         "level": 24,
         "aggroRange": 1,
@@ -1707,12 +1843,11 @@
             "magic": 0
         }
     },
-
     "devilkazya": {
         "name": "Devil Blox",
         "hitPoints": 2300,
         "level": 135,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1736,13 +1871,20 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "earthworm": {
         "name": "Earth Worm",
         "description": "You know, it would make sense that earth worms are underground.",
-        "dropTables": ["ordinary", "shards", "unusual", "fruits", "vegetables", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "fruits",
+            "vegetables",
+            "mushrooms"
+        ],
         "hitPoints": 815,
         "level": 74,
         "aggroRange": 1,
@@ -1771,13 +1913,16 @@
             "magic": 0
         }
     },
-
     "flaredanceknight": {
         "name": "Cursed Knight",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 1000,
         "level": 65,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -1800,9 +1945,9 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "frog": {
         "name": "Frog",
         "drops": [
@@ -1812,10 +1957,17 @@
             }
         ],
         "description": "Just look at it hop around and things and stuff.",
-        "dropTables": ["ordinary", "shards", "unusual", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 788,
         "level": 56,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "roamDistance": 5,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -1839,9 +1991,9 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "ghostrider": {
         "name": "Skeleton Knight",
         "hitPoints": 700,
@@ -1872,10 +2024,13 @@
             "magic": 8
         }
     },
-
     "goldgolem": {
         "name": "Golden Golem",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 1200,
         "level": 75,
         "aggroRange": 1,
@@ -1904,7 +2059,6 @@
             "magic": 0
         }
     },
-
     "golem": {
         "name": "Golem",
         "drops": [
@@ -1913,7 +2067,11 @@
                 "chance": 250
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 350,
         "level": 38,
         "aggroRange": 1,
@@ -1942,13 +2100,16 @@
             "magic": 0
         }
     },
-
     "redfish": {
         "name": "Red Fesh",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 100,
         "level": 46,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -1971,15 +2132,19 @@
             "strength": 2,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "yellowfish": {
         "name": "Yellow Fesh",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 135,
         "level": 44,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2002,15 +2167,19 @@
             "strength": 2,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "greenfish": {
         "name": "Green Fesh",
-        "dropTables": ["ordinary", "shards", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual"
+        ],
         "hitPoints": 200,
         "level": 45,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2033,15 +2202,18 @@
             "strength": 3,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "hermitcrab": {
         "name": "Hermit Crab",
-        "dropTables": ["ordinary", "unusual"],
+        "dropTables": [
+            "ordinary",
+            "unusual"
+        ],
         "hitPoints": 155,
         "level": 15,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2064,12 +2236,19 @@
             "strength": 5,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "hobgoblin": {
         "name": "Hobgoblin",
-        "dropTables": ["ordinary", "shards", "unusual", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 260,
         "level": 42,
         "aggroRange": 1,
@@ -2098,12 +2277,11 @@
             "magic": 0
         }
     },
-
     "hongcheol": {
         "name": "Hong Chul",
         "hitPoints": 1550,
         "level": 100,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2126,12 +2304,18 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true,
+        "alwaysAggressive": true
     },
-
     "icegolem": {
         "name": "Ice Golem",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 700,
         "level": 46,
         "aggroRange": 5,
@@ -2163,10 +2347,14 @@
             "magic": 9
         }
     },
-
     "iceknight": {
         "name": "Ice Knight",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 550,
         "level": 37,
         "aggroRange": 1,
@@ -2195,7 +2383,6 @@
             "magic": 8
         }
     },
-
     "icevulture": {
         "name": "Ice Vulture",
         "description": "It's like a frozen version of the vicious bird I've seen before.",
@@ -2205,7 +2392,12 @@
                 "chance": 25000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 300,
         "level": 96,
         "aggroRange": 1,
@@ -2234,10 +2426,14 @@
             "magic": 7
         }
     },
-
     "infectedguard": {
         "name": "Infected Guard",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 750,
         "level": 61,
         "aggroRange": 1,
@@ -2266,10 +2462,14 @@
             "magic": 0
         }
     },
-
     "ironogre": {
         "name": "Iron Ogre",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 300,
         "level": 20,
         "aggroRange": 1,
@@ -2298,10 +2498,14 @@
             "magic": 0
         }
     },
-
     "livingarmor": {
         "name": "Living armor",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 340,
         "level": 45,
         "aggroRange": 1,
@@ -2330,10 +2534,17 @@
             "magic": 0
         }
     },
-
     "mantis": {
         "name": "Praying Mantis",
-        "dropTables": ["ordinary", "shards", "unusual", "vegetables", "fruits", "mushrooms", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "vegetables",
+            "fruits",
+            "mushrooms",
+            "arrows"
+        ],
         "hitPoints": 1000,
         "level": 56,
         "aggroRange": 1,
@@ -2362,13 +2573,17 @@
             "magic": 0
         }
     },
-
     "mermaid": {
         "name": "Mermaid",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 150,
         "level": 40,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 115000,
@@ -2391,12 +2606,20 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "mimic": {
         "name": "Mimic",
-        "dropTables": ["ordinary", "shards", "unusual", "mushrooms", "vegetables", "fruits", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "mushrooms",
+            "vegetables",
+            "fruits",
+            "arrows"
+        ],
         "hitPoints": 1200,
         "level": 25,
         "aggroRange": 1,
@@ -2427,14 +2650,21 @@
             "magic": 0
         }
     },
-
     "miniiceknight1": {
         "name": "Mini Ice Knight",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1100,
         "level": 144,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1200,
         "movementSpeed": 400,
@@ -2458,16 +2688,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 3
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniiceknight2": {
         "name": "Mini Ice Knight",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1100,
         "level": 144,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1200,
         "movementSpeed": 400,
@@ -2491,16 +2729,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 3
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniiceknight3": {
         "name": "Mini Ice Knight",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1100,
         "level": 144,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1200,
         "movementSpeed": 400,
@@ -2524,16 +2770,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 3
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniiceknight4": {
         "name": "Mini Ice Knight",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1100,
         "level": 144,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1200,
         "movementSpeed": 400,
@@ -2557,16 +2811,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 3
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniiceknight5": {
         "name": "Mini Ice Knight",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1100,
         "level": 144,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1200,
         "movementSpeed": 400,
@@ -2590,16 +2852,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 3
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight1": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2623,16 +2893,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight2": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2656,16 +2934,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight3": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2689,16 +2975,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight4": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2722,16 +3016,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight5": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2755,16 +3057,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniknight6": {
         "name": "Mini Knight",
         "description": "A little ferocious tiny knight that might actually hurt me.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 950,
         "level": 116,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2788,16 +3098,24 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "miniemperor": {
         "name": "Mini Emperor",
         "description": "It looks like the leader of this band of mini knights.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 3950,
         "level": 316,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -2822,13 +3140,21 @@
             "strength": 24,
             "archery": 0,
             "magic": 18
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "oldogre": {
         "name": "Old Ogre",
         "description": "He's old, and balding, but still dangerous.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 256,
         "level": 23,
         "aggroRange": 1,
@@ -2857,10 +3183,17 @@
             "magic": -5
         }
     },
-
     "orc": {
         "name": "Orc",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 275,
         "level": 47,
         "aggroRange": 1,
@@ -2889,10 +3222,17 @@
             "magic": 0
         }
     },
-
     "infectedvillager": {
         "name": "Infected Villager",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 1550,
         "level": 73,
         "aggroRange": 1,
@@ -2921,13 +3261,20 @@
             "magic": 0
         }
     },
-
     "penguin": {
         "name": "Penguin",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 526,
         "level": 41,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2950,15 +3297,23 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "pierrot": {
         "name": "Clown",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 150,
         "level": 12,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -2981,16 +3336,24 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "pinkelf": {
         "name": "Pink Elf",
         "description": "A pink elf, it's pink, what else do you want to know.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 925,
         "level": 123,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -3014,12 +3377,20 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "preta": {
         "name": "Preta",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 495,
         "level": 36,
         "aggroRange": 1,
@@ -3048,10 +3419,17 @@
             "magic": 0
         }
     },
-
     "purplepreta": {
         "name": "Purple Preta",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 431,
         "level": 31,
         "aggroRange": 1,
@@ -3080,14 +3458,21 @@
             "magic": 0
         }
     },
-
     "greencockroach": {
         "name": "Green Cockroach",
         "description": "Ew, a cockroach.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 785,
         "level": 55,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3110,15 +3495,23 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "redcockroach": {
         "name": "Red Cockroach",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 669,
         "level": 44,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 300,
         "respawnDelay": 45000,
@@ -3141,16 +3534,24 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "redelf": {
         "name": "Red Elf",
         "description": "It's an elf, and it is red, kinda looks like the developer ran out of assets.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "mushrooms", "fruits", "vegetables"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "mushrooms",
+            "fruits",
+            "vegetables"
+        ],
         "hitPoints": 850,
         "level": 110,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -3174,12 +3575,17 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "guardsword": {
         "name": "Guard",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 625,
         "level": 47,
         "aggroRange": 1,
@@ -3208,10 +3614,14 @@
             "magic": 0
         }
     },
-
     "guardmace": {
         "name": "Guard",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 625,
         "level": 45,
         "aggroRange": 1,
@@ -3240,10 +3650,14 @@
             "magic": 0
         }
     },
-
     "redguard": {
         "name": "Bandit",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 335,
         "level": 44,
         "aggroRange": 1,
@@ -3272,13 +3686,17 @@
             "magic": 0
         }
     },
-
     "redmouse": {
         "name": "Red Mouse",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 160,
         "level": 24,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3301,15 +3719,20 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "rhaphidophoridae": {
         "name": "Cricket",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 3500,
         "level": 93,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3332,15 +3755,20 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "rudolf": {
         "name": "Raindeer",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 5550,
         "level": 129,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -3364,12 +3792,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 10
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "santaelf": {
         "name": "Santa's Elf",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 610,
         "level": 136,
         "aggroRange": 1,
@@ -3398,10 +3831,14 @@
             "magic": 30
         }
     },
-
     "scorpion": {
         "name": "Scorpion",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 2700,
         "level": 80,
         "aggroRange": 1,
@@ -3430,14 +3867,18 @@
             "magic": 0
         }
     },
-
     "skyelf": {
         "name": "Sky Elf",
         "description": "An elf that lives in the sky... What is it doing here?",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1000,
         "level": 134,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -3461,13 +3902,20 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "slime": {
         "name": "Slime",
         "description": "Why does every game have a slime in it?",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits"
+        ],
         "hitPoints": 694,
         "level": 48,
         "aggroRange": 3,
@@ -3499,10 +3947,14 @@
             "magic": 0
         }
     },
-
     "smalldevil": {
         "name": "Corrupted Bat",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 100,
         "level": 13,
         "aggroRange": 2,
@@ -3531,11 +3983,15 @@
             "magic": 0
         }
     },
-
     "snowelf": {
         "name": "Snow Elf",
         "description": "A magical tiny elf from the snow realm.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 920,
         "level": 99,
         "aggroRange": 1,
@@ -3564,14 +4020,18 @@
             "magic": 0
         }
     },
-
     "snowman": {
         "name": "Snowman",
         "description": "A magical snowman from the snow realm.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 750,
         "level": 43,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3594,16 +4054,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 8
-        }
+        },
+        "aggressive": true
     },
-
     "snowman2": {
         "name": "Snowman",
         "description": "I wonder if it'll be resilient to fire.",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 850,
         "level": 93,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3626,13 +4091,18 @@
             "strength": 0,
             "archery": 0,
             "magic": 10
-        }
+        },
+        "aggressive": true
     },
-
     "rabbitman": {
         "name": "The Rabbit Man",
         "description": "A dude... dressed as a rabbit... why?",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 385,
         "level": 37,
         "aggroRange": 1,
@@ -3661,10 +4131,14 @@
             "magic": 0
         }
     },
-
     "snowrabbit": {
         "name": "Snow Rabbit",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 340,
         "level": 29,
         "aggroRange": 1,
@@ -3693,11 +4167,15 @@
             "magic": 0
         }
     },
-
     "snowwolf": {
         "name": "Snow Wolf",
         "description": "I really expected the wolf to be made out of snow :(",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1185,
         "level": 55,
         "aggroRange": 1,
@@ -3726,13 +4204,17 @@
             "magic": 0
         }
     },
-
     "icegoblin": {
         "name": "Frost Goblin",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 475,
         "level": 28,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3755,12 +4237,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "soldierant": {
         "name": "Soldier Ant",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 526,
         "level": 60,
         "aggroRange": 1,
@@ -3789,13 +4276,17 @@
             "magic": 0
         }
     },
-
     "soybeanbug": {
         "name": "Soy Bean Bug",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 3500,
         "level": 103,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 400,
@@ -3819,12 +4310,17 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "suicideghost": {
         "name": "Ghost",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 750,
         "level": 62,
         "aggroRange": 1,
@@ -3853,7 +4349,6 @@
             "magic": 4
         }
     },
-
     "vulture": {
         "name": "Vulture",
         "drops": [
@@ -3862,7 +4357,12 @@
                 "chance": 25000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 100,
         "level": 16,
         "aggroRange": 1,
@@ -3891,10 +4391,14 @@
             "magic": 0
         }
     },
-
     "whitebear": {
         "name": "Molar Bear",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1300,
         "level": 42,
         "aggroRange": 2,
@@ -3923,13 +4427,17 @@
             "magic": 0
         }
     },
-
     "whitemouse": {
         "name": "Mouse",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 750,
         "level": 45,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -3952,12 +4460,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "whitetiger": {
         "name": "Tiger",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 3350,
         "level": 98,
         "aggroRange": 1,
@@ -3994,7 +4507,12 @@
                 "chance": 5000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 350,
         "level": 45,
         "aggroRange": 1,
@@ -4023,13 +4541,17 @@
             "magic": 0
         }
     },
-
     "darkwolf": {
         "name": "Dark Wolf",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 850,
         "level": 118,
-        "aggroRange": 1,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 900,
         "movementSpeed": 375,
@@ -4053,15 +4575,20 @@
             "strength": 12,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "yellowbat": {
         "name": "Mutated Bat",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 650,
         "level": 60,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -4084,15 +4611,20 @@
             "strength": 8,
             "archery": 4,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "paladin": {
         "name": "Paladin",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 350,
         "level": 16,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -4115,15 +4647,20 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "yellowmouse": {
         "name": "Yellow Mouse",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 750,
         "level": 39,
-        "aggroRange": 1,
+        "aggroRange": 3,
         "attackRate": 900,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -4146,12 +4683,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "yellowpreta": {
         "name": "Yellow Preta",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 526,
         "level": 39,
         "aggroRange": 1,
@@ -4180,10 +4722,14 @@
             "magic": 0
         }
     },
-
     "zombie": {
         "name": "Zombie",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1250,
         "level": 69,
         "aggroRange": 1,
@@ -4212,13 +4758,17 @@
             "magic": 0
         }
     },
-
     "brownmouse": {
         "name": "Brown Mouse",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 140,
         "level": 22,
-        "aggroRange": 1,
+        "aggroRange": 2,
         "attackRate": 1100,
         "movementSpeed": 400,
         "respawnDelay": 35000,
@@ -4241,12 +4791,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "picklemob": {
         "name": "Sea Cucumber",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 1250,
         "level": 88,
         "aggroRange": 4,
@@ -4277,7 +4832,6 @@
             "magic": 0
         }
     },
-
     "icerat": {
         "name": "Ice Rat",
         "drops": [
@@ -4286,13 +4840,18 @@
                 "chance": 3
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 710,
         "level": 80,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 1500,
         "movementSpeed": 500,
-        "respawnDelay": 10000,
+        "respawnDelay": 60000,
         "attackStats": {
             "crush": 18,
             "slash": 29,
@@ -4312,19 +4871,24 @@
             "strength": 16,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "icebat": {
         "name": "Frozen Bat",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 825,
         "level": 86,
         "aggroRange": 1,
         "aggressive": true,
         "attackRate": 1100,
         "movementSpeed": 350,
-        "respawnDelay": 20000,
+        "respawnDelay": 60000,
         "attackStats": {
             "crush": 18,
             "slash": 29,
@@ -4346,16 +4910,20 @@
             "magic": 0
         }
     },
-
     "icecrab": {
         "name": "Ice Crab",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows"
+        ],
         "hitPoints": 860,
         "level": 89,
-        "aggroRange": 1,
+        "aggroRange": 4,
         "attackRate": 1200,
         "movementSpeed": 300,
-        "respawnDelay": 20000,
+        "respawnDelay": 60000,
         "attackStats": {
             "crush": 20,
             "slash": 31,
@@ -4375,9 +4943,9 @@
             "strength": 19,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "aggressive": true
     },
-
     "skeletonking": {
         "name": "Skeleton King",
         "description": "Here he is, the chad of r/neverbrokeabone.",
@@ -4391,7 +4959,15 @@
                 "chance": 2000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 1850,
         "level": 32,
         "aggroRange": 5,
@@ -4429,9 +5005,9 @@
             "defense": 40,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "ogrelord": {
         "name": "Ogre Lord",
         "description": "I better keep a distance before this thing turns me into a stew!",
@@ -4441,7 +5017,15 @@
                 "chance": 1000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 2850,
         "level": 44,
         "aggroRange": 12,
@@ -4479,9 +5063,9 @@
             "defense": 40,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "hellhound": {
         "name": "Hellhound",
         "description": "I better keep a distance before this thing turns me into a stew!",
@@ -4507,7 +5091,15 @@
                 "chance": 400
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 4550,
         "level": 344,
         "aggroRange": 12,
@@ -4546,16 +5138,24 @@
             "defense": 50,
             "archery": 80,
             "magic": 70
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "windguardian": {
         "name": "Wind Guardian",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 15000,
         "projectileName": "iceball",
         "level": 195,
-        "aggroRange": 3,
+        "aggroRange": 6,
         "attackRange": 6,
         "aggressive": true,
         "attackRate": 1300,
@@ -4587,12 +5187,20 @@
             "defense": 30,
             "archery": 80,
             "magic": 70
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "lightningguardian": {
         "name": "Lightning Guardian",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 4500,
         "level": 64,
         "aggroRange": 6,
@@ -4628,7 +5236,6 @@
             "magic": 70
         }
     },
-
     "darkregion": {
         "name": "Tenebris",
         "drops": [
@@ -4637,7 +5244,15 @@
                 "chance": 2000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 4000,
         "level": 79,
         "aggroRange": 5,
@@ -4673,7 +5288,6 @@
             "magic": 130
         }
     },
-
     "darkregionillusion": {
         "name": "Tenebris",
         "hitPoints": 500,
@@ -4703,11 +5317,18 @@
             "magic": 5
         }
     },
-
     "miniseadragon": {
         "name": "Mini Sea Dragon",
         "description": "Aww it's a little version of something that's gonna stomp me later!",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 1200,
         "level": 52,
         "aggroRange": 6,
@@ -4743,7 +5364,6 @@
             "magic": 30
         }
     },
-
     "forestdragon": {
         "name": "Forest Dragon",
         "description": "Keros' favourite pet!",
@@ -4753,7 +5373,15 @@
                 "chance": 1500
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 6942,
         "level": 258,
         "aggroRange": 8,
@@ -4793,13 +5421,20 @@
             "magic": 100
         }
     },
-
     "enel": {
         "name": "Lucendi",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 25000,
         "level": 256,
-        "aggroRange": 2,
+        "aggroRange": 6,
         "attackRange": 2,
         "aggressive": true,
         "attackRate": 1100,
@@ -4824,15 +5459,23 @@
             "strength": 60,
             "archery": 30,
             "magic": 80
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "seadragon": {
         "name": "Sea Dragon",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 100,
         "level": 485,
-        "aggroRange": 4,
+        "aggroRange": 6,
         "aggressive": true,
         "attackRate": 1500,
         "movementSpeed": 600,
@@ -4856,12 +5499,20 @@
             "strength": 52,
             "archery": 0,
             "magic": 60
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "minidragon": {
         "name": "Mini Dragon",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 380,
         "level": 77,
         "aggroRange": 5,
@@ -4892,7 +5543,6 @@
             "magic": 12
         }
     },
-
     "queenant": {
         "name": "Queen Ant",
         "drops": [
@@ -4901,7 +5551,15 @@
                 "chance": 2000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 4200,
         "level": 94,
         "aggroRange": 14,
@@ -4942,13 +5600,20 @@
             "magic": 60
         }
     },
-
     "skydinosaur": {
         "name": "Fulgur",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 50000,
         "level": 435,
-        "aggroRange": 4,
+        "aggroRange": 6,
         "attackRange": 2,
         "aggressive": true,
         "attackRate": 1800,
@@ -4980,9 +5645,9 @@
             "defense": 140,
             "archery": 155,
             "magic": 90
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "squid": {
         "name": "Great Squid",
         "drops": [
@@ -4991,7 +5656,15 @@
                 "chance": 2500
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 3800,
         "level": 171,
         "aggroRange": 7,
@@ -5027,9 +5700,9 @@
             "defense": 60,
             "archery": 75,
             "magic": 90
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "snowlady": {
         "name": "Queen of Snow",
         "drops": [
@@ -5037,13 +5710,20 @@
                 "key": "swashbuckler",
                 "chance": 1000
             },
-
             {
                 "key": "bident",
                 "chance": 1500
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 2800,
         "level": 180,
         "aggroRange": 7,
@@ -5072,9 +5752,9 @@
             "strength": 20,
             "archery": 0,
             "magic": 30
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "frostqueen": {
         "name": "Frost Queen",
         "drops": [
@@ -5087,7 +5767,15 @@
                 "chance": 40
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 2800,
         "level": 180,
         "aggroRange": 7,
@@ -5116,9 +5804,9 @@
             "strength": 20,
             "archery": 0,
             "magic": 30
-        }
+        },
+        "alwaysAggressive": true
     },
-
     "eliminator": {
         "name": "Eliminator",
         "drops": [
@@ -5127,7 +5815,15 @@
                 "chance": 1000
             }
         ],
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 2000,
         "level": 65,
         "aggroRange": 7,
@@ -5156,10 +5852,17 @@
             "magic": 0
         }
     },
-
     "santa": {
         "name": "Santa",
-        "dropTables": ["ordinary", "shards", "unusual", "arrows", "vegetables", "fruits", "mushrooms"],
+        "dropTables": [
+            "ordinary",
+            "shards",
+            "unusual",
+            "arrows",
+            "vegetables",
+            "fruits",
+            "mushrooms"
+        ],
         "hitPoints": 7500,
         "level": 240,
         "aggroRange": 18,
@@ -5197,6 +5900,7 @@
             "defense": 66,
             "archery": 76,
             "magic": 83
-        }
+        },
+        "alwaysAggressive": true
     }
 }

@@ -19,6 +19,16 @@ export default class Statistics {
     public lastLogin = this.getTime();
     public loginCount = 1;
 
+    // MMORPG systems
+    public karma = 0; // Positive = grinder, Negative = PKer
+    public title = ''; // Currently equipped title
+    public unlockedTitles: string[] = [];
+    public killStreak = 0; // Current consecutive mob kills without dying
+    public bestKillStreak = 0;
+    public loginStreak = 0; // Consecutive daily logins
+    public lastLoginDate = ''; // YYYY-MM-DD
+    public totalGoldEarned = 0;
+
     // Class variables for calculating login time, etc.
     public loginTime = this.getTime(); // Time when player logged in.
 
@@ -42,6 +52,16 @@ export default class Statistics {
         this.averageTimePlayed = data.averageTimePlayed || this.averageTimePlayed;
         this.lastLogin = data.lastLogin || this.lastLogin;
         this.loginCount = data.loginCount + 1 || this.loginCount;
+
+        // MMORPG systems
+        this.karma = data.karma || this.karma;
+        this.title = data.title || this.title;
+        this.unlockedTitles = data.unlockedTitles || this.unlockedTitles;
+        this.killStreak = data.killStreak || this.killStreak;
+        this.bestKillStreak = data.bestKillStreak || this.bestKillStreak;
+        this.loginStreak = data.loginStreak || this.loginStreak;
+        this.lastLoginDate = data.lastLoginDate || this.lastLoginDate;
+        this.totalGoldEarned = data.totalGoldEarned || this.totalGoldEarned;
     }
 
     /**
@@ -72,6 +92,7 @@ export default class Statistics {
     /**
      * Appends a mob kill onto the statistics. A mob is killed by a player
      * when they deal the primary amount of damage on the damage table.
+     * Also updates karma (positive) and kill streak.
      * @param key The key of the mob that was killed.
      */
 
@@ -79,6 +100,136 @@ export default class Statistics {
         if (!(key in this.mobKills)) this.mobKills[key] = 0;
 
         this.mobKills[key]++;
+
+        // Increase karma for mob kills (capped at 10000)
+        this.karma = Math.min(10_000, this.karma + 1);
+
+        // Update kill streak
+        this.killStreak++;
+
+        if (this.killStreak > this.bestKillStreak) this.bestKillStreak = this.killStreak;
+    }
+
+    /**
+     * Called when the player kills another player (PK).
+     * Heavily penalizes karma.
+     */
+
+    public addPvpKarma(): void {
+        this.karma = Math.max(-10_000, this.karma - 50);
+    }
+
+    /**
+     * Called when the player dies. Resets kill streak.
+     */
+
+    public handleDeath(): void {
+        this.killStreak = 0;
+    }
+
+    /**
+     * Calculates the total number of mob kills across all mob types.
+     * @returns The total number of mobs killed.
+     */
+
+    public getTotalMobKills(): number {
+        let total = 0;
+
+        for (let key in this.mobKills) total += this.mobKills[key];
+
+        return total;
+    }
+
+    /**
+     * Gets the name colour based on karma.
+     * Blue shades for positive karma (grinders), red shades for negative (PKers).
+     * @returns A CSS colour string or empty string for default.
+     */
+
+    public getNameColour(): string {
+        if (this.karma <= -200) return 'rgb(255, 0, 0)'; // Deep red (악명 높은 PK)
+        if (this.karma <= -100) return 'rgb(255, 80, 80)'; // Red
+        if (this.karma <= -50) return 'rgb(255, 140, 100)'; // Orange-red
+        if (this.karma >= 500) return 'rgb(50, 130, 255)'; // Deep blue (전설의 사냥꾼)
+        if (this.karma >= 200) return 'rgb(80, 170, 255)'; // Blue
+        if (this.karma >= 100) return 'rgb(130, 200, 255)'; // Light blue
+        return ''; // Default white
+    }
+
+    /**
+     * Gets the karma tier name for display purposes.
+     * @returns A Korean title describing the player's karma tier.
+     */
+
+    public getKarmaTier(): string {
+        if (this.karma <= -200) return '악명 높은 살인자';
+        if (this.karma <= -100) return '위험한 무법자';
+        if (this.karma <= -50) return '무법자';
+        if (this.karma >= 500) return '전설의 수호자';
+        if (this.karma >= 200) return '용맹한 사냥꾼';
+        if (this.karma >= 100) return '숙련된 사냥꾼';
+        if (this.karma >= 50) return '모험가';
+        return '여행자';
+    }
+
+    /**
+     * Processes daily login streak. Call during player welcome.
+     * @returns The login streak reward tier (0 = no reward, 1-7 for consecutive days).
+     */
+
+    public processLoginStreak(): number {
+        let today = new Date().toISOString().slice(0, 10), // YYYY-MM-DD
+            yesterday = new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
+
+        if (this.lastLoginDate === today) return 0; // Already logged in today
+
+        if (this.lastLoginDate === yesterday) this.loginStreak++;
+        else this.loginStreak = 1; // Reset streak
+
+        this.lastLoginDate = today;
+
+        // Cap at 30
+        if (this.loginStreak > 30) this.loginStreak = 30;
+
+        return this.loginStreak;
+    }
+
+    /**
+     * Checks and unlocks titles based on player achievements.
+     * @param level The player's combat level.
+     * @returns Array of newly unlocked title keys.
+     */
+
+    public checkTitleUnlocks(level: number): string[] {
+        let newTitles: string[] = [],
+            totalMobs = this.getTotalMobKills(),
+            checks: [string, boolean][] = [
+                ['초보 모험가', level >= 5],
+                ['숙련된 전사', level >= 20],
+                ['베테랑 영웅', level >= 40],
+                ['전설의 용사', level >= 60],
+                ['학살자', totalMobs >= 1000],
+                ['몬스터 헌터', totalMobs >= 5000],
+                ['전장의 지배자', totalMobs >= 10_000],
+                ['결투사', this.pvpKills >= 10],
+                ['챔피언', this.pvpKills >= 50],
+                ['불사신', this.bestKillStreak >= 100],
+                ['연속 처치왕', this.bestKillStreak >= 500],
+                ['단골 손님', this.loginCount >= 30],
+                ['상주 주민', this.loginCount >= 100],
+                ['개근상', this.loginStreak >= 7],
+                ['한 달 개근', this.loginStreak >= 30],
+                ['수호자', this.karma >= 500],
+                ['무법자', this.karma <= -200]
+            ];
+
+        for (let [title, condition] of checks)
+            if (condition && !this.unlockedTitles.includes(title)) {
+                this.unlockedTitles.push(title);
+                newTitles.push(title);
+            }
+
+        return newTitles;
     }
 
     /**
@@ -164,7 +315,15 @@ export default class Statistics {
             averageTimePlayed: this.averageTimePlayed,
             lastLogin: this.lastLogin,
             loginCount: this.loginCount,
-            cheater: this.player.isCheater()
+            cheater: this.player.isCheater(),
+            karma: this.karma,
+            title: this.title,
+            unlockedTitles: this.unlockedTitles,
+            killStreak: this.killStreak,
+            bestKillStreak: this.bestKillStreak,
+            loginStreak: this.loginStreak,
+            lastLoginDate: this.lastLoginDate,
+            totalGoldEarned: this.totalGoldEarned
         };
     }
 

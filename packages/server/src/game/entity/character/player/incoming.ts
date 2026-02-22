@@ -196,7 +196,7 @@ export default class Incoming {
         // Ensure the handshake has been completed before proceeding.
         if (!this.completedHandshake) return this.connection.reject('lost');
 
-        let { opcode, username, password, email } = data;
+        let { opcode, username, password, email, playerClass, studyLanguage } = data;
 
         if (username) {
             // Format username by making it all lower case, shorter than 32 characters, and no spaces.
@@ -207,6 +207,8 @@ export default class Incoming {
 
             if (password) this.player.password = password.slice(0, 64);
             if (email) this.player.email = email;
+            if (playerClass !== undefined) this.player.playerClass = playerClass;
+            if (studyLanguage) this.player.studyLanguage = studyLanguage;
 
             // Reject connection if player is already logged in.
             if (this.world.isOnline(this.player.username))

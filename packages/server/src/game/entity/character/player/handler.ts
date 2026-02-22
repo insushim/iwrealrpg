@@ -143,6 +143,9 @@ export default class Handler {
         this.player.dead = true;
         this.player.status.clear();
 
+        // Reset kill streak on death.
+        this.player.statistics.handleDeath();
+
         if (attacker) {
             attacker.clearTarget();
             attacker.removeAttacker(this.player);
@@ -754,15 +757,64 @@ export default class Handler {
         if (character.isPlayer()) {
             if (this.player.inMinigame()) this.player.getMinigame()?.kill(this.player);
 
-            // Incremebt the pvp kill count.
+            // Increment the pvp kill count.
             this.player.statistics.pvpKills++;
+
+            // Apply karma penalty for PK.
+            this.player.statistics.addPvpKarma();
+
+            // Announce PK to the world.
+            let victimName = character.username || 'unknown';
+
+            this.world.globalMessage(
+                'SYSTEM',
+                `⚔️ ${this.player.username}님이 ${victimName}님을 처치했습니다!`,
+                'rgb(255, 100, 100)'
+            );
+
+            // Sync name colour change.
+            this.player.sync();
         }
 
         // Skip if the kill is not a mob entity.
         if (!character.isMob()) return;
 
-        // Add the mob kill to the player's statistics.
+        // Add the mob kill to the player's statistics (also updates karma and kill streak).
         this.player.statistics.addMobKill(character.key);
+
+        // Kill streak milestone announcements.
+        let streak = this.player.statistics.killStreak;
+
+        if (streak === 50 || streak === 100 || streak === 200 || streak === 500 || streak === 1000)
+            this.world.globalMessage(
+                'SYSTEM',
+                `🔥 ${this.player.username}님이 ${streak}연속 처치를 달성했습니다!`,
+                'rgb(255, 200, 50)'
+            );
+
+        // Total mob kill milestones.
+        let totalMobs = this.player.statistics.getTotalMobKills();
+
+        if (
+            totalMobs === 1000 ||
+            totalMobs === 5000 ||
+            totalMobs === 10_000 ||
+            totalMobs === 50_000
+        )
+            this.world.globalMessage(
+                'SYSTEM',
+                `🏆 ${
+                    this.player.username
+                }님이 총 ${totalMobs.toLocaleString()}마리 몬스터를 처치했습니다!`,
+                'rgb(100, 200, 255)'
+            );
+
+        // Check for new title unlocks.
+        let level = this.player.skills.getCombatLevel(),
+            newTitles = this.player.statistics.checkTitleUnlocks(level);
+
+        for (let title of newTitles)
+            this.player.notify(`🎖️ 새 칭호 획득: "${title}"`, 'rgb(255, 215, 0)', '', true);
 
         /**
          * Special mobs (such as minibosses and bosses) have achievements
@@ -772,6 +824,20 @@ export default class Handler {
         let mobAchievement = character.achievement;
 
         if (mobAchievement) this.player.achievements.get(mobAchievement).finish();
+
+        // Boss/miniboss kill announcements.
+        if (character.boss)
+            this.world.globalMessage(
+                'SYSTEM',
+                `👑 ${this.player.username}님이 보스 "${character.name}"을(를) 처치했습니다!`,
+                'rgb(255, 180, 50)'
+            );
+        else if (character.miniboss)
+            this.world.globalMessage(
+                'SYSTEM',
+                `⭐ ${this.player.username}님이 미니보스 "${character.name}"을(를) 처치했습니다!`,
+                'rgb(200, 180, 255)'
+            );
 
         // Checks if the mob has a active quest associated with it.
         let quest = this.player.quests.getQuestFromMob(character);
@@ -909,9 +975,37 @@ export default class Handler {
             // Ignore non-mob entities.
             if (!entity.isMob()) return;
 
+            // Guards attack players with very negative karma (red name PKers).
+            if (this.isGuardMob(entity.key) && this.player.statistics.karma <= -100) {
+                let dx = Math.abs(entity.x - this.player.x),
+                    dy = Math.abs(entity.y - this.player.y);
+
+                if (!entity.target && dx <= 7 && dy <= 7) {
+                    entity.combat.attack(this.player);
+                    return;
+                }
+            }
+
             // Check if the mob can aggro the player and initiate the combat.
             if (entity.canAggro(this.player)) entity.combat.attack(this.player);
         });
+    }
+
+    /**
+     * Checks if a mob key corresponds to a town guard.
+     * Guards will attack players with negative karma (red names).
+     * @param key The mob key to check.
+     * @returns Whether the mob is a guard.
+     */
+
+    private isGuardMob(key: string): boolean {
+        return (
+            key.includes('guard') ||
+            key.includes('knight') ||
+            key.includes('soldier') ||
+            key.includes('warrior') ||
+            key === 'townguard'
+        );
     }
 
     /**

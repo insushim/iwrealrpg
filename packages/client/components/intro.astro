@@ -129,6 +129,63 @@ let currentLanguage = getLanguage(),
                     autocomplete="off"
                 />
 
+                <div id="class-select">
+                    <p class="class-label">클래스 선택</p>
+                    <div class="class-options">
+                        <label class="class-option">
+                            <input type="radio" name="player-class" value="0" checked />
+                            <span class="class-card">
+                                <strong>⚔️ 기사</strong>
+                                <small>검과 방패의 달인</small>
+                            </span>
+                        </label>
+                        <label class="class-option">
+                            <input type="radio" name="player-class" value="1" />
+                            <span class="class-card">
+                                <strong>🏹 요정</strong>
+                                <small>활과 민첩의 달인</small>
+                            </span>
+                        </label>
+                        <label class="class-option">
+                            <input type="radio" name="player-class" value="2" />
+                            <span class="class-card">
+                                <strong>🔮 마법사</strong>
+                                <small>마법과 지팡이의 달인</small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="study-language-select">
+                    <p class="class-label">학습 언어 선택</p>
+                    <div class="language-options">
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="english" checked />
+                            <span class="class-card"><strong>🇺🇸 영어</strong></span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="japanese" />
+                            <span class="class-card"><strong>🇯🇵 일본어</strong></span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="chinese" />
+                            <span class="class-card"><strong>🇨🇳 중국어</strong></span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="french" />
+                            <span class="class-card"><strong>🇫🇷 프랑스어</strong></span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="spanish" />
+                            <span class="class-card"><strong>🇪🇸 스페인어</strong></span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="study-language" value="german" />
+                            <span class="class-card"><strong>🇩🇪 독일어</strong></span>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="validation-summary"></div>
 
                 <div class="button-row">

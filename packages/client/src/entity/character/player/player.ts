@@ -111,7 +111,7 @@ export default class Player extends Character {
         this.orientation = data.orientation!;
         this.attackRange = data.attackRange!;
 
-        if (data.displayInfo) this.nameColour = data.displayInfo.colour!;
+        if (data.displayInfo?.colour) this.nameColour = data.displayInfo.colour;
 
         this.setRank(data.rank);
         this.setOrientation(data.orientation);

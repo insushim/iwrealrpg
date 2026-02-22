@@ -232,7 +232,9 @@ export default class Connection {
                 opcode: Opcodes.Login.Register,
                 username,
                 password,
-                email
+                email,
+                playerClass: this.app.getPlayerClass(),
+                studyLanguage: this.app.getStudyLanguage()
             });
 
         // Send login packet if the user is logging in.
