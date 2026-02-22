@@ -490,6 +490,12 @@ export default class Player extends Character {
     public welcome(): void {
         if (this.isNew()) {
             this.giveStartingEquipment();
+
+            // Give starting inventory items (axe for woodcutting, pickaxe for mining)
+            this.inventory.add(new Item('bronzeaxe', -1, -1, false, 1));
+            this.inventory.add(new Item('bronzepickaxe', -1, -1, false, 1));
+            this.inventory.add(new Item('gold', -1, -1, false, 100));
+
             this.save();
 
             return this.notify(`misc:WELCOME;name=${config.name}`);
