@@ -1,6 +1,6 @@
 {
     "rat": {
-        "name": "Rat",
+        "name": "쥐",
         "description": "Ah yes, this rat is made out of rat.",
         "drops": [
             {
@@ -11,7 +11,7 @@
         "dropTables": [
             "ordinary"
         ],
-        "hitPoints": 20,
+        "hitPoints": 40,
         "level": 1,
         "aggroRange": 1,
         "attackRate": 1400,
@@ -38,20 +38,20 @@
             "magic": 0
         },
         "skills": {
-            "accuracy": 2,
-            "strength": 1,
-            "defense": 0,
+            "accuracy": 3,
+            "strength": 2,
+            "defense": 1,
             "archery": 0,
             "magic": 0
         }
     },
     "bat": {
-        "name": "Batterfly",
+        "name": "나비박쥐",
         "description": "A bat that is also a butterfly, what a strange creature.",
         "dropTables": [
             "ordinary"
         ],
-        "hitPoints": 65,
+        "hitPoints": 90,
         "level": 4,
         "aggroRange": 1,
         "aggressive": true,
@@ -77,15 +77,22 @@
             "strength": 1,
             "archery": 0,
             "magic": 0
+        },
+        "skills": {
+            "accuracy": 7,
+            "strength": 6,
+            "defense": 5,
+            "magic": 0,
+            "archery": 0
         }
     },
     "crab": {
-        "name": "Crab",
+        "name": "게",
         "description": "I wonder if I can eat this.",
         "dropTables": [
             "ordinary"
         ],
-        "hitPoints": 15,
+        "hitPoints": 40,
         "level": 1,
         "aggroRange": 1,
         "attackRate": 1200,
@@ -110,10 +117,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
+        },
+        "skills": {
+            "accuracy": 3,
+            "strength": 2,
+            "defense": 1,
+            "magic": 0,
+            "archery": 0
         }
     },
     "wizard": {
-        "name": "Wizard",
+        "name": "마법사",
         "description": "Why does every MMORPG have one of these things?",
         "drops": [
             {
@@ -196,7 +210,7 @@
         }
     },
     "goblin": {
-        "name": "Goblin",
+        "name": "고블린",
         "description": "Didn't I see this same style of goblin in RuneScape?",
         "drops": [
             {
@@ -248,7 +262,7 @@
         }
     },
     "skeleton": {
-        "name": "Spooky Skeleton",
+        "name": "해골 병사",
         "description": "I wonder if this skeleton is made out of bones.",
         "drops": [
             {
@@ -299,7 +313,7 @@
         }
     },
     "ogre": {
-        "name": "Ogre",
+        "name": "오우거",
         "description": "I really feel like the developers had to include generic fantasy creatures.",
         "drops": [
             {
@@ -351,7 +365,7 @@
         }
     },
     "skeleton2": {
-        "name": "Scary Skeleton",
+        "name": "공포의 해골",
         "description": "Ah yes, it's not spooky, this one is scary.",
         "drops": [
             {
@@ -402,7 +416,7 @@
         }
     },
     "snek": {
-        "name": "Snek",
+        "name": "뱀",
         "description": "Snek, where you going? Snek, stahp!",
         "dropTables": [
             "ordinary"
@@ -437,7 +451,7 @@
         }
     },
     "spectre": {
-        "name": "Spectre",
+        "name": "유령",
         "description": "Has a scythe and looks like it's floating.",
         "drops": [
             {
@@ -483,7 +497,7 @@
         }
     },
     "lavaslime": {
-        "name": "Lava Slime",
+        "name": "용암 슬라임",
         "description": "A cute little slime made out of molten rock.",
         "dropTables": [
             "ordinary",
@@ -518,7 +532,7 @@
         }
     },
     "eye": {
-        "name": "Eye",
+        "name": "마안",
         "description": [
             "Must have really poor depth perception when you think about it.",
             "Eye really can't seem to figure out how that thing works."
@@ -563,7 +577,7 @@
         "aggressive": true
     },
     "deathknight": {
-        "name": "Death Knight",
+        "name": "죽음의 기사",
         "description": "Seriously, who comes up with the names for these things?",
         "dropTables": [
             "ordinary",
@@ -599,7 +613,7 @@
         }
     },
     "adherer": {
-        "name": "Dark Mage",
+        "name": "암흑 마법사",
         "description": "I heard that these things drop roses that I can then use to hit things with.",
         "drops": [
             {
@@ -647,7 +661,7 @@
         }
     },
     "regionhenchman": {
-        "name": "Dark Region Henchman",
+        "name": "암흑 부하",
         "description": "I heard that these things drop roses that I can then use to hit things with.",
         "dropTables": [
             "ordinary",
@@ -685,7 +699,7 @@
         }
     },
     "angel": {
-        "name": "Angel",
+        "name": "천사",
         "description": "Holy moly, this is nothing like how they're described in the bible.",
         "hitPoints": 1200,
         "level": 98,
@@ -716,7 +730,7 @@
         }
     },
     "ant": {
-        "name": "Worker Ant",
+        "name": "일개미",
         "description": "A hardworking small itty bitty ant!",
         "dropTables": [
             "ordinary",
@@ -753,7 +767,7 @@
         }
     },
     "beetle": {
-        "name": "Beetle",
+        "name": "딱정벌레",
         "description": "Ever heard of a Dung Beetle, well I'm better!",
         "hitPoints": 600,
         "level": 45,
@@ -784,7 +798,7 @@
         }
     },
     "card": {
-        "name": "Poker Card",
+        "name": "카드 병사",
         "description": "What's it gonna do, gamble me to death?",
         "hitPoints": 1300,
         "level": 104,
@@ -816,7 +830,7 @@
         "alwaysAggressive": true
     },
     "card2": {
-        "name": "Another Card",
+        "name": "카드 전사",
         "description": "Okay but like, how does this even make sense as a mob?",
         "hitPoints": 1300,
         "level": 102,
@@ -848,7 +862,7 @@
         "alwaysAggressive": true
     },
     "cowwarrior": {
-        "name": "Cow Warrior",
+        "name": "소 전사",
         "description": "The cows are rising up!",
         "dropTables": [
             "ordinary",
@@ -887,7 +901,7 @@
         }
     },
     "rooster": {
-        "name": "Angry Rooster",
+        "name": "성난 수탉",
         "description": "It's a sleeping rooster that attacks you...",
         "drops": [
             {
@@ -932,7 +946,7 @@
         }
     },
     "pirateskeleton": {
-        "name": "Pirate Skeleton",
+        "name": "해적 해골",
         "drops": [
             {
                 "key": "scimitar",
@@ -973,7 +987,7 @@
         }
     },
     "greenpirateskeleton": {
-        "name": "Green Pirate Skeleton",
+        "name": "녹색 해적 해골",
         "description": "Isn't this just a skeleton but wearing a pirate hat?",
         "dropTables": [
             "ordinary",
@@ -1009,7 +1023,7 @@
         }
     },
     "redpirateskeleton": {
-        "name": "Red Pirate Skeleton",
+        "name": "붉은 해적 해골",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1044,7 +1058,7 @@
         }
     },
     "blackpirateskeleton": {
-        "name": "Blue Pirate Skeleton",
+        "name": "푸른 해적 해골",
         "description": "Isn't this just a skeleton but wearing a pirate hat?",
         "dropTables": [
             "ordinary",
@@ -1080,7 +1094,7 @@
         }
     },
     "piratecaptain": {
-        "name": "Pirate Captain",
+        "name": "해적 선장",
         "hitPoints": 4750,
         "level": 175,
         "aggroRange": 10,
@@ -1114,7 +1128,7 @@
         "alwaysAggressive": true
     },
     "blackwizard": {
-        "name": "Dark Wizard",
+        "name": "암흑 마법사",
         "description": "They don't look all that different from the other ones.",
         "dropTables": [
             "ordinary",
@@ -1152,7 +1166,7 @@
         }
     },
     "icewizard": {
-        "name": "Ice Wizard",
+        "name": "얼음 마법사",
         "description": "It's like similar to some other type of wizard I've encountered before.",
         "drops": [
             {
@@ -1197,7 +1211,7 @@
         }
     },
     "babyspider": {
-        "name": "Baby Spooder",
+        "name": "아기 거미",
         "description": "It's cute now but give it a while...",
         "dropTables": [
             "ordinary",
@@ -1232,7 +1246,7 @@
         "aggressive": true
     },
     "spider": {
-        "name": "Spooder",
+        "name": "거미",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1268,7 +1282,7 @@
         }
     },
     "poisonspider": {
-        "name": "Poison Spooder",
+        "name": "독거미",
         "description": "I swear this thing is gonna poison me as soon as I engage it.",
         "dropTables": [
             "ordinary",
@@ -1305,7 +1319,7 @@
         }
     },
     "firespider": {
-        "name": "Fire Spooder",
+        "name": "불거미",
         "description": "Damn, that is one hot spider.",
         "dropTables": [
             "ordinary",
@@ -1341,7 +1355,7 @@
         }
     },
     "blazespider": {
-        "name": "Blaze Spooder",
+        "name": "화염 거미",
         "description": "I wonder how high this spider is...",
         "dropTables": [
             "ordinary",
@@ -1377,7 +1391,7 @@
         "aggressive": true
     },
     "hellspider": {
-        "name": "Hell Spooder",
+        "name": "지옥 거미",
         "description": "Aren't all spiders technically from hell?",
         "dropTables": [
             "ordinary",
@@ -1414,7 +1428,7 @@
         }
     },
     "bluepreta": {
-        "name": "Blue Preta",
+        "name": "푸른 아귀",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1451,7 +1465,7 @@
         }
     },
     "cactus": {
-        "name": "Cactus",
+        "name": "선인장",
         "description": "So it's like, a cactus, that can move?",
         "dropTables": [
             "ordinary",
@@ -1492,7 +1506,7 @@
         }
     },
     "cat": {
-        "name": "Cat",
+        "name": "고양이",
         "hitPoints": 600,
         "level": 35,
         "aggroRange": 1,
@@ -1522,7 +1536,7 @@
         }
     },
     "clam": {
-        "name": "Clam",
+        "name": "조개",
         "description": "Now this would make a good stew!",
         "dropTables": [
             "ordinary",
@@ -1559,7 +1573,7 @@
         "aggressive": true
     },
     "cobra": {
-        "name": "Cobra",
+        "name": "코브라",
         "hitPoints": 1150,
         "level": 91,
         "aggroRange": 1,
@@ -1589,7 +1603,7 @@
         }
     },
     "crystalscorpion": {
-        "name": "Crystal Scorpion",
+        "name": "수정 전갈",
         "description": "It's a scorpion that is made out of crystal, that's really original.",
         "dropTables": [
             "ordinary",
@@ -1626,7 +1640,7 @@
         "alwaysAggressive": true
     },
     "cursedhahoemask": {
-        "name": "Cursed Hahoe Mask",
+        "name": "저주받은 하회탈",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1662,7 +1676,7 @@
         "alwaysAggressive": true
     },
     "curseddjangseung": {
-        "name": "Cursed Djangseung",
+        "name": "저주받은 장승",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1698,7 +1712,7 @@
         "alwaysAggressive": true
     },
     "darkogre": {
-        "name": "Dark Ogre",
+        "name": "암흑 오우거",
         "description": "It didn't get to see much sun...",
         "dropTables": [
             "ordinary",
@@ -1735,7 +1749,7 @@
         }
     },
     "darkscorpion": {
-        "name": "Dark Scorpion",
+        "name": "암흑 전갈",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1772,7 +1786,7 @@
         "alwaysAggressive": true
     },
     "darkskeleton": {
-        "name": "Dark Skeleton",
+        "name": "암흑 해골",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1808,7 +1822,7 @@
         }
     },
     "desertscorpion": {
-        "name": "Desert Scorpion",
+        "name": "사막 전갈",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1844,7 +1858,7 @@
         }
     },
     "devilkazya": {
-        "name": "Devil Blox",
+        "name": "악마 블록",
         "hitPoints": 2300,
         "level": 135,
         "aggroRange": 6,
@@ -1875,7 +1889,7 @@
         "alwaysAggressive": true
     },
     "earthworm": {
-        "name": "Earth Worm",
+        "name": "지렁이",
         "description": "You know, it would make sense that earth worms are underground.",
         "dropTables": [
             "ordinary",
@@ -1914,7 +1928,7 @@
         }
     },
     "flaredanceknight": {
-        "name": "Cursed Knight",
+        "name": "저주받은 기사",
         "dropTables": [
             "ordinary",
             "shards",
@@ -1949,7 +1963,7 @@
         "aggressive": true
     },
     "frog": {
-        "name": "Frog",
+        "name": "개구리",
         "drops": [
             {
                 "key": "froghelm",
@@ -1995,7 +2009,7 @@
         "aggressive": true
     },
     "ghostrider": {
-        "name": "Skeleton Knight",
+        "name": "해골 기사",
         "hitPoints": 700,
         "level": 19,
         "aggroRange": 1,
@@ -2025,7 +2039,7 @@
         }
     },
     "goldgolem": {
-        "name": "Golden Golem",
+        "name": "황금 골렘",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2060,7 +2074,7 @@
         }
     },
     "golem": {
-        "name": "Golem",
+        "name": "골렘",
         "drops": [
             {
                 "key": "golemsmace",
@@ -2101,7 +2115,7 @@
         }
     },
     "redfish": {
-        "name": "Red Fesh",
+        "name": "붉은 물고기",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2136,7 +2150,7 @@
         "aggressive": true
     },
     "yellowfish": {
-        "name": "Yellow Fesh",
+        "name": "노란 물고기",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2171,7 +2185,7 @@
         "aggressive": true
     },
     "greenfish": {
-        "name": "Green Fesh",
+        "name": "초록 물고기",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2206,7 +2220,7 @@
         "aggressive": true
     },
     "hermitcrab": {
-        "name": "Hermit Crab",
+        "name": "소라게",
         "dropTables": [
             "ordinary",
             "unusual"
@@ -2240,7 +2254,7 @@
         "aggressive": true
     },
     "hobgoblin": {
-        "name": "Hobgoblin",
+        "name": "홉고블린",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2278,7 +2292,7 @@
         }
     },
     "hongcheol": {
-        "name": "Hong Chul",
+        "name": "홍철",
         "hitPoints": 1550,
         "level": 100,
         "aggroRange": 6,
@@ -2309,7 +2323,7 @@
         "alwaysAggressive": true
     },
     "icegolem": {
-        "name": "Ice Golem",
+        "name": "얼음 골렘",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2348,7 +2362,7 @@
         }
     },
     "iceknight": {
-        "name": "Ice Knight",
+        "name": "얼음 기사",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2384,7 +2398,7 @@
         }
     },
     "icevulture": {
-        "name": "Ice Vulture",
+        "name": "얼음 독수리",
         "description": "It's like a frozen version of the vicious bird I've seen before.",
         "drops": [
             {
@@ -2427,7 +2441,7 @@
         }
     },
     "infectedguard": {
-        "name": "Infected Guard",
+        "name": "감염된 경비병",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2463,7 +2477,7 @@
         }
     },
     "ironogre": {
-        "name": "Iron Ogre",
+        "name": "강철 오우거",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2499,7 +2513,7 @@
         }
     },
     "livingarmor": {
-        "name": "Living armor",
+        "name": "살아있는 갑옷",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2535,7 +2549,7 @@
         }
     },
     "mantis": {
-        "name": "Praying Mantis",
+        "name": "사마귀",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2574,7 +2588,7 @@
         }
     },
     "mermaid": {
-        "name": "Mermaid",
+        "name": "인어",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2610,7 +2624,7 @@
         "aggressive": true
     },
     "mimic": {
-        "name": "Mimic",
+        "name": "미믹",
         "dropTables": [
             "ordinary",
             "shards",
@@ -2651,7 +2665,7 @@
         }
     },
     "miniiceknight1": {
-        "name": "Mini Ice Knight",
+        "name": "꼬마 얼음 기사",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
         "dropTables": [
             "ordinary",
@@ -2692,7 +2706,7 @@
         "alwaysAggressive": true
     },
     "miniiceknight2": {
-        "name": "Mini Ice Knight",
+        "name": "꼬마 얼음 기사",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
         "dropTables": [
             "ordinary",
@@ -2733,7 +2747,7 @@
         "alwaysAggressive": true
     },
     "miniiceknight3": {
-        "name": "Mini Ice Knight",
+        "name": "꼬마 얼음 기사",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
         "dropTables": [
             "ordinary",
@@ -2774,7 +2788,7 @@
         "alwaysAggressive": true
     },
     "miniiceknight4": {
-        "name": "Mini Ice Knight",
+        "name": "꼬마 얼음 기사",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
         "dropTables": [
             "ordinary",
@@ -2815,7 +2829,7 @@
         "alwaysAggressive": true
     },
     "miniiceknight5": {
-        "name": "Mini Ice Knight",
+        "name": "꼬마 얼음 기사",
         "description": "It's a little teeny tiny knight in a little teeny tiny suit of armor.",
         "dropTables": [
             "ordinary",
@@ -2856,7 +2870,7 @@
         "alwaysAggressive": true
     },
     "miniknight1": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -2897,7 +2911,7 @@
         "alwaysAggressive": true
     },
     "miniknight2": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -2938,7 +2952,7 @@
         "alwaysAggressive": true
     },
     "miniknight3": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -2979,7 +2993,7 @@
         "alwaysAggressive": true
     },
     "miniknight4": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -3020,7 +3034,7 @@
         "alwaysAggressive": true
     },
     "miniknight5": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -3061,7 +3075,7 @@
         "alwaysAggressive": true
     },
     "miniknight6": {
-        "name": "Mini Knight",
+        "name": "꼬마 기사",
         "description": "A little ferocious tiny knight that might actually hurt me.",
         "dropTables": [
             "ordinary",
@@ -3102,7 +3116,7 @@
         "alwaysAggressive": true
     },
     "miniemperor": {
-        "name": "Mini Emperor",
+        "name": "꼬마 황제",
         "description": "It looks like the leader of this band of mini knights.",
         "dropTables": [
             "ordinary",
@@ -3144,7 +3158,7 @@
         "alwaysAggressive": true
     },
     "oldogre": {
-        "name": "Old Ogre",
+        "name": "늙은 오우거",
         "description": "He's old, and balding, but still dangerous.",
         "dropTables": [
             "ordinary",
@@ -3184,7 +3198,7 @@
         }
     },
     "orc": {
-        "name": "Orc",
+        "name": "오크",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3223,7 +3237,7 @@
         }
     },
     "infectedvillager": {
-        "name": "Infected Villager",
+        "name": "감염된 마을주민",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3262,7 +3276,7 @@
         }
     },
     "penguin": {
-        "name": "Penguin",
+        "name": "펭귄",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3301,7 +3315,7 @@
         "aggressive": true
     },
     "pierrot": {
-        "name": "Clown",
+        "name": "광대",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3340,7 +3354,7 @@
         "aggressive": true
     },
     "pinkelf": {
-        "name": "Pink Elf",
+        "name": "분홍 엘프",
         "description": "A pink elf, it's pink, what else do you want to know.",
         "dropTables": [
             "ordinary",
@@ -3381,7 +3395,7 @@
         "alwaysAggressive": true
     },
     "preta": {
-        "name": "Preta",
+        "name": "아귀",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3420,7 +3434,7 @@
         }
     },
     "purplepreta": {
-        "name": "Purple Preta",
+        "name": "보라 아귀",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3459,7 +3473,7 @@
         }
     },
     "greencockroach": {
-        "name": "Green Cockroach",
+        "name": "초록 바퀴벌레",
         "description": "Ew, a cockroach.",
         "dropTables": [
             "ordinary",
@@ -3499,7 +3513,7 @@
         "aggressive": true
     },
     "redcockroach": {
-        "name": "Red Cockroach",
+        "name": "붉은 바퀴벌레",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3538,7 +3552,7 @@
         "aggressive": true
     },
     "redelf": {
-        "name": "Red Elf",
+        "name": "붉은 엘프",
         "description": "It's an elf, and it is red, kinda looks like the developer ran out of assets.",
         "dropTables": [
             "ordinary",
@@ -3579,7 +3593,7 @@
         "alwaysAggressive": true
     },
     "guardsword": {
-        "name": "Guard",
+        "name": "경비병",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3615,7 +3629,7 @@
         }
     },
     "guardmace": {
-        "name": "Guard",
+        "name": "경비병",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3651,7 +3665,7 @@
         }
     },
     "redguard": {
-        "name": "Bandit",
+        "name": "도적",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3687,7 +3701,7 @@
         }
     },
     "redmouse": {
-        "name": "Red Mouse",
+        "name": "붉은 쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3723,7 +3737,7 @@
         "aggressive": true
     },
     "rhaphidophoridae": {
-        "name": "Cricket",
+        "name": "귀뚜라미",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3759,7 +3773,7 @@
         "aggressive": true
     },
     "rudolf": {
-        "name": "Raindeer",
+        "name": "순록",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3796,7 +3810,7 @@
         "alwaysAggressive": true
     },
     "santaelf": {
-        "name": "Santa's Elf",
+        "name": "산타 요정",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3832,7 +3846,7 @@
         }
     },
     "scorpion": {
-        "name": "Scorpion",
+        "name": "전갈",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3868,7 +3882,7 @@
         }
     },
     "skyelf": {
-        "name": "Sky Elf",
+        "name": "하늘 엘프",
         "description": "An elf that lives in the sky... What is it doing here?",
         "dropTables": [
             "ordinary",
@@ -3906,7 +3920,7 @@
         "alwaysAggressive": true
     },
     "slime": {
-        "name": "Slime",
+        "name": "슬라임",
         "description": "Why does every game have a slime in it?",
         "dropTables": [
             "ordinary",
@@ -3948,7 +3962,7 @@
         }
     },
     "smalldevil": {
-        "name": "Corrupted Bat",
+        "name": "타락한 박쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -3984,7 +3998,7 @@
         }
     },
     "snowelf": {
-        "name": "Snow Elf",
+        "name": "눈 엘프",
         "description": "A magical tiny elf from the snow realm.",
         "dropTables": [
             "ordinary",
@@ -4021,7 +4035,7 @@
         }
     },
     "snowman": {
-        "name": "Snowman",
+        "name": "눈사람",
         "description": "A magical snowman from the snow realm.",
         "dropTables": [
             "ordinary",
@@ -4058,7 +4072,7 @@
         "aggressive": true
     },
     "snowman2": {
-        "name": "Snowman",
+        "name": "눈사람",
         "description": "I wonder if it'll be resilient to fire.",
         "dropTables": [
             "ordinary",
@@ -4095,7 +4109,7 @@
         "aggressive": true
     },
     "rabbitman": {
-        "name": "The Rabbit Man",
+        "name": "토끼 인간",
         "description": "A dude... dressed as a rabbit... why?",
         "dropTables": [
             "ordinary",
@@ -4132,7 +4146,7 @@
         }
     },
     "snowrabbit": {
-        "name": "Snow Rabbit",
+        "name": "눈토끼",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4168,7 +4182,7 @@
         }
     },
     "snowwolf": {
-        "name": "Snow Wolf",
+        "name": "눈늑대",
         "description": "I really expected the wolf to be made out of snow :(",
         "dropTables": [
             "ordinary",
@@ -4205,7 +4219,7 @@
         }
     },
     "icegoblin": {
-        "name": "Frost Goblin",
+        "name": "서리 고블린",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4241,7 +4255,7 @@
         "aggressive": true
     },
     "soldierant": {
-        "name": "Soldier Ant",
+        "name": "병정개미",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4277,7 +4291,7 @@
         }
     },
     "soybeanbug": {
-        "name": "Soy Bean Bug",
+        "name": "콩벌레",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4314,7 +4328,7 @@
         "alwaysAggressive": true
     },
     "suicideghost": {
-        "name": "Ghost",
+        "name": "유령",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4350,7 +4364,7 @@
         }
     },
     "vulture": {
-        "name": "Vulture",
+        "name": "독수리",
         "drops": [
             {
                 "key": "feather",
@@ -4392,7 +4406,7 @@
         }
     },
     "whitebear": {
-        "name": "Molar Bear",
+        "name": "이빨 곰",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4428,7 +4442,7 @@
         }
     },
     "whitemouse": {
-        "name": "Mouse",
+        "name": "쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4464,7 +4478,7 @@
         "aggressive": true
     },
     "whitetiger": {
-        "name": "Tiger",
+        "name": "호랑이",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4500,7 +4514,7 @@
         }
     },
     "wolf": {
-        "name": "Wolf",
+        "name": "늑대",
         "drops": [
             {
                 "key": "wolfhelmet",
@@ -4542,7 +4556,7 @@
         }
     },
     "darkwolf": {
-        "name": "Dark Wolf",
+        "name": "암흑 늑대",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4579,7 +4593,7 @@
         "alwaysAggressive": true
     },
     "yellowbat": {
-        "name": "Mutated Bat",
+        "name": "변이 박쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4615,7 +4629,7 @@
         "aggressive": true
     },
     "paladin": {
-        "name": "Paladin",
+        "name": "성기사",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4651,7 +4665,7 @@
         "aggressive": true
     },
     "yellowmouse": {
-        "name": "Yellow Mouse",
+        "name": "노란 쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4687,7 +4701,7 @@
         "aggressive": true
     },
     "yellowpreta": {
-        "name": "Yellow Preta",
+        "name": "노란 아귀",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4723,7 +4737,7 @@
         }
     },
     "zombie": {
-        "name": "Zombie",
+        "name": "좀비",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4759,7 +4773,7 @@
         }
     },
     "brownmouse": {
-        "name": "Brown Mouse",
+        "name": "갈색 쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4795,7 +4809,7 @@
         "aggressive": true
     },
     "picklemob": {
-        "name": "Sea Cucumber",
+        "name": "해삼",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4833,7 +4847,7 @@
         }
     },
     "icerat": {
-        "name": "Ice Rat",
+        "name": "얼음 쥐",
         "drops": [
             {
                 "key": "rathatpet",
@@ -4875,7 +4889,7 @@
         "aggressive": true
     },
     "icebat": {
-        "name": "Frozen Bat",
+        "name": "냉동 박쥐",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4911,7 +4925,7 @@
         }
     },
     "icecrab": {
-        "name": "Ice Crab",
+        "name": "얼음 게",
         "dropTables": [
             "ordinary",
             "shards",
@@ -4947,7 +4961,7 @@
         "aggressive": true
     },
     "skeletonking": {
-        "name": "Skeleton King",
+        "name": "해골왕",
         "description": "Here he is, the chad of r/neverbrokeabone.",
         "drops": [
             {
@@ -5009,7 +5023,7 @@
         "alwaysAggressive": true
     },
     "ogrelord": {
-        "name": "Ogre Lord",
+        "name": "오우거 군주",
         "description": "I better keep a distance before this thing turns me into a stew!",
         "drops": [
             {
@@ -5067,7 +5081,7 @@
         "alwaysAggressive": true
     },
     "hellhound": {
-        "name": "Hellhound",
+        "name": "지옥견",
         "description": "I better keep a distance before this thing turns me into a stew!",
         "drops": [
             {
@@ -5142,7 +5156,7 @@
         "alwaysAggressive": true
     },
     "windguardian": {
-        "name": "Wind Guardian",
+        "name": "바람의 수호자",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5191,7 +5205,7 @@
         "alwaysAggressive": true
     },
     "lightningguardian": {
-        "name": "Lightning Guardian",
+        "name": "번개의 수호자",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5237,7 +5251,7 @@
         }
     },
     "darkregion": {
-        "name": "Tenebris",
+        "name": "테네브리스",
         "drops": [
             {
                 "key": "bladeofdarkness",
@@ -5289,7 +5303,7 @@
         }
     },
     "darkregionillusion": {
-        "name": "Tenebris",
+        "name": "테네브리스",
         "hitPoints": 500,
         "level": 79,
         "aggroRange": 8,
@@ -5318,7 +5332,7 @@
         }
     },
     "miniseadragon": {
-        "name": "Mini Sea Dragon",
+        "name": "꼬마 해룡",
         "description": "Aww it's a little version of something that's gonna stomp me later!",
         "dropTables": [
             "ordinary",
@@ -5365,7 +5379,7 @@
         }
     },
     "forestdragon": {
-        "name": "Forest Dragon",
+        "name": "숲의 용",
         "description": "Keros' favourite pet!",
         "drops": [
             {
@@ -5422,7 +5436,7 @@
         }
     },
     "enel": {
-        "name": "Lucendi",
+        "name": "루센디",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5463,7 +5477,7 @@
         "alwaysAggressive": true
     },
     "seadragon": {
-        "name": "Sea Dragon",
+        "name": "해룡",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5503,7 +5517,7 @@
         "alwaysAggressive": true
     },
     "minidragon": {
-        "name": "Mini Dragon",
+        "name": "꼬마 용",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5544,7 +5558,7 @@
         }
     },
     "queenant": {
-        "name": "Queen Ant",
+        "name": "여왕개미",
         "drops": [
             {
                 "key": "helmofliberty",
@@ -5601,7 +5615,7 @@
         }
     },
     "skydinosaur": {
-        "name": "Fulgur",
+        "name": "풀구르",
         "dropTables": [
             "ordinary",
             "shards",
@@ -5649,7 +5663,7 @@
         "alwaysAggressive": true
     },
     "squid": {
-        "name": "Great Squid",
+        "name": "거대 오징어",
         "drops": [
             {
                 "key": "twilightgreataxe",
@@ -5704,7 +5718,7 @@
         "alwaysAggressive": true
     },
     "snowlady": {
-        "name": "Queen of Snow",
+        "name": "눈의 여왕",
         "drops": [
             {
                 "key": "swashbuckler",
@@ -5756,7 +5770,7 @@
         "alwaysAggressive": true
     },
     "frostqueen": {
-        "name": "Frost Queen",
+        "name": "서리 여왕",
         "drops": [
             {
                 "key": "timelessglaive",
@@ -5808,7 +5822,7 @@
         "alwaysAggressive": true
     },
     "eliminator": {
-        "name": "Eliminator",
+        "name": "처형자",
         "drops": [
             {
                 "key": "executionershammer",
@@ -5853,7 +5867,7 @@
         }
     },
     "santa": {
-        "name": "Santa",
+        "name": "산타",
         "dropTables": [
             "ordinary",
             "shards",

@@ -332,7 +332,7 @@ export default class Renderer {
      */
 
     private drawHoveringCell(): void {
-        if (this.mobile || this.game.input.keyMovement) return;
+        if (this.mobile || this.game.input.keyMovement || this.game.player.moving) return;
 
         let location = this.game.input.getCoords();
 
@@ -359,7 +359,12 @@ export default class Renderer {
      */
 
     private drawSelectedCell(): void {
-        if (!this.game.input.selectedCellVisible || this.game.input.keyMovement) return;
+        if (
+            !this.game.input.selectedCellVisible ||
+            this.game.input.keyMovement ||
+            this.game.player.moving
+        )
+            return;
 
         // let posX = this.game.input.selectedX,
         //     posY = this.game.input.selectedY,
@@ -1112,20 +1117,24 @@ export default class Renderer {
             drawLevels = this.drawLevels && !entity.isNPC() && !entity.isItem(),
             nameY = this.drawLevels ? y - 10 : y - 4,
             levelY = this.drawLevels ? y : y - 7,
-            levelText = `Level ${entity.level}`;
+            levelText = '';
 
-        // For other players, show relative strength indicator instead of exact level.
-        if (entity.isPlayer() && entity.instance !== this.game.player.instance) {
+        // Only show exact level to the player themselves.
+        if (entity.isPlayer() && entity.instance === this.game.player.instance)
+            levelText = `Lv.${entity.level}`;
+        // For other players and mobs, show relative strength indicator.
+        else if (entity.isPlayer() || entity.isMob()) {
             let myLevel = this.game.player.level,
-                diff = entity.level - myLevel;
+                targetLevel = entity.level || 0,
+                diff = targetLevel - myLevel;
 
-            if (entity.level === 0 || !entity.level) levelText = '???';
-            else if (diff >= 20) levelText = '⚠️ 매우 강함';
-            else if (diff >= 10) levelText = '🔴 강함';
-            else if (diff >= 3) levelText = '🟠 위험';
-            else if (diff > -3) levelText = '🟡 비슷함';
-            else if (diff > -10) levelText = '🟢 약함';
-            else levelText = '⚪ 매우 약함';
+            if (targetLevel === 0) levelText = '???';
+            else if (diff >= 20) levelText = '매우 강함';
+            else if (diff >= 10) levelText = '강함';
+            else if (diff >= 3) levelText = '위험';
+            else if (diff > -3) levelText = '비슷함';
+            else if (diff > -10) levelText = '약함';
+            else levelText = '매우 약함';
         }
 
         // NPCs will have their name displayed closer to their sprite.
@@ -1151,10 +1160,8 @@ export default class Renderer {
         // Draw the name if we're drawing names.
         if (drawNames) this.drawText(entity.name, x, nameY, true, true, colour);
 
-        // Draw the level if we're drawing levels.
-        // For other players, show strength indicator even when level is hidden (0/undefined).
-        if (drawLevels && (entity.level || entity.isPlayer()))
-            this.drawText(levelText, x, levelY, true, true, colour);
+        // Draw the level/strength indicator.
+        if (drawLevels && levelText) this.drawText(levelText, x, levelY, true, true, colour);
     }
 
     /**
@@ -1181,7 +1188,7 @@ export default class Renderer {
 
         if (this.drawLevels && entity.level)
             this.drawText(
-                `Level ${entity.level}`,
+                `Lv.${entity.level}`,
                 this.camera.borderOffsetWidth / 2 + 8 * this.camera.zoomFactor,
                 this.camera.borderOffsetHeight / 2 - 10 * this.camera.zoomFactor,
                 true,
