@@ -2851,13 +2851,13 @@ export default class Player extends Character {
      */
 
     public override getProjectileName(): string {
-        // Use `Character` default `projectileName` in tutorial.
-        if (!this.quests.isTutorialFinished()) return this.projectileName;
-
         // Use the projectile name of the arrows if the player is using ranged weapons.
         if (this.isArcher()) return this.equipment.getArrows().projectileName;
 
-        return this.equipment.getWeapon().projectileName;
+        // Use weapon's projectile (magic bolt for staves, etc.)
+        let weaponProjectile = this.equipment.getWeapon().projectileName;
+
+        return weaponProjectile || this.projectileName;
     }
 
     /**

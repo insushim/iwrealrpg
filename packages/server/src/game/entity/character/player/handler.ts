@@ -126,6 +126,7 @@ export default class Handler {
     public startUpdateInterval(): void {
         this.updateInterval = setInterval(() => {
             if (this.isTickInterval(4)) this.detectAggro();
+            if (this.isTickInterval(10)) this.passiveRegen();
             if (this.isTickInterval(32)) {
                 this.player.loiter();
                 this.player.cheatScore = 0;
@@ -133,6 +134,58 @@ export default class Handler {
 
             this.updateTicks++;
         }, this.updateTime);
+    }
+
+    /**
+     * Passive HP/MP regeneration when the player is standing still.
+     * Knight: fast HP / slow MP, Wizard: slow HP / fast MP, Fairy: balanced.
+     */
+
+    private passiveRegen(): void {
+        // Only regen when not moving and not in combat.
+        if (this.player.moving || this.player.combat.started || this.player.isDead()) return;
+
+        let maxHp = this.player.hitPoints.getMaxHitPoints(),
+            maxMana = this.player.mana.getMaxMana(),
+            hpRate: number,
+            mpRate: number;
+
+        switch (this.player.playerClass) {
+            case Modules.Classes.Knight: {
+                hpRate = 0.02; // 2% HP per tick
+                mpRate = 0.005; // 0.5% MP per tick
+                break;
+            }
+
+            case Modules.Classes.Wizard: {
+                hpRate = 0.005; // 0.5% HP per tick
+                mpRate = 0.02; // 2% MP per tick
+                break;
+            }
+
+            default: {
+                // Fairy and others
+                hpRate = 0.01; // 1% HP per tick
+                mpRate = 0.01; // 1% MP per tick
+                break;
+            }
+        }
+
+        let hpHeal = Math.max(1, Math.floor(maxHp * hpRate)),
+            mpHeal = Math.max(1, Math.floor(maxMana * mpRate)),
+            healed = false;
+
+        if (!this.player.hitPoints.isFull()) {
+            this.player.hitPoints.increment(hpHeal);
+            healed = true;
+        }
+
+        if (!this.player.mana.isFull()) {
+            this.player.mana.increment(mpHeal);
+            healed = true;
+        }
+
+        if (healed) this.player.sync();
     }
 
     /**
