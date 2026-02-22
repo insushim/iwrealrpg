@@ -649,7 +649,7 @@ export const Constants = {
     CRAFT_COOLDOWN: 1500, // 1.5 seconds between crafting items to prevent spam.
     ARCHER_ATTACK_RANGE: 8, // Default attack range for bows if no other range is specified.
     MAX_CONNECTIONS: 16, // Maximum number of connections per IP address.
-    EXPERIENCE_PER_HIT: 2, // Amount of experience received per 1 damage dealt.
+    EXPERIENCE_PER_HIT: 0.5, // Amount of experience received per 1 damage dealt.
     SNOW_POTION_DURATION: 60_000, // 60 seconds
     FIRE_POTION_DURATION: 60_000, // 60 seconds
     FREEZING_DURATION: 60_000, // 60 seconds
@@ -694,7 +694,7 @@ export enum ItemDefaults {
 
 // Defaults that apply specifically to mobs
 export enum MobDefaults {
-    AGGRO_RANGE = 2, // Default aggro range of 2 tiles
+    AGGRO_RANGE = 5, // Default aggro range of 5 tiles
     RESPAWN_DELAY = 60_000, // 60 seconds to respawn
     ROAM_DISTANCE = 20, // 20 tiles away from spawn point
     ROAM_FREQUENCY = 17_000, // Roam interval every 35 seconds
