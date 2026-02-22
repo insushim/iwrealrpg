@@ -542,8 +542,19 @@ export default class Mob extends Character {
 
     public sendToSpawn(): void {
         this.combat.stop();
+        this.clearTarget();
 
-        this.setPosition(this.spawnX, this.spawnY);
+        // Walk back to spawn instead of teleporting
+        this.world.push(Modules.PacketType.Regions, {
+            region: this.region,
+            packet: new MovementPacket(Opcodes.Movement.Move, {
+                instance: this.instance,
+                x: this.spawnX,
+                y: this.spawnY
+            })
+        });
+
+        this.setPosition(this.spawnX, this.spawnY, false);
     }
 
     /**
