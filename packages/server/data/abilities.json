@@ -161,5 +161,109 @@
                 "mana": 15
             }
         }
+    },
+
+    "haste": {
+        "type": "active",
+        "levels": {
+            "1": {
+                "cooldown": 60000,
+                "duration": 12000,
+                "mana": 20
+            },
+            "2": {
+                "cooldown": 60000,
+                "duration": 14000,
+                "mana": 20
+            },
+            "3": {
+                "cooldown": 60000,
+                "duration": 16000,
+                "mana": 20
+            },
+            "4": {
+                "cooldown": 60000,
+                "duration": 18000,
+                "mana": 20
+            }
+        }
+    },
+
+    "magicshield": {
+        "type": "active",
+        "levels": {
+            "1": {
+                "cooldown": 60000,
+                "duration": 15000,
+                "mana": 20
+            },
+            "2": {
+                "cooldown": 60000,
+                "duration": 17000,
+                "mana": 20
+            },
+            "3": {
+                "cooldown": 60000,
+                "duration": 19000,
+                "mana": 20
+            },
+            "4": {
+                "cooldown": 60000,
+                "duration": 22000,
+                "mana": 20
+            }
+        }
+    },
+
+    "warcry": {
+        "type": "active",
+        "levels": {
+            "1": {
+                "cooldown": 60000,
+                "duration": 12000,
+                "mana": 18
+            },
+            "2": {
+                "cooldown": 60000,
+                "duration": 14000,
+                "mana": 18
+            },
+            "3": {
+                "cooldown": 60000,
+                "duration": 16000,
+                "mana": 18
+            },
+            "4": {
+                "cooldown": 60000,
+                "duration": 18000,
+                "mana": 18
+            }
+        }
+    },
+
+    "swiftshot": {
+        "type": "active",
+        "levels": {
+            "1": {
+                "cooldown": 60000,
+                "duration": 12000,
+                "mana": 18
+            },
+            "2": {
+                "cooldown": 60000,
+                "duration": 14000,
+                "mana": 18
+            },
+            "3": {
+                "cooldown": 60000,
+                "duration": 16000,
+                "mana": 18
+            },
+            "4": {
+                "cooldown": 60000,
+                "duration": 18000,
+                "mana": 18
+            }
+        }
     }
 }

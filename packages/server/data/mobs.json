@@ -84,7 +84,13 @@
             "defense": 5,
             "magic": 0,
             "archery": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 5800
+            }
+        ]
     },
     "crab": {
         "name": "게",
@@ -124,7 +130,8 @@
             "defense": 1,
             "magic": 0,
             "archery": 0
-        }
+        },
+        "drops": []
     },
     "wizard": {
         "name": "마법사",
@@ -173,11 +180,21 @@
             {
                 "key": "wizardhatyellow",
                 "chance": 10000
+            },
+            {
+                "key": "gold",
+                "chance": 7200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
             }
         ],
         "dropTables": [
             "ordinary",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 130,
         "level": 11,
@@ -224,6 +241,10 @@
             {
                 "key": "tinchestplate",
                 "chance": 10000
+            },
+            {
+                "key": "gold",
+                "chance": 6400
             }
         ],
         "dropTables": [
@@ -232,7 +253,8 @@
             "unusual",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops"
         ],
         "hitPoints": 90,
         "level": 7,
@@ -279,11 +301,21 @@
                 "chance": 100000,
                 "quest": "codersglitch",
                 "status": "started"
+            },
+            {
+                "key": "gold",
+                "chance": 7800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
             }
         ],
         "dropTables": [
             "ordinary",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 140,
         "level": 14,
@@ -328,6 +360,14 @@
             {
                 "key": "ironscythe",
                 "chance": 10000
+            },
+            {
+                "key": "gold",
+                "chance": 8600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
             }
         ],
         "dropTables": [
@@ -335,7 +375,10 @@
             "unusual",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows"
         ],
         "hitPoints": 150,
         "level": 18,
@@ -380,13 +423,29 @@
             {
                 "key": "bronzescythe",
                 "chance": 10000
+            },
+            {
+                "key": "gold",
+                "chance": 11000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
             "arrows",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 375,
         "level": 30,
@@ -420,7 +479,10 @@
         "name": "뱀",
         "description": "Snek, where you going? Snek, stahp!",
         "dropTables": [
-            "ordinary"
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows"
         ],
         "hitPoints": 85,
         "level": 16,
@@ -449,7 +511,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 8200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "spectre": {
         "name": "유령",
@@ -462,12 +534,29 @@
             {
                 "key": "sycophant",
                 "chance": 100
+            },
+            {
+                "key": "gold",
+                "chance": 11400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 270,
         "level": 32,
@@ -502,7 +591,12 @@
         "description": "A cute little slime made out of molten rock.",
         "dropTables": [
             "ordinary",
-            "shards"
+            "shards",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 270,
         "level": 32,
@@ -530,7 +624,21 @@
             "strength": 5,
             "archery": 0,
             "magic": 6
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 11400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "eye": {
         "name": "마안",
@@ -542,12 +650,29 @@
             {
                 "key": "eyesword",
                 "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 11600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "unusual",
-            "shards"
+            "shards",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 160,
         "level": 33,
@@ -583,7 +708,14 @@
         "dropTables": [
             "ordinary",
             "unusual",
-            "shards"
+            "shards",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 185,
         "level": 40,
@@ -611,7 +743,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "adherer": {
         "name": "암흑 마법사",
@@ -624,12 +770,30 @@
             {
                 "key": "darkmagehoodgold",
                 "chance": 20
+            },
+            {
+                "key": "gold",
+                "chance": 12600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "unusual",
-            "shards"
+            "shards",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 200,
         "level": 38,
@@ -667,7 +831,13 @@
         "dropTables": [
             "ordinary",
             "unusual",
-            "shards"
+            "shards",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 200,
         "level": 38,
@@ -697,7 +867,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 16
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "angel": {
         "name": "천사",
@@ -728,7 +912,33 @@
             "strength": 21,
             "archery": 4,
             "magic": 10
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 24600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "ant": {
         "name": "일개미",
@@ -737,7 +947,15 @@
             "ordinary",
             "fruits",
             "mushrooms",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 300,
         "level": 46,
@@ -765,7 +983,21 @@
             "strength": 2,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "beetle": {
         "name": "딱정벌레",
@@ -796,7 +1028,32 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "card": {
         "name": "카드 병사",
@@ -828,7 +1085,33 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "card2": {
         "name": "카드 전사",
@@ -860,7 +1143,33 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "cowwarrior": {
         "name": "소 전사",
@@ -871,7 +1180,15 @@
             "unusual",
             "fruits",
             "mushrooms",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 800,
         "level": 54,
@@ -899,7 +1216,21 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 15800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "rooster": {
         "name": "성난 수탉",
@@ -908,6 +1239,18 @@
             {
                 "key": "pytharring",
                 "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 15800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -916,7 +1259,15 @@
             "unusual",
             "fruits",
             "mushrooms",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 320,
         "level": 54,
@@ -952,12 +1303,32 @@
             {
                 "key": "scimitar",
                 "chance": 2500
+            },
+            {
+                "key": "gold",
+                "chance": 15800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 460,
         "level": 54,
@@ -993,7 +1364,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 585,
         "level": 64,
@@ -1021,14 +1400,36 @@
             "strength": 6,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "redpirateskeleton": {
         "name": "붉은 해적 해골",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 640,
         "level": 69,
@@ -1056,7 +1457,21 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 18800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "blackpirateskeleton": {
         "name": "푸른 해적 해골",
@@ -1064,7 +1479,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 625,
         "level": 70,
@@ -1092,7 +1515,21 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 19000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "piratecaptain": {
         "name": "해적 선장",
@@ -1126,7 +1563,33 @@
             "archery": 0,
             "magic": 18
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "blackwizard": {
         "name": "암흑 마법사",
@@ -1134,7 +1597,12 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 170,
         "level": 32,
@@ -1164,7 +1632,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 16
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 11400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icewizard": {
         "name": "얼음 마법사",
@@ -1173,12 +1655,32 @@
             {
                 "key": "bluemoonstaff",
                 "chance": 5000
+            },
+            {
+                "key": "gold",
+                "chance": 23400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 470,
         "level": 92,
@@ -1216,7 +1718,13 @@
         "description": "It's cute now but give it a while...",
         "dropTables": [
             "ordinary",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords"
         ],
         "hitPoints": 400,
         "level": 34,
@@ -1244,14 +1752,35 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 11800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "spider": {
         "name": "거미",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 650,
         "level": 47,
@@ -1280,7 +1809,21 @@
             "strength": 3,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "poisonspider": {
         "name": "독거미",
@@ -1288,7 +1831,14 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 990,
         "level": 49,
@@ -1317,7 +1867,21 @@
             "strength": 5,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "firespider": {
         "name": "불거미",
@@ -1325,7 +1889,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 850,
         "level": 61,
@@ -1353,7 +1925,21 @@
             "strength": 5,
             "archery": 0,
             "magic": 11
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "blazespider": {
         "name": "화염 거미",
@@ -1361,7 +1947,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1350,
         "level": 77,
@@ -1389,7 +1983,21 @@
             "archery": 0,
             "magic": 14
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 20400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "hellspider": {
         "name": "지옥 거미",
@@ -1397,7 +2005,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 780,
         "level": 56,
@@ -1426,7 +2042,21 @@
             "strength": 7,
             "archery": 0,
             "magic": 15
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 16200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "bluepreta": {
         "name": "푸른 아귀",
@@ -1435,7 +2065,15 @@
             "shards",
             "unusual",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 600,
         "level": 85,
@@ -1463,7 +2101,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 10
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 22000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "cactus": {
         "name": "선인장",
@@ -1474,7 +2126,10 @@
             "unusual",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows"
         ],
         "hitPoints": 160,
         "level": 16,
@@ -1505,7 +2160,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 8200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "cat": {
         "name": "고양이",
@@ -1535,7 +2200,31 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "clam": {
         "name": "조개",
@@ -1544,7 +2233,15 @@
             "ordinary",
             "shards",
             "unusual",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 450,
         "level": 66,
@@ -1572,7 +2269,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 18200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "cobra": {
         "name": "코브라",
@@ -1602,7 +2313,33 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 23200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "crystalscorpion": {
         "name": "수정 전갈",
@@ -1610,7 +2347,15 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1450,
         "level": 105,
@@ -1639,14 +2384,36 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "cursedhahoemask": {
         "name": "저주받은 하회탈",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 2100,
         "level": 115,
@@ -1675,14 +2442,36 @@
             "archery": 0,
             "magic": 13
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "curseddjangseung": {
         "name": "저주받은 장승",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1900,
         "level": 110,
@@ -1711,7 +2500,21 @@
             "archery": 0,
             "magic": 12
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "darkogre": {
         "name": "암흑 오우거",
@@ -1720,7 +2523,15 @@
             "ordinary",
             "shards",
             "unusual",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 900,
         "level": 68,
@@ -1748,7 +2559,21 @@
             "strength": 14,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 18600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "darkscorpion": {
         "name": "암흑 전갈",
@@ -1756,7 +2581,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1150,
         "level": 101,
@@ -1785,7 +2617,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "darkskeleton": {
         "name": "암흑 해골",
@@ -1793,7 +2639,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 740,
         "level": 76,
@@ -1821,7 +2674,21 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 20200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "desertscorpion": {
         "name": "사막 전갈",
@@ -1829,7 +2696,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 124,
         "level": 24,
@@ -1857,7 +2727,17 @@
             "strength": 2,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 9800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "devilkazya": {
         "name": "악마 블록",
@@ -1888,7 +2768,33 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "earthworm": {
         "name": "지렁이",
@@ -1899,7 +2805,15 @@
             "unusual",
             "fruits",
             "vegetables",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 815,
         "level": 74,
@@ -1927,14 +2841,36 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 19800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "flaredanceknight": {
         "name": "저주받은 기사",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1000,
         "level": 65,
@@ -1962,7 +2898,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 18000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "frog": {
         "name": "개구리",
@@ -1970,6 +2920,18 @@
             {
                 "key": "froghelm",
                 "chance": 5000
+            },
+            {
+                "key": "gold",
+                "chance": 16200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "description": "Just look at it hop around and things and stuff.",
@@ -1979,7 +2941,15 @@
             "unusual",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 788,
         "level": 56,
@@ -2038,14 +3008,38 @@
             "strength": 11,
             "archery": 0,
             "magic": 8
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 8800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "goldgolem": {
         "name": "황금 골렘",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1200,
         "level": 75,
@@ -2073,7 +3067,21 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 20000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "golem": {
         "name": "골렘",
@@ -2081,12 +3089,30 @@
             {
                 "key": "golemsmace",
                 "chance": 250
+            },
+            {
+                "key": "gold",
+                "chance": 12600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 350,
         "level": 38,
@@ -2121,7 +3147,14 @@
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 100,
         "level": 46,
@@ -2149,14 +3182,35 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "yellowfish": {
         "name": "노란 물고기",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 135,
         "level": 44,
@@ -2184,14 +3238,35 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "greenfish": {
         "name": "초록 물고기",
         "dropTables": [
             "ordinary",
             "shards",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 200,
         "level": 45,
@@ -2219,13 +3294,30 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "hermitcrab": {
         "name": "소라게",
         "dropTables": [
             "ordinary",
-            "unusual"
+            "unusual",
+            "bronzedrops",
+            "irondrops",
+            "arrows"
         ],
         "hitPoints": 155,
         "level": 15,
@@ -2253,7 +3345,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 8000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "hobgoblin": {
         "name": "홉고블린",
@@ -2263,7 +3365,14 @@
             "unusual",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 260,
         "level": 42,
@@ -2291,7 +3400,21 @@
             "strength": 6,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "hongcheol": {
         "name": "홍철",
@@ -2322,7 +3445,33 @@
             "magic": 0
         },
         "aggressive": true,
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icegolem": {
         "name": "얼음 골렘",
@@ -2330,7 +3479,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 700,
         "level": 46,
@@ -2361,7 +3516,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 9
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "iceknight": {
         "name": "얼음 기사",
@@ -2369,7 +3538,12 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 550,
         "level": 37,
@@ -2397,7 +3571,21 @@
             "strength": 11,
             "archery": 0,
             "magic": 8
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icevulture": {
         "name": "얼음 독수리",
@@ -2406,13 +3594,32 @@
             {
                 "key": "feather",
                 "chance": 25000
+            },
+            {
+                "key": "gold",
+                "chance": 24200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 300,
         "level": 96,
@@ -2448,7 +3655,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 750,
         "level": 61,
@@ -2476,7 +3690,21 @@
             "strength": 12,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "ironogre": {
         "name": "강철 오우거",
@@ -2484,7 +3712,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 300,
         "level": 20,
@@ -2512,7 +3743,17 @@
             "strength": 11,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 9000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "livingarmor": {
         "name": "살아있는 갑옷",
@@ -2520,7 +3761,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 340,
         "level": 45,
@@ -2548,7 +3795,21 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "mantis": {
         "name": "사마귀",
@@ -2559,7 +3820,14 @@
             "vegetables",
             "fruits",
             "mushrooms",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1000,
         "level": 56,
@@ -2587,7 +3855,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 16200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "mermaid": {
         "name": "인어",
@@ -2595,7 +3877,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 150,
         "level": 40,
@@ -2623,7 +3911,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "mimic": {
         "name": "미믹",
@@ -2634,7 +3936,10 @@
             "mushrooms",
             "vegetables",
             "fruits",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 1200,
         "level": 25,
@@ -2665,7 +3970,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 10000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "miniiceknight1": {
         "name": "꼬마 얼음 기사",
@@ -2677,7 +3992,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1100,
         "level": 144,
@@ -2706,7 +4028,21 @@
             "archery": 0,
             "magic": 3
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniiceknight2": {
         "name": "꼬마 얼음 기사",
@@ -2718,7 +4054,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1100,
         "level": 144,
@@ -2747,7 +4090,21 @@
             "archery": 0,
             "magic": 3
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniiceknight3": {
         "name": "꼬마 얼음 기사",
@@ -2759,7 +4116,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1100,
         "level": 144,
@@ -2788,7 +4152,21 @@
             "archery": 0,
             "magic": 3
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniiceknight4": {
         "name": "꼬마 얼음 기사",
@@ -2800,7 +4178,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1100,
         "level": 144,
@@ -2829,7 +4214,21 @@
             "archery": 0,
             "magic": 3
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniiceknight5": {
         "name": "꼬마 얼음 기사",
@@ -2841,7 +4240,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1100,
         "level": 144,
@@ -2870,7 +4276,21 @@
             "archery": 0,
             "magic": 3
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight1": {
         "name": "꼬마 기사",
@@ -2882,7 +4302,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -2911,7 +4338,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight2": {
         "name": "꼬마 기사",
@@ -2923,7 +4364,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -2952,7 +4400,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight3": {
         "name": "꼬마 기사",
@@ -2964,7 +4426,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -2993,7 +4462,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight4": {
         "name": "꼬마 기사",
@@ -3005,7 +4488,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -3034,7 +4524,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight5": {
         "name": "꼬마 기사",
@@ -3046,7 +4550,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -3075,7 +4586,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniknight6": {
         "name": "꼬마 기사",
@@ -3087,7 +4612,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 950,
         "level": 116,
@@ -3116,7 +4648,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniemperor": {
         "name": "꼬마 황제",
@@ -3128,7 +4674,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 3950,
         "level": 316,
@@ -3158,7 +4711,21 @@
             "archery": 0,
             "magic": 18
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "oldogre": {
         "name": "늙은 오우거",
@@ -3170,7 +4737,10 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 256,
         "level": 23,
@@ -3198,7 +4768,17 @@
             "strength": 10,
             "archery": 0,
             "magic": -5
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 9600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "orc": {
         "name": "오크",
@@ -3209,7 +4789,13 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 275,
         "level": 47,
@@ -3237,7 +4823,21 @@
             "strength": 8,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "infectedvillager": {
         "name": "감염된 마을주민",
@@ -3248,7 +4848,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1550,
         "level": 73,
@@ -3276,7 +4883,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 19600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "penguin": {
         "name": "펭귄",
@@ -3287,7 +4908,13 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 526,
         "level": 41,
@@ -3315,7 +4942,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "pierrot": {
         "name": "광대",
@@ -3326,7 +4967,9 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 150,
         "level": 12,
@@ -3354,7 +4997,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 7400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "pinkelf": {
         "name": "분홍 엘프",
@@ -3366,7 +5019,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 925,
         "level": 123,
@@ -3395,7 +5055,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "preta": {
         "name": "아귀",
@@ -3406,7 +5080,12 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 495,
         "level": 36,
@@ -3434,7 +5113,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "purplepreta": {
         "name": "보라 아귀",
@@ -3445,7 +5138,11 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 431,
         "level": 31,
@@ -3473,7 +5170,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 11200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "greencockroach": {
         "name": "초록 바퀴벌레",
@@ -3485,7 +5196,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 785,
         "level": 55,
@@ -3513,7 +5231,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 16000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "redcockroach": {
         "name": "붉은 바퀴벌레",
@@ -3524,7 +5256,13 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 669,
         "level": 44,
@@ -3552,7 +5290,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "redelf": {
         "name": "붉은 엘프",
@@ -3564,7 +5316,14 @@
             "arrows",
             "mushrooms",
             "fruits",
-            "vegetables"
+            "vegetables",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 850,
         "level": 110,
@@ -3593,7 +5352,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "guardsword": {
         "name": "경비병",
@@ -3601,7 +5374,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 625,
         "level": 47,
@@ -3629,7 +5408,21 @@
             "strength": 3,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "guardmace": {
         "name": "경비병",
@@ -3637,7 +5430,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 625,
         "level": 45,
@@ -3665,7 +5464,21 @@
             "strength": 3,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "redguard": {
         "name": "도적",
@@ -3673,7 +5486,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 335,
         "level": 44,
@@ -3701,7 +5520,21 @@
             "strength": 12,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "redmouse": {
         "name": "붉은 쥐",
@@ -3709,7 +5542,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 160,
         "level": 24,
@@ -3737,7 +5573,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 9800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "rhaphidophoridae": {
         "name": "귀뚜라미",
@@ -3745,7 +5591,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 3500,
         "level": 93,
@@ -3773,7 +5626,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 23600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "rudolf": {
         "name": "순록",
@@ -3781,7 +5648,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 5550,
         "level": 129,
@@ -3810,7 +5684,21 @@
             "archery": 0,
             "magic": 10
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "santaelf": {
         "name": "산타 요정",
@@ -3818,7 +5706,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 610,
         "level": 136,
@@ -3847,7 +5742,21 @@
             "archery": 0,
             "magic": 30
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "scorpion": {
         "name": "전갈",
@@ -3855,7 +5764,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 2700,
         "level": 80,
@@ -3883,7 +5799,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 21000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "skyelf": {
         "name": "하늘 엘프",
@@ -3892,7 +5822,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1000,
         "level": 134,
@@ -3921,7 +5858,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "slime": {
         "name": "슬라임",
@@ -3932,7 +5883,13 @@
             "unusual",
             "arrows",
             "vegetables",
-            "fruits"
+            "fruits",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 694,
         "level": 48,
@@ -3963,7 +5920,21 @@
             "strength": 0,
             "archery": 10,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "smalldevil": {
         "name": "타락한 박쥐",
@@ -3971,7 +5942,9 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 100,
         "level": 13,
@@ -3999,7 +5972,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 7600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "snowelf": {
         "name": "눈 엘프",
@@ -4008,7 +5991,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 920,
         "level": 99,
@@ -4036,7 +6026,21 @@
             "strength": 4,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 24800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "snowman": {
         "name": "눈사람",
@@ -4045,7 +6049,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 750,
         "level": 43,
@@ -4073,7 +6083,21 @@
             "archery": 0,
             "magic": 8
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "snowman2": {
         "name": "눈사람",
@@ -4082,7 +6106,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 850,
         "level": 93,
@@ -4110,7 +6141,21 @@
             "archery": 0,
             "magic": 10
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 23600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "rabbitman": {
         "name": "토끼 인간",
@@ -4119,7 +6164,12 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 385,
         "level": 37,
@@ -4147,7 +6197,21 @@
             "strength": -5,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "snowrabbit": {
         "name": "눈토끼",
@@ -4155,7 +6219,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 340,
         "level": 29,
@@ -4183,7 +6250,17 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 10800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "snowwolf": {
         "name": "눈늑대",
@@ -4192,7 +6269,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1185,
         "level": 55,
@@ -4220,7 +6304,21 @@
             "strength": 5,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 16000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icegoblin": {
         "name": "서리 고블린",
@@ -4228,7 +6326,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 475,
         "level": 28,
@@ -4256,7 +6357,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 10600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "soldierant": {
         "name": "병정개미",
@@ -4264,7 +6375,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 526,
         "level": 60,
@@ -4292,7 +6410,21 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "soybeanbug": {
         "name": "콩벌레",
@@ -4300,7 +6432,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 3500,
         "level": 103,
@@ -4329,7 +6468,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "suicideghost": {
         "name": "유령",
@@ -4337,7 +6490,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 750,
         "level": 62,
@@ -4365,7 +6525,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 4
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "vulture": {
         "name": "독수리",
@@ -4373,13 +6547,23 @@
             {
                 "key": "feather",
                 "chance": 25000
+            },
+            {
+                "key": "gold",
+                "chance": 8200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 100,
         "level": 16,
@@ -4415,7 +6599,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 1300,
         "level": 42,
@@ -4443,7 +6633,21 @@
             "strength": 7,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 13400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "whitemouse": {
         "name": "쥐",
@@ -4451,7 +6655,13 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 750,
         "level": 45,
@@ -4479,7 +6689,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "whitetiger": {
         "name": "호랑이",
@@ -4487,7 +6711,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 3350,
         "level": 98,
@@ -4515,7 +6746,21 @@
             "strength": 10,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 24600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "wolf": {
         "name": "늑대",
@@ -4523,13 +6768,31 @@
             {
                 "key": "wolfhelmet",
                 "chance": 5000
+            },
+            {
+                "key": "gold",
+                "chance": 14000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 350,
         "level": 45,
@@ -4565,7 +6828,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 850,
         "level": 118,
@@ -4594,7 +6864,21 @@
             "archery": 0,
             "magic": 0
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "yellowbat": {
         "name": "변이 박쥐",
@@ -4602,7 +6886,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 650,
         "level": 60,
@@ -4630,7 +6921,21 @@
             "archery": 4,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "paladin": {
         "name": "성기사",
@@ -4638,7 +6943,9 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops"
         ],
         "hitPoints": 350,
         "level": 16,
@@ -4666,7 +6973,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 8200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "yellowmouse": {
         "name": "노란 쥐",
@@ -4674,7 +6991,12 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 750,
         "level": 39,
@@ -4702,7 +7024,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "yellowpreta": {
         "name": "노란 아귀",
@@ -4710,7 +7046,12 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
         ],
         "hitPoints": 526,
         "level": 39,
@@ -4738,7 +7079,21 @@
             "strength": 0,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 12800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "zombie": {
         "name": "좀비",
@@ -4746,7 +7101,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1250,
         "level": 69,
@@ -4774,7 +7136,21 @@
             "strength": 18,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 18800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "brownmouse": {
         "name": "갈색 쥐",
@@ -4782,7 +7158,10 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops"
         ],
         "hitPoints": 140,
         "level": 22,
@@ -4810,7 +7189,17 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 9400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            }
+        ]
     },
     "picklemob": {
         "name": "해삼",
@@ -4818,7 +7207,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1250,
         "level": 88,
@@ -4849,7 +7245,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 22600
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icerat": {
         "name": "얼음 쥐",
@@ -4857,13 +7267,32 @@
             {
                 "key": "rathatpet",
                 "chance": 3
+            },
+            {
+                "key": "gold",
+                "chance": 21000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 710,
         "level": 80,
@@ -4899,7 +7328,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 825,
         "level": 86,
@@ -4927,7 +7363,21 @@
             "strength": 18,
             "archery": 0,
             "magic": 0
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 22200
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "icecrab": {
         "name": "얼음 게",
@@ -4935,7 +7385,14 @@
             "ordinary",
             "shards",
             "unusual",
-            "arrows"
+            "arrows",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 860,
         "level": 89,
@@ -4963,7 +7420,21 @@
             "archery": 0,
             "magic": 0
         },
-        "aggressive": true
+        "aggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 22800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "skeletonking": {
         "name": "해골왕",
@@ -4976,6 +7447,18 @@
             {
                 "key": "royalrapier",
                 "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 11400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -4985,7 +7468,11 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords"
         ],
         "hitPoints": 1850,
         "level": 32,
@@ -5034,6 +7521,18 @@
             {
                 "key": "firesword",
                 "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 13800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5043,7 +7542,13 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "accessories"
         ],
         "hitPoints": 2850,
         "level": 44,
@@ -5108,6 +7613,18 @@
             {
                 "key": "hellkeeperboots",
                 "chance": 400
+            },
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5117,7 +7634,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 4550,
         "level": 344,
@@ -5169,7 +7693,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 15000,
         "projectileName": "iceball",
@@ -5207,7 +7738,21 @@
             "archery": 80,
             "magic": 70
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "lightningguardian": {
         "name": "번개의 수호자",
@@ -5218,7 +7763,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 4500,
         "level": 64,
@@ -5253,7 +7805,21 @@
             "defense": 30,
             "archery": 80,
             "magic": 70
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 17800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "darkregion": {
         "name": "테네브리스",
@@ -5261,6 +7827,18 @@
             {
                 "key": "bladeofdarkness",
                 "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 20800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5270,7 +7848,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 4000,
         "level": 79,
@@ -5334,7 +7919,33 @@
             "strength": 0,
             "archery": 0,
             "magic": 5
-        }
+        },
+        "dropTables": [
+            "ordinary",
+            "bronzedrops",
+            "irondrops",
+            "arrows",
+            "golddrops",
+            "shards",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
+        ],
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 20800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "miniseadragon": {
         "name": "꼬마 해룡",
@@ -5346,7 +7957,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 1200,
         "level": 52,
@@ -5381,7 +7999,21 @@
             "defense": 30,
             "archery": 40,
             "magic": 30
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 15400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "forestdragon": {
         "name": "숲의 용",
@@ -5390,6 +8022,18 @@
             {
                 "key": "dragonscale",
                 "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5399,7 +8043,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 6942,
         "level": 258,
@@ -5450,7 +8101,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 25000,
         "level": 256,
@@ -5480,7 +8138,21 @@
             "archery": 30,
             "magic": 80
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "seadragon": {
         "name": "해룡",
@@ -5491,7 +8163,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 100,
         "level": 485,
@@ -5520,7 +8199,21 @@
             "archery": 0,
             "magic": 60
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "minidragon": {
         "name": "꼬마 용",
@@ -5531,7 +8224,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 380,
         "level": 77,
@@ -5561,7 +8261,21 @@
             "strength": 6,
             "archery": 0,
             "magic": 12
-        }
+        },
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 20400
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "queenant": {
         "name": "여왕개미",
@@ -5569,6 +8283,18 @@
             {
                 "key": "helmofliberty",
                 "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 23800
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5578,7 +8304,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 4200,
         "level": 94,
@@ -5630,7 +8363,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 50000,
         "level": 435,
@@ -5667,7 +8407,21 @@
             "archery": 155,
             "magic": 90
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     },
     "squid": {
         "name": "거대 오징어",
@@ -5675,6 +8429,18 @@
             {
                 "key": "twilightgreataxe",
                 "chance": 2500
+            },
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5684,7 +8450,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 3800,
         "level": 171,
@@ -5734,6 +8507,18 @@
             {
                 "key": "bident",
                 "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5743,7 +8528,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 2800,
         "level": 180,
@@ -5786,6 +8578,18 @@
             {
                 "key": "moongreataxe",
                 "chance": 40
+            },
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5795,7 +8599,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 2800,
         "level": 180,
@@ -5834,6 +8645,18 @@
             {
                 "key": "executionershammer",
                 "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 18000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
             }
         ],
         "dropTables": [
@@ -5843,7 +8666,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 2000,
         "level": 65,
@@ -5882,7 +8712,14 @@
             "arrows",
             "vegetables",
             "fruits",
-            "mushrooms"
+            "mushrooms",
+            "bronzedrops",
+            "irondrops",
+            "golddrops",
+            "rareswords",
+            "cobaltdrops",
+            "richdrops",
+            "accessories"
         ],
         "hitPoints": 7500,
         "level": 240,
@@ -5922,6 +8759,20 @@
             "archery": 76,
             "magic": 83
         },
-        "alwaysAggressive": true
+        "alwaysAggressive": true,
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 25000
+            },
+            {
+                "key": "bigflask",
+                "chance": 5000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 4000
+            }
+        ]
     }
 }

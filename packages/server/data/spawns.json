@@ -8,7 +8,6 @@
         "projectileName": "fireball2",
         "achievement": "ancientwizard"
     },
-
     "320-455": {
         "name": "Hermit Crab Warrior",
         "drops": [
@@ -29,7 +28,11 @@
                 "chance": 1000
             }
         ],
-        "dropTables": ["ordinary", "unusual", "warriorcrab"],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "warriorcrab"
+        ],
         "roaming": true,
         "miniboss": true,
         "hitPoints": 300,
@@ -38,7 +41,6 @@
         "aggressive": true,
         "achievement": "warriorcrab"
     },
-
     "293-729": {
         "name": "Water Guardian",
         "drops": [
@@ -52,7 +54,6 @@
         "hitPoints": 350,
         "achievement": "waterguardian"
     },
-
     "387-740": {
         "name": "Ogre Guardian",
         "miniboss": true,
@@ -63,7 +64,6 @@
         "respawnDelay": 180000,
         "achievement": "ogreguardian"
     },
-
     "271-731": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -94,7 +94,6 @@
             }
         ]
     },
-
     "507-828": {
         "name": "Mimic",
         "achievement": "treadcarefully",
@@ -125,7 +124,6 @@
             }
         ]
     },
-
     "324-252": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -159,7 +157,6 @@
             }
         ]
     },
-
     "556-821": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -185,7 +182,6 @@
             }
         ]
     },
-
     "951-707": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -207,7 +203,6 @@
             }
         ]
     },
-
     "773-767": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -229,7 +224,6 @@
             }
         ]
     },
-
     "802-651": {
         "name": "Mimic",
         "achievement": "notwhatitseems",
@@ -251,44 +245,37 @@
             }
         ]
     },
-
     "264-127": {
         "name": "Old Ogre",
         "miniboss": true
     },
-
     "355-247": {
         "name": "Ice Guardian",
         "miniboss": true,
         "defenseLevel": 15,
         "level": 35
     },
-
     "356-252": {
         "name": "Ice Guardian",
         "miniboss": true,
         "defenseLevel": 15,
         "level": 35
     },
-
     "398-135": {
         "name": "Vulture",
         "achievement": "vulture"
     },
-
     "334-144": {
         "name": "Iron Ogre",
         "miniboss": true,
         "level": 25,
         "achievement": "pathofdeath"
     },
-
     "149-402": {
         "name": "Baby Sea Dragon",
         "miniboss": true,
         "achievement": "babyseadragon"
     },
-
     "808-813": {
         "name": "Ice Knight",
         "miniboss": true,
@@ -304,20 +291,17 @@
             }
         ]
     },
-
     "880-772": {
         "name": "Golden Golem",
         "miniboss": true,
         "achievement": "goldengolem"
     },
-
     "865-753": {
         "name": "Big Baby Spooder",
         "miniboss": true,
         "achievement": "webdeveloper",
         "level": 45
     },
-
     "676-851": {
         "name": "Mermaid",
         "miniboss": true,
@@ -325,12 +309,1427 @@
         "defenseLevel": 28,
         "level": 55
     },
-
     "1112-778": {
         "name": "Dark Wolf",
         "miniboss": true,
         "achievement": "roadtohell",
         "hitPoints": 1050,
         "attackRate": 800
+    },
+    "1138-805": {
+        "name": "해골 대장",
+        "miniboss": true,
+        "level": 50,
+        "hitPoints": 800,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldhelmet",
+                "chance": 3000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "761-769": {
+        "name": "저주받은 갑옷",
+        "miniboss": true,
+        "level": 65,
+        "hitPoints": 1200,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltshield",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "760-773": {
+        "name": "저주받은 갑옷",
+        "miniboss": true,
+        "level": 65,
+        "hitPoints": 1200,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltshield",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "799-775": {
+        "name": "저주받은 갑옷",
+        "miniboss": true,
+        "level": 65,
+        "hitPoints": 1200,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltshield",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "1120-784": {
+        "name": "검은 늑대 대장",
+        "miniboss": true,
+        "level": 60,
+        "hitPoints": 1000,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltscythe",
+                "chance": 2500
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "accessories"
+        ]
+    },
+    "751-765": {
+        "name": "암흑 오우거 족장",
+        "miniboss": true,
+        "level": 70,
+        "hitPoints": 1500,
+        "aggressive": true,
+        "aggroRange": 8,
+        "drops": [
+            {
+                "key": "cobaltbattleaxe",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "739-769": {
+        "name": "암흑 오우거 족장",
+        "miniboss": true,
+        "level": 70,
+        "hitPoints": 1500,
+        "aggressive": true,
+        "aggroRange": 8,
+        "drops": [
+            {
+                "key": "cobaltbattleaxe",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "556-656": {
+        "name": "여왕개미 호위병",
+        "miniboss": true,
+        "level": 52,
+        "hitPoints": 750,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 2500
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "588-651": {
+        "name": "개미 장군",
+        "miniboss": true,
+        "level": 58,
+        "hitPoints": 950,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldbattleaxe",
+                "chance": 3000
+            },
+            {
+                "key": "goldlegplates",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "cobaltdrops",
+            "accessories"
+        ]
+    },
+    "875-584": {
+        "name": "수정 전갈 여왕",
+        "miniboss": true,
+        "level": 55,
+        "hitPoints": 900,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "pytharsword",
+                "chance": 3000
+            },
+            {
+                "key": "nisocring",
+                "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "871-582": {
+        "name": "빙결 대마법사",
+        "miniboss": true,
+        "level": 60,
+        "hitPoints": 1000,
+        "aggressive": true,
+        "aggroRange": 8,
+        "attackRange": 5,
+        "projectileName": "iceball",
+        "drops": [
+            {
+                "key": "ibosword",
+                "chance": 2000
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords"
+        ]
+    },
+    "252-647": {
+        "name": "고대 소라게",
+        "miniboss": true,
+        "level": 45,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 5,
+        "drops": [
+            {
+                "key": "goldshield",
+                "chance": 4000
+            },
+            {
+                "key": "goldboots",
+                "chance": 4000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "86-365": {
+        "name": "해적 선장",
+        "miniboss": true,
+        "level": 48,
+        "hitPoints": 800,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 4000
+            },
+            {
+                "key": "goldring",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "golddrops",
+            "accessories"
+        ]
+    },
+    "548-400": {
+        "name": "화염 드래곤",
+        "miniboss": true,
+        "level": 65,
+        "hitPoints": 1300,
+        "aggressive": true,
+        "aggroRange": 8,
+        "attackRange": 4,
+        "projectileName": "fireball2",
+        "drops": [
+            {
+                "key": "cobaltbattleaxe",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "pytharring",
+                "chance": 800
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "330-402": {
+        "name": "황금 박쥐왕",
+        "miniboss": true,
+        "level": 42,
+        "hitPoints": 650,
+        "aggressive": true,
+        "aggroRange": 7,
+        "attackRate": 800,
+        "drops": [
+            {
+                "key": "goldhelmet",
+                "chance": 4000
+            },
+            {
+                "key": "goldring2",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "accessories"
+        ]
+    },
+    "88-438": {
+        "name": "좀비 군주",
+        "miniboss": true,
+        "level": 50,
+        "hitPoints": 850,
+        "aggressive": true,
+        "aggroRange": 6,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "goldscythe",
+                "chance": 3000
+            },
+            {
+                "key": "goldlegplates",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "328-419": {
+        "name": "거대 바퀴벌레",
+        "miniboss": true,
+        "level": 40,
+        "hitPoints": 600,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "ironring",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "irondrops"
+        ]
+    },
+    "382-407": {
+        "name": "사마귀 여왕",
+        "miniboss": true,
+        "level": 48,
+        "hitPoints": 750,
+        "aggressive": true,
+        "aggroRange": 7,
+        "attackRate": 700,
+        "drops": [
+            {
+                "key": "goldscythe",
+                "chance": 4000
+            },
+            {
+                "key": "cinnabarsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "rareswords"
+        ]
+    },
+    "321-254": {
+        "name": "늑대 우두머리",
+        "miniboss": true,
+        "level": 35,
+        "hitPoints": 550,
+        "aggressive": true,
+        "aggroRange": 7,
+        "attackRate": 800,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 2000
+            },
+            {
+                "key": "goldboots",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "292-251": {
+        "name": "오크 족장",
+        "miniboss": true,
+        "level": 38,
+        "hitPoints": 600,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldbattleaxe",
+                "chance": 2500
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "unusual",
+            "irondrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "476-251": {
+        "name": "백은 늑대",
+        "miniboss": true,
+        "level": 40,
+        "hitPoints": 650,
+        "aggressive": true,
+        "aggroRange": 7,
+        "attackRate": 750,
+        "drops": [
+            {
+                "key": "goldspear",
+                "chance": 3000
+            },
+            {
+                "key": "goldhelmet",
+                "chance": 3000
+            },
+            {
+                "key": "nisocsword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "726-215": {
+        "name": "빙결 골렘 수호자",
+        "miniboss": true,
+        "level": 50,
+        "hitPoints": 900,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltshield",
+                "chance": 2000
+            },
+            {
+                "key": "pytharsword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "cobaltdrops",
+            "rareswords"
+        ]
+    },
+    "318-336": {
+        "name": "미노타우로스",
+        "miniboss": true,
+        "level": 42,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldbattleaxe",
+                "chance": 3000
+            },
+            {
+                "key": "goldlegplates",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "269-257": {
+        "name": "호브고블린 족장",
+        "miniboss": true,
+        "level": 32,
+        "hitPoints": 500,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "ironbattleaxe",
+                "chance": 5000
+            },
+            {
+                "key": "ironchestplate",
+                "chance": 4000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "70-324": {
+        "name": "인어 여왕",
+        "miniboss": true,
+        "level": 58,
+        "hitPoints": 1000,
+        "aggressive": true,
+        "aggroRange": 7,
+        "defenseLevel": 20,
+        "drops": [
+            {
+                "key": "cobaltspear",
+                "chance": 2500
+            },
+            {
+                "key": "pytharring",
+                "chance": 1000
+            },
+            {
+                "key": "greenpendant",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "440-159": {
+        "name": "용암 슬라임 왕",
+        "miniboss": true,
+        "level": 45,
+        "hitPoints": 750,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldscythe",
+                "chance": 3000
+            },
+            {
+                "key": "goldshield",
+                "chance": 3000
+            },
+            {
+                "key": "cinnabarsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "rareswords",
+            "shards"
+        ]
+    },
+    "289-107": {
+        "name": "사막 전갈 왕",
+        "miniboss": true,
+        "level": 40,
+        "hitPoints": 650,
+        "aggressive": true,
+        "aggroRange": 7,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldboots",
+                "chance": 3000
+            },
+            {
+                "key": "nisocsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "324-116": {
+        "name": "마안 군주",
+        "miniboss": true,
+        "level": 50,
+        "hitPoints": 850,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 2000
+            },
+            {
+                "key": "pytharsword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "398-108": {
+        "name": "유령 군주",
+        "miniboss": true,
+        "level": 48,
+        "hitPoints": 800,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldscythe",
+                "chance": 4000
+            },
+            {
+                "key": "goldhelmet",
+                "chance": 3000
+            },
+            {
+                "key": "cinnabarsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "rareswords",
+            "shards"
+        ]
+    },
+    "406-104": {
+        "name": "죽음의 기사단장",
+        "miniboss": true,
+        "level": 55,
+        "hitPoints": 1000,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltspear",
+                "chance": 2500
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "ibosword",
+                "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "378-129": {
+        "name": "철갑 오우거 대장",
+        "miniboss": true,
+        "level": 40,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "ironsword",
+                "chance": 5000
+            },
+            {
+                "key": "ironchestplate",
+                "chance": 4000
+            },
+            {
+                "key": "goldsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "402-118": {
+        "name": "고대 골렘",
+        "miniboss": true,
+        "level": 42,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldshield",
+                "chance": 4000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "shards",
+            "accessories"
+        ]
+    },
+    "219-691": {
+        "name": "해골 대장",
+        "miniboss": true,
+        "level": 30,
+        "hitPoints": 450,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "ironbattleaxe",
+                "chance": 4000
+            },
+            {
+                "key": "ironshield",
+                "chance": 4000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "bronzedrops",
+            "shards"
+        ]
+    },
+    "354-340": {
+        "name": "슬라임 킹",
+        "miniboss": true,
+        "level": 35,
+        "hitPoints": 550,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 2000
+            },
+            {
+                "key": "ironchestplate",
+                "chance": 4000
+            },
+            {
+                "key": "ironring",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "golddrops",
+            "accessories"
+        ]
+    },
+    "1107-689": {
+        "name": "악마 군주",
+        "miniboss": true,
+        "level": 55,
+        "hitPoints": 950,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltscythe",
+                "chance": 2000
+            },
+            {
+                "key": "cobaltlegplates",
+                "chance": 2000
+            },
+            {
+                "key": "ibosword",
+                "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "404-302": {
+        "name": "감염된 수호자",
+        "miniboss": true,
+        "level": 50,
+        "hitPoints": 800,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldshield",
+                "chance": 3000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "cobaltdrops",
+            "shards"
+        ]
+    },
+    "1088-797": {
+        "name": "암흑 전갈 여왕",
+        "miniboss": true,
+        "level": 60,
+        "hitPoints": 1100,
+        "aggressive": true,
+        "aggroRange": 7,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "cobaltspear",
+                "chance": 2500
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 2000
+            },
+            {
+                "key": "pytharsword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "1096-779": {
+        "name": "고대 드래곤",
+        "miniboss": true,
+        "level": 75,
+        "hitPoints": 1800,
+        "aggressive": true,
+        "aggroRange": 8,
+        "attackRange": 4,
+        "projectileName": "fireball2",
+        "drops": [
+            {
+                "key": "cobaltbattleaxe",
+                "chance": 2500
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 2000
+            },
+            {
+                "key": "ibosword",
+                "chance": 1500
+            },
+            {
+                "key": "pytharring",
+                "chance": 1000
+            },
+            {
+                "key": "gold",
+                "chance": 18000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "386-158": {
+        "name": "암흑 대마법사",
+        "miniboss": true,
+        "level": 55,
+        "hitPoints": 900,
+        "aggressive": true,
+        "aggroRange": 8,
+        "attackRange": 5,
+        "projectileName": "fireball2",
+        "drops": [
+            {
+                "key": "cobalthelmet",
+                "chance": 2500
+            },
+            {
+                "key": "pytharsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 12000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords"
+        ]
+    },
+    "447-729": {
+        "name": "맹독 거미 여왕",
+        "miniboss": true,
+        "level": 45,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 6,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "goldscythe",
+                "chance": 3000
+            },
+            {
+                "key": "goldboots",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "rareswords",
+            "shards"
+        ]
+    },
+    "432-725": {
+        "name": "지옥 거미 대왕",
+        "miniboss": true,
+        "level": 65,
+        "hitPoints": 1200,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "cobaltscythe",
+                "chance": 2500
+            },
+            {
+                "key": "cobaltlegplates",
+                "chance": 2000
+            },
+            {
+                "key": "ibosword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 15000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "cobaltdrops",
+            "rareswords",
+            "accessories"
+        ]
+    },
+    "738-595": {
+        "name": "엘프 경비대장",
+        "miniboss": true,
+        "level": 52,
+        "hitPoints": 850,
+        "aggressive": true,
+        "aggroRange": 7,
+        "drops": [
+            {
+                "key": "goldspear",
+                "chance": 4000
+            },
+            {
+                "key": "goldhelmet",
+                "chance": 3000
+            },
+            {
+                "key": "cinnabarsword",
+                "chance": 2000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "richdrops",
+            "golddrops",
+            "cobaltdrops",
+            "accessories"
+        ]
+    },
+    "638-282": {
+        "name": "빙결 박쥐왕",
+        "miniboss": true,
+        "level": 35,
+        "hitPoints": 500,
+        "aggressive": true,
+        "aggroRange": 7,
+        "attackRate": 750,
+        "drops": [
+            {
+                "key": "ironbattleaxe",
+                "chance": 4000
+            },
+            {
+                "key": "ironhelmet",
+                "chance": 4000
+            },
+            {
+                "key": "nisocsword",
+                "chance": 1500
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "golddrops",
+            "shards"
+        ]
+    },
+    "273-339": {
+        "name": "독개구리 왕",
+        "miniboss": true,
+        "level": 28,
+        "hitPoints": 400,
+        "aggressive": true,
+        "aggroRange": 5,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "ironspear",
+                "chance": 5000
+            },
+            {
+                "key": "ironboots",
+                "chance": 4000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "irondrops",
+            "bronzedrops",
+            "accessories"
+        ]
+    },
+    "327-318": {
+        "name": "붉은 근위대장",
+        "miniboss": true,
+        "level": 48,
+        "hitPoints": 800,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldchestplate",
+                "chance": 3000
+            },
+            {
+                "key": "goldshield",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "cobaltdrops",
+            "accessories"
+        ]
+    },
+    "340-427": {
+        "name": "킹코브라",
+        "miniboss": true,
+        "level": 45,
+        "hitPoints": 700,
+        "aggressive": true,
+        "aggroRange": 6,
+        "poisonous": true,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldboots",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 10000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "rareswords",
+            "shards"
+        ]
+    },
+    "867-730": {
+        "name": "고대 지렁이",
+        "miniboss": true,
+        "level": 40,
+        "hitPoints": 600,
+        "aggressive": true,
+        "aggroRange": 6,
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 3000
+            },
+            {
+                "key": "goldlegplates",
+                "chance": 3000
+            },
+            {
+                "key": "gold",
+                "chance": 8000
+            }
+        ],
+        "dropTables": [
+            "ordinary",
+            "golddrops",
+            "irondrops",
+            "shards"
+        ]
     }
 }

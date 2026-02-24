@@ -114,6 +114,30 @@
     background-size: calc(width('abilityicons') * 0.25rem);
 }
 
+.quickslot-icon-haste {
+    background-image: url('/img/interface/abilityicons.png');
+    background-position: -4em 0.0625em;
+    background-size: calc(width('abilityicons') * 0.25rem);
+}
+
+.quickslot-icon-magicshield {
+    background-image: url('/img/interface/abilityicons.png');
+    background-position: -20em 0.0625em;
+    background-size: calc(width('abilityicons') * 0.25rem);
+}
+
+.quickslot-icon-warcry {
+    background-image: url('/img/interface/abilityicons.png');
+    background-position: 0 0.0625em;
+    background-size: calc(width('abilityicons') * 0.25rem);
+}
+
+.quickslot-icon-swiftshot {
+    background-image: url('/img/interface/abilityicons.png');
+    background-position: -12em 0.0625em;
+    background-size: calc(width('abilityicons') * 0.25rem);
+}
+
 .quickslot-icon-intimidate,
 .quickslot-icon-run,
 .quickslot-icon-awareness,
@@ -121,7 +145,11 @@
 .quickslot-icon-hotshot,
 .quickslot-icon-thickskin,
 .quickslot-icon-precognition,
-.quickslot-icon-secretcalling {
+.quickslot-icon-secretcalling,
+.quickslot-icon-haste,
+.quickslot-icon-magicshield,
+.quickslot-icon-warcry,
+.quickslot-icon-swiftshot {
     &:hover {
         background-position-y: -3.75em;
     }

@@ -6,11 +6,9 @@
             "멀리서 오셨군요. 정말 대단합니다."
         ]
     },
-
     "king2": {
         "name": "왕"
     },
-
     "prisoner": {
         "name": "죄수",
         "text": [
@@ -31,60 +29,69 @@
             "영원히..."
         ]
     },
-
     "villagegirl": {
         "name": "아내",
-        "text": ["저를 아자리아라고 불러주세요."]
+        "text": [
+            "저를 아자리아라고 불러주세요."
+        ]
     },
-
     "villagegirl2": {
         "name": "마을 소녀",
-        "text": ["좋은 하루 보내세요!"]
+        "text": [
+            "좋은 하루 보내세요!"
+        ]
     },
-
     "villagegirl3": {
         "name": "마을 소녀",
-        "text": ["어떻게 지내세요?"]
+        "text": [
+            "어떻게 지내세요?"
+        ]
     },
-
     "villagegirl4": {
         "name": "마을 소녀",
-        "text": ["어떻게 지내세요?"]
+        "text": [
+            "어떻게 지내세요?"
+        ]
     },
-
     "villagegirl5": {
         "name": "마을 소녀",
-        "text": ["어떻게 지내세요?"]
+        "text": [
+            "어떻게 지내세요?"
+        ]
     },
-
     "villagegirl6": {
         "name": "마을 소녀",
-        "text": ["어떻게 지내세요?"]
+        "text": [
+            "어떻게 지내세요?"
+        ]
     },
-
     "villagegirl7": {
         "name": "마을 소녀",
-        "text": ["어떻게 지내세요?"]
+        "text": [
+            "어떻게 지내세요?"
+        ]
     },
-
     "forestnpc": {
         "name": "산림꾼",
-        "text": ["안녕하세요!"],
+        "text": [
+            "안녕하세요!"
+        ],
         "store": "forester"
     },
-
     "miner": {
         "name": "광부",
-        "text": ["방해하지 마세요, 일하는 척 바쁩니다!"],
+        "text": [
+            "방해하지 마세요, 일하는 척 바쁩니다!"
+        ],
         "store": "miner"
     },
-
     "miner2": {
         "name": "또 다른 광부",
-        "text": ["방해하지 마세요, 일하는 척 바쁩니다!"],
+        "text": [
+            "방해하지 마세요, 일하는 척 바쁩니다!"
+        ],
         "store": "miner"
     },
-
     "beachnpc": {
         "name": "버바",
         "text": [
@@ -95,7 +102,6 @@
             "이 해변 아래에 지하 세계가 있다고 하더라고요."
         ]
     },
-
     "agent": {
         "name": "비밀 요원",
         "text": [
@@ -107,11 +113,9 @@
             "아... 용감한 모험가 말이에요."
         ]
     },
-
     "nyan": {
         "name": "냥캣 (오래된 밈)"
     },
-
     "rick": {
         "name": "릭",
         "text": [
@@ -136,7 +140,6 @@
             "절대 포기하지 않을 거예요..."
         ]
     },
-
     "rick2": {
         "name": "릭",
         "text": [
@@ -150,61 +153,63 @@
             "절대 거짓말로 상처 주지 않을 거예요..."
         ]
     },
-
     "priest": {
         "name": "신부"
     },
-
     "guard": {
         "name": "경비원",
-        "text": ["지금 굉장히 바쁩니다."]
+        "text": [
+            "지금 굉장히 바쁩니다."
+        ]
     },
-
     "guard2": {
         "name": "왕실 경비원",
-        "text": ["어떠한 반항도 용납하지 않습니다."]
+        "text": [
+            "어떠한 반항도 용납하지 않습니다."
+        ]
     },
-
     "scientist": {
         "name": "과학자"
     },
-
     "madscientist": {
         "name": "미친 과학자"
     },
-
     "desertnpc": {
-        "name": "빌리"
+        "name": "빌리",
+        "store": "desertshop",
+        "text": [
+            "사막의 열기를 견딘 장비들을 팝니다."
+        ]
     },
-
     "lavanpc": {
         "name": "죽어가는 병사",
-        "text": ["도와주셔서 감사합니다. 당신이 없으면 저는 사라질 거예요."]
+        "text": [
+            "용암에서 단련된 최강의 장비... 가져가세요..."
+        ],
+        "store": "lavashop"
     },
-
     "boxingman": {
         "name": "바이크 라이슨",
-        "text": ["슈욱."]
+        "text": [
+            "슈욱."
+        ]
     },
-
     "vampire": {
         "name": "뱀파이어"
     },
-
     "doctor": {
         "name": "의사",
-        "text": ["저는 의사지 마법사가 아니에요."]
+        "text": [
+            "저는 의사지 마법사가 아니에요."
+        ]
     },
-
     "oddeyecat": {
         "name": "오드아이 고양이"
     },
-
     "sorcerer": {
         "name": "마법사",
         "store": "sorcerer"
     },
-
     "coder": {
         "name": "프로그래머",
         "text": [
@@ -215,27 +220,30 @@
             "그 후에 임무들을 알아볼게요."
         ]
     },
-
     "villager": {
         "name": "마을 사람",
-        "text": ["안녕하세요!"]
+        "text": [
+            "안녕하세요!"
+        ]
     },
-
     "villager2": {
         "name": "마을 사람",
-        "text": ["안녕하세요!"]
+        "text": [
+            "안녕하세요!"
+        ]
     },
-
     "villager3": {
         "name": "마을 사람",
-        "text": ["안녕하세요!"]
+        "text": [
+            "안녕하세요!"
+        ]
     },
-
     "villager4": {
         "name": "마을 사람",
-        "text": ["안녕하세요!"]
+        "text": [
+            "안녕하세요!"
+        ]
     },
-
     "octocat": {
         "name": "옥토캣",
         "text": [
@@ -246,177 +254,185 @@
             "<a target=\"_blank\" href=\"https://github.com/insushim/iwrealrpg\">GitHub에서 소스코드를 확인해 보세요!</a>"
         ]
     },
-
     "soldier": {
         "name": "병사"
     },
-
     "fisherman": {
         "name": "어부",
         "store": "fishingstore"
     },
-
     "octopus": {
         "name": "문어"
     },
-
     "mermaidnpc": {
         "name": "인어"
     },
-
     "sponge": {
         "name": "스펀지"
     },
-
     "fairynpc": {
         "name": "요정"
     },
-
     "shepherdboy": {
         "name": "양치기 소년"
     },
-
     "zombiegf": {
         "name": "좀비 여자친구"
     },
-
     "pirategirlnpc": {
         "name": "해적 소녀",
-        "text": ["안녕!"]
+        "text": [
+            "안녕!"
+        ]
     },
-
     "bluebikinigirlnpc": {
         "name": "프레첼"
     },
-
     "redbikinigirlnpc": {
         "name": "플라리스"
     },
-
     "iamverycoldnpc": {
         "name": "바부시카",
         "store": "ingredientsstore"
     },
-
     "iceelfnpc": {
-        "name": "얼음 엘프"
+        "name": "얼음 엘프",
+        "store": "iceshop",
+        "text": [
+            "얼음 땅의 장비들입니다. 추위를 견딜 수 있으세요?"
+        ]
     },
-
     "elfnpc": {
-        "name": "엘프"
+        "name": "엘프",
+        "store": "eliteshop",
+        "text": [
+            "엘프의 비밀 장비들입니다. 강한 자만이 사용할 수 있습니다."
+        ]
     },
-
     "snowshepherdboy": {
         "name": "셰르파",
-        "text": ["안녕하세요, 모험가 님!", "아름다운 경치를 즐기고 계신가요?"]
+        "text": [
+            "안녕하세요, 모험가 님!",
+            "아름다운 경치를 즐기고 계신가요?"
+        ]
     },
-
     "angelnpc": {
         "name": "천사"
     },
-
     "momangelnpc": {
         "name": "대천사"
     },
-
     "superiorangelnpc": {
         "name": "멘토"
     },
-
     "firstsonangelnpc": {
         "name": "천사"
     },
-
     "secondsonangelnpc": {
         "name": "상위 천사"
     },
-
     "mojojojonpc": {
         "name": "몽키"
     },
-
     "ancientmanumentnpc": {
         "name": "고대 기념물"
     },
-
     "vendingmachine": {
         "name": "마법 부여 상인",
         "role": "enchanter"
     },
-
     "redstoremannpc": {
         "name": "은행원",
         "role": "banker"
     },
-
     "purplestoremannpc": {
         "name": "코스메틱 상인",
         "store": "cosmetics"
     },
-
     "bluestoremannpc": {
         "name": "점원",
         "store": "startshop"
     },
-
     "royalguard": {
         "name": "왕실 경비원",
-        "text": ["출입 금지입니다!"]
+        "text": [
+            "출입 금지입니다!"
+        ]
     },
-
     "royalguard2": {
         "name": "왕실 경비원",
-        "text": ["출입 금지입니다!"]
+        "text": [
+            "출입 금지입니다!"
+        ]
     },
-
     "royalguard3": {
         "name": "왕실 경비원",
-        "text": ["출입 금지입니다!"]
+        "text": [
+            "출입 금지입니다!"
+        ]
     },
-
     "picklenpc": {
         "name": "해삼"
     },
-
     "guildnpc": {
         "name": "길드 마스터"
     },
-
     "santaelfnpc": {
         "name": "산타 도우미",
-        "text": ["뭐가 필요하세요? 저는 정말 바쁩니다."]
+        "text": [
+            "엘프 숲의 장비들이에요! 구경하세요."
+        ],
+        "store": "elfshop"
     },
-
     "oldlady": {
         "name": "할머니",
-        "text": ["안녕하세요, 모험가 님!", "모험하실 때 조심하세요."]
+        "text": [
+            "안녕하세요, 모험가 님!",
+            "모험하실 때 조심하세요."
+        ]
     },
-
     "oldlady2": {
         "name": "할머니"
     },
-
     "ratnpc": {
         "name": "쥐",
-        "text": ["찍찍!"]
+        "text": [
+            "찍찍!"
+        ]
     },
-
     "blacksmith": {
         "name": "대장장이",
-        "text": ["안녕하세요!"]
+        "text": [
+            "무기와 방어구를 팝니다. 둘러보세요!"
+        ],
+        "store": "ironshop"
     },
-
     "blacksmith2": {
         "name": "대장장이",
-        "text": ["안녕하세요!"]
+        "text": [
+            "최고급 금 장비를 다루는 대장장이입니다."
+        ],
+        "store": "goldshop"
     },
-
     "herbalist": {
         "name": "약초꾼",
-        "text": ["안녕하세요!"]
+        "text": [
+            "약초로 만든 포션과 물약을 팝니다."
+        ],
+        "store": "herbshop"
     },
     "rickgf": {
         "name": "레나",
-        "text": ["아, 다른 사람을 본 게 정말 오랜만이에요.", "혹시 릭을 보셨나요?"]
+        "text": [
+            "아, 다른 사람을 본 게 정말 오랜만이에요.",
+            "혹시 릭을 보셨나요?"
+        ]
+    },
+    "greenstoremannpc": {
+        "name": "잡화 상인",
+        "store": "midshop",
+        "text": [
+            "청동과 철 장비를 팝니다. 둘러보세요!"
+        ]
     }
 }

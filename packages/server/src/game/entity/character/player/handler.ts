@@ -142,10 +142,11 @@ export default class Handler {
      */
 
     private passiveRegen(): void {
-        // Only regen when not moving and not in combat.
-        if (this.player.moving || this.player.combat.started || this.player.isDead()) return;
+        // Skip regen if dead.
+        if (this.player.isDead()) return;
 
-        let maxHp = this.player.hitPoints.getMaxHitPoints(),
+        let inCombat = this.player.moving || this.player.combat.started,
+            maxHp = this.player.hitPoints.getMaxHitPoints(),
             maxMana = this.player.mana.getMaxMana(),
             hpRate: number,
             mpRate: number;
@@ -153,29 +154,35 @@ export default class Handler {
         switch (this.player.playerClass) {
             case Modules.Classes.Knight: {
                 hpRate = 0.02; // 2% HP per tick
-                mpRate = 0.005; // 0.5% MP per tick
+                mpRate = 0.01; // 1% MP per tick
                 break;
             }
 
             case Modules.Classes.Wizard: {
                 hpRate = 0.005; // 0.5% HP per tick
-                mpRate = 0.02; // 2% MP per tick
+                mpRate = 0.03; // 3% MP per tick
                 break;
             }
 
             default: {
                 // Fairy and others
                 hpRate = 0.01; // 1% HP per tick
-                mpRate = 0.01; // 1% MP per tick
+                mpRate = 0.015; // 1.5% MP per tick
                 break;
             }
+        }
+
+        // In combat: HP regen stops, MP regens at half rate.
+        if (inCombat) {
+            hpRate = 0;
+            mpRate *= 0.5;
         }
 
         let hpHeal = Math.max(1, Math.floor(maxHp * hpRate)),
             mpHeal = Math.max(1, Math.floor(maxMana * mpRate)),
             healed = false;
 
-        if (!this.player.hitPoints.isFull()) {
+        if (hpRate > 0 && !this.player.hitPoints.isFull()) {
             this.player.hitPoints.increment(hpHeal);
             healed = true;
         }
@@ -276,19 +283,18 @@ export default class Handler {
         if (this.player.isMagic()) {
             let { manaCost } = this.player.equipment.getWeapon();
 
-            // If the player doesn't have enough mana to attack.
-            if (!this.player.hasManaForAttack()) {
-                // Warn the player once if they don't have enough mana.
+            // If the player doesn't have enough mana, allow weak attack without mana cost.
+            if (this.player.hasManaForAttack()) {
+                this.player.displayedManaWarning = false;
+
+                this.player.mana.decrement(manaCost);
+            } else {
                 if (!this.player.displayedManaWarning) this.player.notify('misc:LOW_MANA');
 
                 this.player.displayedManaWarning = true;
 
-                return;
+                // Don't block attack - allow weak melee-like attack to proceed.
             }
-
-            this.player.displayedManaWarning = false;
-
-            this.player.mana.decrement(manaCost);
         }
 
         if (this.player.isArcher()) {

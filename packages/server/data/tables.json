@@ -7,7 +7,6 @@
             }
         ]
     },
-
     "ordinary": {
         "drops": [
             {
@@ -44,7 +43,6 @@
             }
         ]
     },
-
     "arrows": {
         "drops": [
             {
@@ -85,7 +83,6 @@
             }
         ]
     },
-
     "unusual": {
         "drops": [
             {
@@ -110,7 +107,6 @@
             }
         ]
     },
-
     "shards": {
         "drops": [
             {
@@ -135,7 +131,6 @@
             }
         ]
     },
-
     "vegetables": {
         "drops": [
             {
@@ -156,7 +151,6 @@
             }
         ]
     },
-
     "fruits": {
         "drops": [
             {
@@ -201,7 +195,6 @@
             }
         ]
     },
-
     "mushrooms": {
         "drops": [
             {
@@ -230,7 +223,6 @@
             }
         ]
     },
-
     "manafruits": {
         "drops": [
             {
@@ -279,6 +271,226 @@
             },
             {
                 "key": "zephyrsgaleblade",
+                "chance": 5000
+            }
+        ]
+    },
+    "bronzedrops": {
+        "drops": [
+            {
+                "key": "bronzesword",
+                "chance": 2000
+            },
+            {
+                "key": "bronzespear",
+                "chance": 2000
+            },
+            {
+                "key": "bronzescythe",
+                "chance": 1500
+            },
+            {
+                "key": "bronzehelmet",
+                "chance": 2500
+            },
+            {
+                "key": "bronzechestplate",
+                "chance": 2000
+            },
+            {
+                "key": "bronzelegplates",
+                "chance": 2000
+            },
+            {
+                "key": "bronzeboots",
+                "chance": 2500
+            }
+        ]
+    },
+    "irondrops": {
+        "drops": [
+            {
+                "key": "ironsword",
+                "chance": 1500
+            },
+            {
+                "key": "ironspear",
+                "chance": 1500
+            },
+            {
+                "key": "ironscythe",
+                "chance": 1200
+            },
+            {
+                "key": "ironbattleaxe",
+                "chance": 1000
+            },
+            {
+                "key": "ironhelmet",
+                "chance": 2000
+            },
+            {
+                "key": "ironchestplate",
+                "chance": 1500
+            },
+            {
+                "key": "ironlegplates",
+                "chance": 1500
+            },
+            {
+                "key": "ironboots",
+                "chance": 2000
+            },
+            {
+                "key": "ironshield",
+                "chance": 1500
+            },
+            {
+                "key": "ironring",
+                "chance": 500
+            }
+        ]
+    },
+    "golddrops": {
+        "drops": [
+            {
+                "key": "goldsword",
+                "chance": 800
+            },
+            {
+                "key": "goldspear",
+                "chance": 800
+            },
+            {
+                "key": "goldscythe",
+                "chance": 600
+            },
+            {
+                "key": "goldbattleaxe",
+                "chance": 500
+            },
+            {
+                "key": "goldhelmet",
+                "chance": 1000
+            },
+            {
+                "key": "goldchestplate",
+                "chance": 800
+            },
+            {
+                "key": "goldlegplates",
+                "chance": 800
+            },
+            {
+                "key": "goldboots",
+                "chance": 1000
+            },
+            {
+                "key": "goldshield",
+                "chance": 800
+            }
+        ]
+    },
+    "cobaltdrops": {
+        "drops": [
+            {
+                "key": "cobaltspear",
+                "chance": 400
+            },
+            {
+                "key": "cobaltscythe",
+                "chance": 350
+            },
+            {
+                "key": "cobaltbattleaxe",
+                "chance": 300
+            },
+            {
+                "key": "cobalthelmet",
+                "chance": 500
+            },
+            {
+                "key": "cobaltchestplate",
+                "chance": 400
+            },
+            {
+                "key": "cobaltlegplates",
+                "chance": 400
+            },
+            {
+                "key": "cobaltshield",
+                "chance": 500
+            }
+        ]
+    },
+    "rareswords": {
+        "drops": [
+            {
+                "key": "nisocsword",
+                "chance": 300
+            },
+            {
+                "key": "cinnabarsword",
+                "chance": 200
+            },
+            {
+                "key": "pytharsword",
+                "chance": 100
+            },
+            {
+                "key": "ibosword",
+                "chance": 50
+            }
+        ]
+    },
+    "accessories": {
+        "drops": [
+            {
+                "key": "pendant1",
+                "chance": 1500
+            },
+            {
+                "key": "ring1",
+                "chance": 1500
+            },
+            {
+                "key": "bronzering",
+                "chance": 800
+            },
+            {
+                "key": "ironring",
+                "chance": 400
+            },
+            {
+                "key": "nisocring",
+                "chance": 100
+            },
+            {
+                "key": "greenpendant",
+                "chance": 200
+            }
+        ]
+    },
+    "richdrops": {
+        "drops": [
+            {
+                "key": "gold",
+                "chance": 50000
+            },
+            {
+                "key": "bigflask",
+                "chance": 15000
+            },
+            {
+                "key": "bigmanaflask",
+                "chance": 12000
+            },
+            {
+                "key": "burger",
+                "chance": 8000
+            },
+            {
+                "key": "cure",
                 "chance": 5000
             }
         ]

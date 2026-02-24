@@ -492,6 +492,7 @@ export default class Player extends Character {
     public welcome(): void {
         if (this.isNew()) {
             this.giveStartingEquipment();
+            this.giveStartingAbilities();
 
             // Give starting inventory items (axe for woodcutting, pickaxe for mining)
             this.inventory.add(new Item('bronzeaxe', -1, -1, false, 1));
@@ -502,6 +503,9 @@ export default class Player extends Character {
 
             return this.notify(`misc:WELCOME;name=${config.name}`);
         }
+
+        // Give starting abilities to existing players (safe - skips if already owned).
+        this.giveStartingAbilities();
 
         this.notify(`misc:WELCOME_BACK;name=${config.name}`);
 
@@ -642,7 +646,7 @@ export default class Player extends Character {
                 startingItems = [
                     {
                         type: Modules.Equipment.Weapon,
-                        key: 'aquastaff',
+                        key: 'coppersword',
                         count: 1,
                         enchantments: {}
                     },
@@ -703,6 +707,34 @@ export default class Player extends Character {
                 this.skills.get(Modules.Skills.Magic).addExperience(50, false);
                 this.skills.get(Modules.Skills.Health).addExperience(30, false);
                 this.skills.get(Modules.Skills.Defense).addExperience(20, false);
+                break;
+            }
+        }
+    }
+
+    /**
+     * Gives the player class-specific starting abilities.
+     * Knight: warcry + thickskin, Fairy: swiftshot + run, Wizard: haste + magicshield.
+     * Safe for existing players - abilities.add() skips if already owned.
+     */
+
+    private giveStartingAbilities(): void {
+        switch (this.playerClass) {
+            case Modules.Classes.Knight: {
+                this.abilities.add('warcry', 1, 0);
+                this.abilities.add('thickskin', 1, 1);
+                break;
+            }
+
+            case Modules.Classes.Fairy: {
+                this.abilities.add('swiftshot', 1, 0);
+                this.abilities.add('run', 1, 1);
+                break;
+            }
+
+            case Modules.Classes.Wizard: {
+                this.abilities.add('haste', 1, 0);
+                this.abilities.add('magicshield', 1, 1);
                 break;
             }
         }
@@ -2747,8 +2779,9 @@ export default class Player extends Character {
     public override getDamageBonus(): number {
         // Handle magic bonuses
         if (this.isMagic()) {
-            // If the player does not have enough mana for the attack decrease the damage.
-            if (!this.hasManaForAttack()) return -3;
+            // If the player does not have enough mana, use weak strength-based damage.
+            if (!this.hasManaForAttack())
+                return Math.max(1, Math.floor(this.getBonuses().strength / 2));
 
             // Return the total magic bonus.
             return this.getBonuses().magic;
